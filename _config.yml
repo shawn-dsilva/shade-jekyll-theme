@@ -9,7 +9,7 @@ permalink:        pretty
 # Setup
 title:            Shawn D'silva
 tagline:          'A Jekyll theme'
-description:      'embedded software developer'
+description:      'Embedded software developer and Tinkerer'
 
 #baseurl: /
 url:              https://shawn-dsilva.github.io/
@@ -24,6 +24,11 @@ paginate:         5
 
 github:
   repo:           https://github.com/shawn-dsilva
+
+twitter:
+                  https://twitter.com/Shade978
+
+email:  mailto:shawn.dsilva_97@protonmail.com
   
 plugins: [jekyll-paginate, jekyll-gist]
 

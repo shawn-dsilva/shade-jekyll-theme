@@ -4,7 +4,7 @@
  <title>Shawn D'silva</title>
  <link href="http://localhost:4000/atom.xml" rel="self"/>
  <link href="http://localhost:4000/"/>
- <updated>2018-10-05T02:35:53-07:00</updated>
+ <updated>2018-10-05T03:07:04-07:00</updated>
  <id>http://localhost:4000</id>
  <author>
    <name>Shawn D'silva</name>
@@ -17,7 +17,8 @@
    <link href="http://localhost:4000/2018/10/05/placeholder-post/"/>
    <updated>2018-10-05T00:00:00-07:00</updated>
    <id>http://localhost:4000/2018/10/05/placeholder-post</id>
-   <content type="html">&lt;p&gt;a placeholder for other content&lt;/p&gt;
+   <content type="html">&lt;p&gt;a placeholder for other content
+below is just filler text for testing purposes&lt;/p&gt;
 
 &lt;h1 id=&quot;tm4c-template-for-linux&quot;&gt;TM4C Template for Linux&lt;/h1&gt;
 

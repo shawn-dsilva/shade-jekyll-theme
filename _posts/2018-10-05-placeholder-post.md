@@ -4,7 +4,7 @@ title: Placeholder post
 ---
 
 a placeholder for other content
-
+below is just filler text for testing purposes
 
 TM4C Template for Linux
 ==================

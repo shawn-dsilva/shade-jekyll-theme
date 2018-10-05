@@ -1,1 +1,1 @@
-repo for my website
+repo for my website,uses Hyde theme by mdo with a modified _config.yml file to make it work with jekyll 3.x

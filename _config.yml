@@ -12,8 +12,8 @@ tagline:          'A Jekyll theme'
 description:      'embedded software developer'
 
 #baseurl: /
-url:              https://shawn-dsilva.github.io/shawn-dsilva.github.io/
-baseurl:          /
+url:              https://shawn-dsilva.github.io/
+baseurl:          /shawn-dsilva.github.io/
 
 author:
   name:           "Shawn D'silva"

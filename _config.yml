@@ -10,8 +10,10 @@ permalink:        pretty
 title:            Shawn D'silva
 tagline:          'A Jekyll theme'
 description:      'embedded software developer'
+
 #baseurl: /
-baseurl:          https://shawn-dsilva.github.io/shawn-dsilva.github.io/
+url:              https://shawn-dsilva.github.io/shawn-dsilva.github.io/
+baseurl:          /shawn-dsilva.github.io/
 
 author:
   name:           "Shawn D'silva"

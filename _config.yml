@@ -13,7 +13,7 @@ description:      'embedded software developer'
 
 #baseurl: /
 url:              https://shawn-dsilva.github.io/shawn-dsilva.github.io/
-baseurl:          /shawn-dsilva.github.io/
+baseurl:          /
 
 author:
   name:           "Shawn D'silva"

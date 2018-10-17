@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
  <title>Shawn D'silva</title>
- <link href="/atom.xml" rel="self"/>
- <link href="/"/>
- <updated>2018-10-17T16:23:09+05:30</updated>
- <id></id>
+ <link href="https://shawn-dsilva.github.io//atom.xml" rel="self"/>
+ <link href="https://shawn-dsilva.github.io//"/>
+ <updated>2018-10-17T16:57:40+05:30</updated>
+ <id>https://shawn-dsilva.github.io/</id>
  <author>
    <name>Shawn D'silva</name>
    <email></email>
@@ -14,9 +14,9 @@
  
  <entry>
    <title>Getting started with the TM4C Launchpad on Linux</title>
-   <link href="/2018/10/17/Getting-Started-with-TM4C-Launchpad-On-Linux/"/>
+   <link href="https://shawn-dsilva.github.io//2018/10/17/Getting-Started-with-TM4C-Launchpad-On-Linux/"/>
    <updated>2018-10-17T00:00:00+05:30</updated>
-   <id>/2018/10/17/Getting-Started-with-TM4C-Launchpad-On-Linux</id>
+   <id>https://shawn-dsilva.github.io//2018/10/17/Getting-Started-with-TM4C-Launchpad-On-Linux</id>
    <content type="html">&lt;p&gt;This is a guide to getting up-and-running to develop firmware for the &lt;strong&gt;TM4C123GH6PM&lt;/strong&gt; evaluation board from Texas Instruments on a Linux based system.&lt;/p&gt;
 
 &lt;p&gt;The TM4C was my first microcontroller,and i found it very uninteresting to use a bulky IDE like Keil or IAR EWARM that abstracts so much from me,I checked various blog posts about using GCC and Make to develop firmware for this board,but the instructions were always outdated.&lt;/p&gt;
@@ -39,7 +39,7 @@
     &lt;p&gt;A &lt;code class=&quot;highlighter-rouge&quot;&gt;Makefile&lt;/code&gt;&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
-    &lt;p&gt;A flasher program,I use &lt;code class=&quot;highlighter-rouge&quot;&gt;lm4flash&lt;/code&gt; in this guide,altough OpenOCD may also be used&lt;/p&gt;
+    &lt;p&gt;A flasher program,I use &lt;code class=&quot;highlighter-rouge&quot;&gt;lm4flash&lt;/code&gt; in this guide,although OpenOCD may also be used&lt;/p&gt;
   &lt;/li&gt;
 &lt;/ul&gt;
 
@@ -80,6 +80,8 @@ sudo cp lm4flash /usr/bin/
 
 &lt;p&gt;Once cloned,&lt;code class=&quot;highlighter-rouge&quot;&gt;cd&lt;/code&gt; into &lt;code class=&quot;highlighter-rouge&quot;&gt;tm4c-linux-template&lt;/code&gt; and run &lt;code class=&quot;highlighter-rouge&quot;&gt;make&lt;/code&gt;&lt;/p&gt;
 
+&lt;p&gt;you can change the name of the final binary by setting the &lt;code class=&quot;highlighter-rouge&quot;&gt;PROJECT&lt;/code&gt; variable in the &lt;code class=&quot;highlighter-rouge&quot;&gt;Makefile&lt;/code&gt; to whatever name you want to use,by default &lt;code class=&quot;highlighter-rouge&quot;&gt;PROJECT = main&lt;/code&gt;&lt;/p&gt;
+
 &lt;p&gt;once you run &lt;code class=&quot;highlighter-rouge&quot;&gt;make&lt;/code&gt; this will be the directory structure:&lt;/p&gt;
 
 &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;├── bin
@@ -110,6 +112,9 @@ sudo cp lm4flash /usr/bin/
 &lt;/ul&gt;
 
 &lt;p&gt;Run &lt;code class=&quot;highlighter-rouge&quot;&gt;make flash&lt;/code&gt; to invoke &lt;code class=&quot;highlighter-rouge&quot;&gt;lm4flash&lt;/code&gt; and burn your &lt;code class=&quot;highlighter-rouge&quot;&gt;main.bin&lt;/code&gt; binary to the board,press the RESET button on your board,and hold SW1 to cause the red LED on board to blink as long as it is pressed&lt;/p&gt;
+
+&lt;p&gt;Additional library and driver files for this board can be acquired by downloading the &lt;code class=&quot;highlighter-rouge&quot;&gt;SW-TM4C-2.1.4.178.exe&lt;/code&gt; package from this 
+&lt;a href=&quot;http://software-dl.ti.com/tiva-c/SW-TM4C/latest/index_FDS.html&quot;&gt;TI Website here&lt;/a&gt;&lt;/p&gt;
 </content>
  </entry>
  

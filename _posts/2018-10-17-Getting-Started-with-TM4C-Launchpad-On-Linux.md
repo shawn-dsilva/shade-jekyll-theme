@@ -101,4 +101,5 @@ once you run `make` this will be the directory structure:
 
 Run `make flash` to invoke `lm4flash` and burn your `main.bin` binary to the board,press the RESET button on your board,and hold SW1 to cause the red LED on board to blink as long as it is pressed
 
-Additional library and driver files for this board can be acquired by downloading the `SW-TM4C-2.1.4.178.exe` package from this TI website http://software-dl.ti.com/tiva-c/SW-TM4C/latest/index_FDS.html 
+Additional library and driver files for this board can be acquired by downloading the `SW-TM4C-2.1.4.178.exe` package from this 
+[TI Website here](http://software-dl.ti.com/tiva-c/SW-TM4C/latest/index_FDS.html)

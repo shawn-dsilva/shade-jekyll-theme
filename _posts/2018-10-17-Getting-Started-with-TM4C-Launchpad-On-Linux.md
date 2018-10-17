@@ -68,6 +68,8 @@ This template contains a skeleton directory of folders,a `blinky.c` file,a `star
 
 Once cloned,`cd` into `tm4c-linux-template` and run `make`
 
+you can change the name of the final binary by setting the `PROJECT` variable in the `Makefile` to whatever name you want to use,by default `PROJECT = main`
+
 once you run `make` this will be the directory structure:
 
 ```

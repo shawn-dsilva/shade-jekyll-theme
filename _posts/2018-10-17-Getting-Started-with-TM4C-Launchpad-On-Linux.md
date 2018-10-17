@@ -39,7 +39,7 @@ The steps here are tested on an **Ubuntu 18.04 LTS** system,but should work on a
 
   
 
-	sudo apt install arm-none-eabi-gcc
+	sudo apt install gcc-arm-none-eabi
 
   
 

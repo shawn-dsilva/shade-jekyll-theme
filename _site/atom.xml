@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
  <title>Shawn D'silva</title>
- <link href="http://localhost:4000/atom.xml" rel="self"/>
- <link href="http://localhost:4000/"/>
- <updated>2018-10-05T03:07:04-07:00</updated>
- <id>http://localhost:4000</id>
+ <link href="/atom.xml" rel="self"/>
+ <link href="/"/>
+ <updated>2018-10-17T16:23:09+05:30</updated>
+ <id></id>
  <author>
    <name>Shawn D'silva</name>
    <email></email>
@@ -13,56 +13,49 @@
 
  
  <entry>
-   <title>Placeholder post</title>
-   <link href="http://localhost:4000/2018/10/05/placeholder-post/"/>
-   <updated>2018-10-05T00:00:00-07:00</updated>
-   <id>http://localhost:4000/2018/10/05/placeholder-post</id>
-   <content type="html">&lt;p&gt;a placeholder for other content
-below is just filler text for testing purposes&lt;/p&gt;
+   <title>Getting started with the TM4C Launchpad on Linux</title>
+   <link href="/2018/10/17/Getting-Started-with-TM4C-Launchpad-On-Linux/"/>
+   <updated>2018-10-17T00:00:00+05:30</updated>
+   <id>/2018/10/17/Getting-Started-with-TM4C-Launchpad-On-Linux</id>
+   <content type="html">&lt;p&gt;This is a guide to getting up-and-running to develop firmware for the &lt;strong&gt;TM4C123GH6PM&lt;/strong&gt; evaluation board from Texas Instruments on a Linux based system.&lt;/p&gt;
 
-&lt;h1 id=&quot;tm4c-template-for-linux&quot;&gt;TM4C Template for Linux&lt;/h1&gt;
+&lt;p&gt;The TM4C was my first microcontroller,and i found it very uninteresting to use a bulky IDE like Keil or IAR EWARM that abstracts so much from me,I checked various blog posts about using GCC and Make to develop firmware for this board,but the instructions were always outdated.&lt;/p&gt;
 
-&lt;h2 id=&quot;about&quot;&gt;About&lt;/h2&gt;
+&lt;p&gt;The steps here are tested on an &lt;strong&gt;Ubuntu 18.04 LTS&lt;/strong&gt; system,but should work on any other Linux based system&lt;/p&gt;
 
-&lt;p&gt;This is a simple template for writing and building code for the TM4C123GH6PM Launchpad development board by TI on a Linux(specifically Ubuntu) system.This repository includes a &lt;code class=&quot;highlighter-rouge&quot;&gt;Makefile&lt;/code&gt;,a linker script &lt;code class=&quot;highlighter-rouge&quot;&gt;TM4C123GH6PM.ld&lt;/code&gt; for the TM4C board,the &lt;code class=&quot;highlighter-rouge&quot;&gt;Startup.c&lt;/code&gt; file and required headers for the TM4C microcontroller and a basic blinky &lt;code class=&quot;highlighter-rouge&quot;&gt;main.c&lt;/code&gt; file&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;To start writing firmware for the TM4C we need:&lt;/strong&gt;&lt;/p&gt;
 
-&lt;p&gt;Directory structure after running &lt;code class=&quot;highlighter-rouge&quot;&gt;make&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;A text editor like vim or vscode whatever is your preference&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;A compiler/assembler/linker package like &lt;code class=&quot;highlighter-rouge&quot;&gt;arm-none-eabi-gcc&lt;/code&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Files specific to this board like a linker script &lt;code class=&quot;highlighter-rouge&quot;&gt;*.ld&lt;/code&gt; file and a &lt;code class=&quot;highlighter-rouge&quot;&gt;startup.c&lt;/code&gt; file&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;A &lt;code class=&quot;highlighter-rouge&quot;&gt;Makefile&lt;/code&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;A flasher program,I use &lt;code class=&quot;highlighter-rouge&quot;&gt;lm4flash&lt;/code&gt; in this guide,altough OpenOCD may also be used&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;├── inc
-│   ├── hw_nvic.h
-│   └── hw_types.h
-├── main.bin
-├── Makefile
-├── obj
-│   ├── a.axf
-│   ├── main.d
-│   ├── main.o
-│   ├── startup_gcc.d
-│   └── startup_gcc.o
-├── README.md
-├── src
-│   ├── main.c
-│   └── startup_gcc.c
-└── TM4C123GH6PM.ld
+&lt;h2 id=&quot;toolchain-installation&quot;&gt;Toolchain installation&lt;/h2&gt;
+
+&lt;p&gt;&lt;strong&gt;1&lt;/strong&gt;.First we install the dependencies needed by our tool chain&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo apt install flex bison libgmp3-dev libmpfr-dev libncurses5-dev libmpc-dev autoconf texinfo build-essential libftdi-dev python-yaml zlib1g-dev libusb-1.0-0-dev
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;Tested on Ubuntu 18.04 LTS&lt;/p&gt;
-
-&lt;h2 id=&quot;toolchain-setup-and-installation&quot;&gt;Toolchain setup and installation&lt;/h2&gt;
-
-&lt;p&gt;You need these dependencies before anything else&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo apt install flex bison libgmp3-dev libmpfr-dev libncurses5-dev \
-libmpc-dev autoconf texinfo build-essential libftdi-dev python-yaml \
-zlib1g-dev libusb-1.0-0-dev
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;You will also need to get the &lt;strong&gt;GCC ARM compiler/linker&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;2&lt;/strong&gt;. Then we install the &lt;strong&gt;GCC for ARM&lt;/strong&gt; package&lt;/p&gt;
 
 &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo apt install arm-none-eabi-gcc
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;And a flasher like &lt;strong&gt;lm4flash&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;3&lt;/strong&gt;. And finally the &lt;code class=&quot;highlighter-rouge&quot;&gt;lm4flash&lt;/code&gt; flashing tool&lt;/p&gt;
 
 &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git clone https://github.com/utzig/lm4tools.git
 cd lm4tools/lm4flash
@@ -70,24 +63,53 @@ make
 sudo cp lm4flash /usr/bin/
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;h2 id=&quot;usage&quot;&gt;Usage&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;4&lt;/strong&gt;. Next, create a file called &lt;code class=&quot;highlighter-rouge&quot;&gt;61.dialout.rules&lt;/code&gt; in &lt;code class=&quot;highlighter-rouge&quot;&gt;/etc/udev/rules.d&lt;/code&gt;
+    with this line inside it &lt;code class=&quot;highlighter-rouge&quot;&gt;SUBSYSTEM==&quot;usb&quot;, ATTRS{idVendor}==&quot;1cbe&quot;,
+    ATTRS{idProduct}==&quot;00fd&quot;, MODE=&quot;0666&quot;&lt;/code&gt;  This is to allow any program to read or write to your TM4C 		  Launchpad board,i.e you will not have
+    to use &lt;code class=&quot;highlighter-rouge&quot;&gt;sudo&lt;/code&gt; every time.
+    Now restart your PC&lt;/p&gt;
 
+&lt;h2 id=&quot;building-and-flashing-a-basic-blinkyc-program-to-the-board&quot;&gt;Building and flashing a basic Blinky.c program to the board&lt;/h2&gt;
+
+&lt;p&gt;I have already created a template for the TM4C,you just have to clone it from GitHub&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; git clone https://github.com/shawn-dsilva/tm4c-linux-template.git
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;This template contains a skeleton directory of folders,a &lt;code class=&quot;highlighter-rouge&quot;&gt;blinky.c&lt;/code&gt; file,a &lt;code class=&quot;highlighter-rouge&quot;&gt;startup.c&lt;/code&gt; file and a linker script for the TM4C&lt;/p&gt;
+
+&lt;p&gt;Once cloned,&lt;code class=&quot;highlighter-rouge&quot;&gt;cd&lt;/code&gt; into &lt;code class=&quot;highlighter-rouge&quot;&gt;tm4c-linux-template&lt;/code&gt; and run &lt;code class=&quot;highlighter-rouge&quot;&gt;make&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;once you run &lt;code class=&quot;highlighter-rouge&quot;&gt;make&lt;/code&gt; this will be the directory structure:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;├── bin
+│   ├── main.bin
+│   └── main.elf
+├── inc
+│   ├── hw_nvic.h
+│   └── hw_types.h
+├── ld
+│   └── TM4C123GH6PM.ld
+├── Makefile
+├── obj
+│   ├── main.d
+│   ├── main.o
+│   ├── startup_gcc.d
+│   └── startup_gcc.o
+├── README.md
+└── src
+    ├── main.c
+    └── startup_gcc.c
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;&lt;strong&gt;Here,&lt;/strong&gt;&lt;/p&gt;
 &lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;Clone this &lt;a href=&quot;https://github.com/shawn-dsilva/tm4c-linux-template&quot;&gt;tm4c-linux-template&lt;/a&gt; repository&lt;/p&gt;
-
-    &lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;git clone https://github.com/shawn-dsilva/tm4c-linux-template.git&lt;/code&gt;&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Header files(.h) to be placed in &lt;code class=&quot;highlighter-rouge&quot;&gt;inc&lt;/code&gt; folder,C source files(.c) to be placed in &lt;code class=&quot;highlighter-rouge&quot;&gt;src&lt;/code&gt; folder&lt;/li&gt;
-  &lt;li&gt;Set the &lt;code class=&quot;highlighter-rouge&quot;&gt;TARGET&lt;/code&gt; variable in the Makefile to whatever you want the &lt;br /&gt;
-finished .bin to be named as.&lt;/li&gt;
-  &lt;li&gt;Run &lt;code class=&quot;highlighter-rouge&quot;&gt;make&lt;/code&gt;&lt;/li&gt;
-  &lt;li&gt;The object files will be in an &lt;code class=&quot;highlighter-rouge&quot;&gt;obj&lt;/code&gt; folder,and the .bin file will be&lt;br /&gt;
-in the main directory itself.&lt;/li&gt;
-  &lt;li&gt;Run &lt;code class=&quot;highlighter-rouge&quot;&gt;sudo make flash&lt;/code&gt; to flash the main.bin to TM4C board&lt;/li&gt;
-  &lt;li&gt;Run &lt;code class=&quot;highlighter-rouge&quot;&gt;make clean&lt;/code&gt; to delete all object and .bin files.&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;src&lt;/code&gt; contains your Source files,i.e main.c and startup.c&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;inc&lt;/code&gt; contains your &lt;code class=&quot;highlighter-rouge&quot;&gt;*.h&lt;/code&gt; Header files,if any&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;obj&lt;/code&gt; contains the *&lt;code class=&quot;highlighter-rouge&quot;&gt;.o&lt;/code&gt; object files and &lt;code class=&quot;highlighter-rouge&quot;&gt;*.d&lt;/code&gt; dependency files&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;bin&lt;/code&gt; contains an ELF executable &lt;code class=&quot;highlighter-rouge&quot;&gt;main.elf&lt;/code&gt;,this contains debugging symbols used by  the &lt;code class=&quot;highlighter-rouge&quot;&gt;gdb&lt;/code&gt; debugger,and &lt;code class=&quot;highlighter-rouge&quot;&gt;main.bin&lt;/code&gt;,the final binary that is stripped off the debugging symbols and will be flashed to your board&lt;/li&gt;
 &lt;/ul&gt;
 
+&lt;p&gt;Run &lt;code class=&quot;highlighter-rouge&quot;&gt;make flash&lt;/code&gt; to invoke &lt;code class=&quot;highlighter-rouge&quot;&gt;lm4flash&lt;/code&gt; and burn your &lt;code class=&quot;highlighter-rouge&quot;&gt;main.bin&lt;/code&gt; binary to the board,press the RESET button on your board,and hold SW1 to cause the red LED on board to blink as long as it is pressed&lt;/p&gt;
 </content>
  </entry>
  

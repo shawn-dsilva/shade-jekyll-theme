@@ -1,102 +1,13 @@
-<!DOCTYPE html>
-<html lang="en-us">
+<p>﻿—
+layout: post
+title: Getting started with the TM4C Launchpad on Linux
+—</p>
 
-  <head>
-  <link href="http://gmpg.org/xfn/11" rel="profile">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta http-equiv="content-type" content="text/html; charset=utf-8">
-
-  <!-- Enable responsiveness on mobile devices-->
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
-
-  <title>
-    
-      Getting started with the TM4C Launchpad on Linux &middot; Shawn D'silva
-    
-  </title>
-
-  <!-- CSS -->
-  <link rel="stylesheet" href="/public/css/poole.css">
-  <link rel="stylesheet" href="/public/css/syntax.css">
-  <link rel="stylesheet" href="/public/css/hyde.css">
-  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700|Abril+Fatface">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-
-  <!-- Icons -->
-  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/public/apple-touch-icon-144-precomposed.png">
-                                 <link rel="shortcut icon" href="/public/favicon.ico">
-
-  <!-- RSS -->
-  <link rel="alternate" type="application/rss+xml" title="RSS" href="/atom.xml">
-</head>
-
-
-  <body>
-
-    <div class="sidebar">
-  <div class="container">
-    <div class="sidebar-about">
-      <h1>
-        <a href="/">
-          Shawn D'silva
-        </a>
-      </h1>
-      <p class="lead">Embedded software developer and Tinkerer</p>
-    </div>
-
-    <nav class="sidebar-nav">
-      <a class="sidebar-nav-item" href="/">Home</a>
-
-      
-
-      
-      
-        
-          
-        
-      
-        
-          
-            <a class="sidebar-nav-item" href="/about/">About</a>
-          
-        
-      
-        
-      
-        
-          
-        
-      
-
-
-      <a class="sidebar-nav-item fa fa-github"  style="font-size:30px" href="https://github.com/shawn-dsilva"> &nbsp;</a>
-
-     <a class="sidebar-nav-item fa fa-twitter"  style="font-size:30px" href="https://twitter.com/Shade978"> &nbsp;  </a>
-
-    <a class="sidebar-nav-item fa fa-envelope-o"  style="font-size:30px" href="mailto:shawn.dsilva_97@protonmail.com"> &nbsp; </a>
-
-
-      <p>
-
-          <br>
-          &copy; 2018 Shawn D'silva,All Rights Reserved</p>
-
-    </nav>
-
-  </div>
-</div>
-
-
-    <div class="content container">
-      <div class="post">
-  <h1 class="post-title">Getting started with the TM4C Launchpad on Linux</h1>
-  <span class="post-date">05 Oct 2018</span>
-  <p>This is a guide to getting up-and-running to develop firmware for the <strong>TM4C123GH6PM</strong> evaluation board from Texas Instruments on a Linux based system.</p>
+<p>This is a guide to getting up-and-running to develop firmware for the TM4C123GH6PM evaluation board from Texas Instruments on a Linux based system.</p>
 
 <p>The TM4C was my first microcontroller,and i found it very uninteresting to use a bulky IDE like Keil or IAR EWARM that abstracts so much from me,I checked various blog posts about using GCC and Make to develop firmware for this board,but the instructions were always outdated.</p>
 
-<p>The steps here are tested on an <strong>Ubuntu 18.04 LTS</strong> system,but should work on any other Linux based system</p>
+<p>The steps here are tested on an Ubuntu 18.04 LTS system,but should work on any other Linux based system</p>
 
 <p><strong>To start writing firmware for the TM4C we need:</strong></p>
 
@@ -122,20 +33,22 @@
 
 <p><strong>1</strong>.First we install the dependencies needed by our tool chain</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo apt install flex bison libgmp3-dev libmpfr-dev libncurses5-dev libmpc-dev autoconf texinfo build-essential libftdi-dev python-yaml zlib1g-dev libusb-1.0-0-dev
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>   sudo apt install flex bison libgmp3-dev libmpfr-dev libncurses5-dev \
+    libmpc-dev autoconf texinfo build-essential libftdi-dev python-yaml \
+    zlib1g-dev libusb-1.0-0-dev
 </code></pre></div></div>
 
 <p><strong>2</strong>. Then we install the <strong>GCC for ARM</strong> package</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo apt install arm-none-eabi-gcc
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>	sudo apt install arm-none-eabi-gcc
 </code></pre></div></div>
 
 <p><strong>3</strong>. And finally the <code class="highlighter-rouge">lm4flash</code> flashing tool</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git clone https://github.com/utzig/lm4tools.git
-cd lm4tools/lm4flash
-make
-sudo cp lm4flash /usr/bin/
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    git clone https://github.com/utzig/lm4tools.git
+    cd lm4tools/lm4flash
+    make
+    sudo cp lm4flash /usr/bin/
 </code></pre></div></div>
 
 <p><strong>4</strong>. Next, create a file called <code class="highlighter-rouge">61.dialout.rules</code> in <code class="highlighter-rouge">/etc/udev/rules.d</code>
@@ -148,7 +61,7 @@ sudo cp lm4flash /usr/bin/
 
 <p>I have already created a template for the TM4C,you just have to clone it from GitHub</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code> git clone https://github.com/shawn-dsilva/tm4c-linux-template.git
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code> `git clone https://github.com/shawn-dsilva/tm4c-linux-template.git`
 </code></pre></div></div>
 
 <p>This template contains a skeleton directory of folders,a <code class="highlighter-rouge">blinky.c</code> file,a <code class="highlighter-rouge">startup.c</code> file and a linker script for the TM4C</p>
@@ -185,17 +98,3 @@ sudo cp lm4flash /usr/bin/
 </ul>
 
 <p>Run <code class="highlighter-rouge">make flash</code> to invoke <code class="highlighter-rouge">lm4flash</code> and burn your <code class="highlighter-rouge">main.bin</code> binary to the board,press the RESET button on your board,and hold SW1 to cause the red LED on board to blink as long as it is pressed</p>
-
-</div>
-
-<div class="related">
-  <h2>Related Posts</h2>
-  <ul class="related-posts">
-    
-  </ul>
-</div>
-
-    </div>
-
-  </body>
-</html>

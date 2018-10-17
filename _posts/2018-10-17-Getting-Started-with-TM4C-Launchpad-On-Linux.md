@@ -1,0 +1,100 @@
+---
+layout: post
+title: Getting started with the TM4C Launchpad on Linux
+---
+
+
+
+This is a guide to getting up-and-running to develop firmware for the **TM4C123GH6PM** evaluation board from Texas Instruments on a Linux based system.
+
+The TM4C was my first microcontroller,and i found it very uninteresting to use a bulky IDE like Keil or IAR EWARM that abstracts so much from me,I checked various blog posts about using GCC and Make to develop firmware for this board,but the instructions were always outdated.
+
+The steps here are tested on an **Ubuntu 18.04 LTS** system,but should work on any other Linux based system
+
+  
+
+**To start writing firmware for the TM4C we need:**
+
+- A text editor like vim or vscode whatever is your preference
+
+- A compiler/assembler/linker package like `arm-none-eabi-gcc`
+
+- Files specific to this board like a linker script `*.ld` file and a `startup.c` file
+
+- A `Makefile`
+
+- A flasher program,I use `lm4flash` in this guide,altough OpenOCD may also be used
+
+  
+
+## Toolchain installation
+
+  
+
+  **1**.First we install the dependencies needed by our tool chain
+
+    sudo apt install flex bison libgmp3-dev libmpfr-dev libncurses5-dev libmpc-dev autoconf texinfo build-essential libftdi-dev python-yaml zlib1g-dev libusb-1.0-0-dev
+
+ **2**. Then we install the **GCC for ARM** package
+
+  
+
+	sudo apt install arm-none-eabi-gcc
+
+  
+
+**3**. And finally the `lm4flash` flashing tool
+
+  
+
+	git clone https://github.com/utzig/lm4tools.git
+	cd lm4tools/lm4flash
+	make
+	sudo cp lm4flash /usr/bin/
+
+ **4**. Next, create a file called `61.dialout.rules` in `/etc/udev/rules.d`
+    with this line inside it `SUBSYSTEM=="usb", ATTRS{idVendor}=="1cbe",
+    ATTRS{idProduct}=="00fd", MODE="0666"`  This is to allow any program to read or write to your TM4C 		  Launchpad board,i.e you will not have
+    to use `sudo` every time.
+    Now restart your PC
+
+## Building and flashing a basic Blinky.c program to the board
+
+I have already created a template for the TM4C,you just have to clone it from GitHub
+
+     git clone https://github.com/shawn-dsilva/tm4c-linux-template.git
+
+This template contains a skeleton directory of folders,a `blinky.c` file,a `startup.c` file and a linker script for the TM4C
+
+Once cloned,`cd` into `tm4c-linux-template` and run `make`
+
+once you run `make` this will be the directory structure:
+
+```
+├── bin
+│   ├── main.bin
+│   └── main.elf
+├── inc
+│   ├── hw_nvic.h
+│   └── hw_types.h
+├── ld
+│   └── TM4C123GH6PM.ld
+├── Makefile
+├── obj
+│   ├── main.d
+│   ├── main.o
+│   ├── startup_gcc.d
+│   └── startup_gcc.o
+├── README.md
+└── src
+    ├── main.c
+    └── startup_gcc.c
+```
+**Here,**
+ - `src` contains your Source files,i.e main.c and startup.c
+ - `inc` contains your `*.h` Header files,if any
+ - `obj` contains the *`.o` object files and `*.d` dependency files
+ - `bin` contains an ELF executable `main.elf`,this contains debugging symbols used by  the `gdb` debugger,and `main.bin`,the final binary that is stripped off the debugging symbols and will be flashed to your board
+ 
+
+Run `make flash` to invoke `lm4flash` and burn your `main.bin` binary to the board,press the RESET button on your board,and hold SW1 to cause the red LED on board to blink as long as it is pressed

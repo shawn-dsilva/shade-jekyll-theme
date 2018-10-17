@@ -30,5 +30,6 @@ twitter:
 
 email:  mailto:shawn.dsilva_97@protonmail.com
   
-plugins: [jekyll-paginate, jekyll-gist]
+plugins_dir: [jekyll-paginate, jekyll-gist]
 
+gems: [jekyll-paginate]

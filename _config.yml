@@ -12,7 +12,6 @@ description:      'Embedded software developer and Tinkerer'
 
 
 #baseurl: /
-url:              https://shawn-dsilva.github.io/
 baseurl:           https://shawn-dsilva.github.io/
 author:
   name:           "Shawn D'silva"

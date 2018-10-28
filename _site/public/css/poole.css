@@ -332,13 +332,17 @@ tbody tr:nth-child(odd) th {
 .page,
 .post {
   margin-bottom: 4em;
+  margin-right: -250px;
 }
 
 /* Blog post or page title */
-.page-title,
-.post-title,
+/*.page-title,*/
 .post-title a {
-  color: #303030;
+  color: #268bd2;
+}
+.post-title a:hover,
+a:focus {
+  text-decoration: underline;
 }
 .page-title,
 .post-title {

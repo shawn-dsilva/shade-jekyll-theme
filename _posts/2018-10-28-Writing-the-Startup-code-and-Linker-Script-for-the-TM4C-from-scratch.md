@@ -15,10 +15,8 @@ Usually,the vendor provided versions of these files are sufficient,but the TI pr
 > laws. You may not combine this software with "viral" open-source
 > software in order to form a larger program.
 
-Which is why i decided to write my own Open source startup code and linker script,and document how both
-of them work on this blog.
+Which is why i decided to write my own **Open Source** Startup code and Linker Script,and document how both of them work on this blog.
 
-[**Click here to see full post**](https://shawn-dsilva.github.io/2018/10/28/Writing-the-Startup-code-and-Linker-Script-for-the-TM4C-from-scratch/)
 <!--more-->
 <br>
 
@@ -91,6 +89,7 @@ typedef union {
 } vector_table_t;
 ```
 `void *stack_top` is a pointer to the top of the stack,and the 0th element of the vector table.
+<br>
 `element_t isr` stands for the void functions that will be added to the vector table
 
 <br>

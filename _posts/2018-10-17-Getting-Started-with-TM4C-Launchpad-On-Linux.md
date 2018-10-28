@@ -12,7 +12,6 @@ The TM4C was my first microcontroller,and i found it very uninteresting to use a
 
 The steps here are tested on an **Ubuntu 18.04 LTS** system,but should work on any other Linux based system
 
-[**Click here to see full post**](https://shawn-dsilva.github.io/2018/10/17/Getting-Started-with-TM4C-Launchpad-On-Linux/)
 
 <!--more-->
 

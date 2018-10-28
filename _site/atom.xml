@@ -4,7 +4,7 @@
  <title>Shawn D'silva</title>
  <link href="/atom.xml" rel="self"/>
  <link href="/"/>
- <updated>2018-10-28T16:26:19+05:30</updated>
+ <updated>2018-10-28T16:58:19+05:30</updated>
  <id></id>
  <author>
    <name>Shawn D'silva</name>
@@ -29,12 +29,10 @@ laws. You may not combine this software with “viral” open-source
 software in order to form a larger program.&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;p&gt;Which is why i decided to write my own Open source startup code and linker script,and document how both
-of them work on this blog.&lt;/p&gt;
+&lt;p&gt;Which is why i decided to write my own &lt;strong&gt;Open Source&lt;/strong&gt; Startup code and Linker Script,and document how both of them work on this blog.&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;https://shawn-dsilva.github.io/2018/10/28/Writing-the-Startup-code-and-Linker-Script-for-the-TM4C-from-scratch/&quot;&gt;&lt;strong&gt;Click here to see full post&lt;/strong&gt;&lt;/a&gt;
 &lt;!--more--&gt;
-&lt;br /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;h1 id=&quot;startup-code&quot;&gt;Startup Code&lt;/h1&gt;
 
@@ -103,6 +101,7 @@ next we define a &lt;code class=&quot;highlighter-rouge&quot;&gt;union&lt;/code&
 &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;vector_table_t&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 &lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;void *stack_top&lt;/code&gt; is a pointer to the top of the stack,and the 0th element of the vector table.
+&lt;br /&gt;
 &lt;code class=&quot;highlighter-rouge&quot;&gt;element_t isr&lt;/code&gt; stands for the void functions that will be added to the vector table&lt;/p&gt;
 
 &lt;p&gt;&lt;br /&gt;
@@ -228,8 +227,6 @@ is set to the address of &lt;code class=&quot;highlighter-rouge&quot;&gt;_data&l
 &lt;p&gt;The TM4C was my first microcontroller,and i found it very uninteresting to use a bulky IDE like Keil or IAR EWARM that abstracts so much from me,I checked various blog posts about using &lt;strong&gt;GCC&lt;/strong&gt; and &lt;strong&gt;Make&lt;/strong&gt; to develop firmware for this board,but the instructions were always outdated.&lt;/p&gt;
 
 &lt;p&gt;The steps here are tested on an &lt;strong&gt;Ubuntu 18.04 LTS&lt;/strong&gt; system,but should work on any other Linux based system&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://shawn-dsilva.github.io/2018/10/17/Getting-Started-with-TM4C-Launchpad-On-Linux/&quot;&gt;&lt;strong&gt;Click here to see full post&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
 
 &lt;!--more--&gt;
 

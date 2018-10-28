@@ -106,12 +106,10 @@ laws. You may not combine this software with “viral” open-source
 software in order to form a larger program.</p>
 </blockquote>
 
-<p>Which is why i decided to write my own Open source startup code and linker script,and document how both
-of them work on this blog.</p>
+<p>Which is why i decided to write my own <strong>Open Source</strong> Startup code and Linker Script,and document how both of them work on this blog.</p>
 
-<p><a href="https://shawn-dsilva.github.io/2018/10/28/Writing-the-Startup-code-and-Linker-Script-for-the-TM4C-from-scratch/"><strong>Click here to see full post</strong></a>
 <!--more-->
-<br /></p>
+<p><br /></p>
 
 <h1 id="startup-code">Startup Code</h1>
 
@@ -180,6 +178,7 @@ next we define a <code class="highlighter-rouge">union</code> for our main stack
 <span class="p">}</span> <span class="n">vector_table_t</span><span class="p">;</span>
 </code></pre></div></div>
 <p><code class="highlighter-rouge">void *stack_top</code> is a pointer to the top of the stack,and the 0th element of the vector table.
+<br />
 <code class="highlighter-rouge">element_t isr</code> stands for the void functions that will be added to the vector table</p>
 
 <p><br />

@@ -42,13 +42,6 @@ sudo apt install flex bison libgmp3-dev libmpfr-dev libncurses5-dev libmpc-dev a
 sudo apt install arm-none-eabi-gcc
 ```
 
-<<<<<<< HEAD
-=======
-	sudo apt install gcc-arm-none-eabi
-
-  
->>>>>>> e867dbcd7cc2602263b50b1b2ffdeb3b9ea8b83d
-
 **3**. And finally the `lm4flash` flashing tool
 
   

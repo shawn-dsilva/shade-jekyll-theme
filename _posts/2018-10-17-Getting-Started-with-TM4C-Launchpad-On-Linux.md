@@ -1,15 +1,20 @@
 ---
 layout: post
 title: Getting started with the TM4C Launchpad on Linux
+excerpt_separator: <!--more-->
 ---
 
 
 
 This is a guide to getting up-and-running to develop firmware for the **TM4C123GH6PM** evaluation board from Texas Instruments on a Linux based system.
 
-The TM4C was my first microcontroller,and i found it very uninteresting to use a bulky IDE like Keil or IAR EWARM that abstracts so much from me,I checked various blog posts about using GCC and Make to develop firmware for this board,but the instructions were always outdated.
+The TM4C was my first microcontroller,and i found it very uninteresting to use a bulky IDE like Keil or IAR EWARM that abstracts so much from me,I checked various blog posts about using **GCC** and **Make** to develop firmware for this board,but the instructions were always outdated.
 
 The steps here are tested on an **Ubuntu 18.04 LTS** system,but should work on any other Linux based system
+
+[**Click here to see full post**](https://shawn-dsilva.github.io/2018/10/17/Getting-Started-with-TM4C-Launchpad-On-Linux/)
+
+<!--more-->
 
   
 
@@ -17,7 +22,7 @@ The steps here are tested on an **Ubuntu 18.04 LTS** system,but should work on a
 
 - A text editor like vim or vscode whatever is your preference
 
-- A compiler/assembler/linker package like `arm-none-eabi-gcc`
+- A compiler/assembler/linker package like `gcc-arm-none-eabi`
 
 - Files specific to this board like a linker script `*.ld` file and a `startup.c` file
 
@@ -39,7 +44,7 @@ sudo apt install flex bison libgmp3-dev libmpfr-dev libncurses5-dev libmpc-dev a
 
   
 ``` shell
-sudo apt install arm-none-eabi-gcc
+sudo apt install gcc-arm-none-eabi
 ```
 
 **3**. And finally the `lm4flash` flashing tool

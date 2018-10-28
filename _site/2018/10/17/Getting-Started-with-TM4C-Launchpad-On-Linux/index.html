@@ -96,9 +96,13 @@
   <span class="post-date">17 Oct 2018</span>
   <p>This is a guide to getting up-and-running to develop firmware for the <strong>TM4C123GH6PM</strong> evaluation board from Texas Instruments on a Linux based system.</p>
 
-<p>The TM4C was my first microcontroller,and i found it very uninteresting to use a bulky IDE like Keil or IAR EWARM that abstracts so much from me,I checked various blog posts about using GCC and Make to develop firmware for this board,but the instructions were always outdated.</p>
+<p>The TM4C was my first microcontroller,and i found it very uninteresting to use a bulky IDE like Keil or IAR EWARM that abstracts so much from me,I checked various blog posts about using <strong>GCC</strong> and <strong>Make</strong> to develop firmware for this board,but the instructions were always outdated.</p>
 
 <p>The steps here are tested on an <strong>Ubuntu 18.04 LTS</strong> system,but should work on any other Linux based system</p>
+
+<p><a href="https://shawn-dsilva.github.io/2018/10/17/Getting-Started-with-TM4C-Launchpad-On-Linux/"><strong>Click here to see full post</strong></a></p>
+
+<!--more-->
 
 <p><strong>To start writing firmware for the TM4C we need:</strong></p>
 
@@ -107,7 +111,7 @@
     <p>A text editor like vim or vscode whatever is your preference</p>
   </li>
   <li>
-    <p>A compiler/assembler/linker package like <code class="highlighter-rouge">arm-none-eabi-gcc</code></p>
+    <p>A compiler/assembler/linker package like <code class="highlighter-rouge">gcc-arm-none-eabi</code></p>
   </li>
   <li>
     <p>Files specific to this board like a linker script <code class="highlighter-rouge">*.ld</code> file and a <code class="highlighter-rouge">startup.c</code> file</p>
@@ -127,7 +131,7 @@
 </code></pre></div></div>
 <p><strong>2</strong>. Then we install the <strong>GCC for ARM</strong> package</p>
 
-<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>apt install arm-none-eabi-gcc
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>apt install gcc-arm-none-eabi
 </code></pre></div></div>
 
 <p><strong>3</strong>. And finally the <code class="highlighter-rouge">lm4flash</code> flashing tool</p>
@@ -196,6 +200,15 @@ make
 <div class="related">
   <h2>Related Posts</h2>
   <ul class="related-posts">
+    
+      <li>
+        <h3>
+          <a href="/2018/10/28/Writing-the-Startup-code-and-Linker-Script-for-the-TM4C-from-scratch/">
+            Writing the Startup code and Linker Script for the TM4C from scratch
+            <small>28 Oct 2018</small>
+          </a>
+        </h3>
+      </li>
     
   </ul>
 </div>

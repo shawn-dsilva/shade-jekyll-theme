@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
  <title>Shawn D'silva</title>
- <link href="/atom.xml" rel="self"/>
- <link href="/"/>
- <updated>2018-10-28T17:00:18+05:30</updated>
- <id></id>
+ <link href="http://localhost:4000/atom.xml" rel="self"/>
+ <link href="http://localhost:4000/"/>
+ <updated>2018-10-29T03:14:51-07:00</updated>
+ <id>http://localhost:4000</id>
  <author>
    <name>Shawn D'silva</name>
    <email></email>
@@ -14,9 +14,9 @@
  
  <entry>
    <title>Writing the Startup code and Linker Script for the TM4C from scratch</title>
-   <link href="/2018/10/28/Writing-the-Startup-code-and-Linker-Script-for-the-TM4C-from-scratch/"/>
-   <updated>2018-10-28T00:00:00+05:30</updated>
-   <id>/2018/10/28/Writing-the-Startup-code-and-Linker-Script-for-the-TM4C-from-scratch</id>
+   <link href="http://localhost:4000/2018/10/28/Writing-the-Startup-code-and-Linker-Script-for-the-TM4C-from-scratch/"/>
+   <updated>2018-10-28T00:00:00-07:00</updated>
+   <id>http://localhost:4000/2018/10/28/Writing-the-Startup-code-and-Linker-Script-for-the-TM4C-from-scratch</id>
    <content type="html">&lt;p&gt;Nearly every ARM Cortex-M needs needs a &lt;strong&gt;startup code&lt;/strong&gt; file to define it’s  &lt;strong&gt;Main Stack Pointer&lt;/strong&gt;, &lt;strong&gt;Reset Handler&lt;/strong&gt; and &lt;strong&gt;Vector Table&lt;/strong&gt; and a &lt;strong&gt;linker script&lt;/strong&gt; telling it to place which sections into which parts of memory,these two files are crucial,without which even a simple blinky program cannot be run.
 &lt;br /&gt;
 Usually,the vendor provided versions of these files are sufficient,but the TI provided ones require a ~500MB download,and registration on the TI website,to top it all off,nearly every file in the TI package has this license in it :&lt;/p&gt;
@@ -219,9 +219,9 @@ is set to the address of &lt;code class=&quot;highlighter-rouge&quot;&gt;_data&l
  
  <entry>
    <title>Getting started with the TM4C Launchpad on Linux</title>
-   <link href="/2018/10/17/Getting-Started-with-TM4C-Launchpad-On-Linux/"/>
-   <updated>2018-10-17T00:00:00+05:30</updated>
-   <id>/2018/10/17/Getting-Started-with-TM4C-Launchpad-On-Linux</id>
+   <link href="http://localhost:4000/2018/10/17/Getting-Started-with-TM4C-Launchpad-On-Linux/"/>
+   <updated>2018-10-17T00:00:00-07:00</updated>
+   <id>http://localhost:4000/2018/10/17/Getting-Started-with-TM4C-Launchpad-On-Linux</id>
    <content type="html">&lt;p&gt;This is a guide to getting up-and-running to develop firmware for the &lt;strong&gt;TM4C123GH6PM&lt;/strong&gt; evaluation board from Texas Instruments on a Linux based system.&lt;/p&gt;
 
 &lt;p&gt;The TM4C was my first microcontroller,and i found it very uninteresting to use a bulky IDE like Keil or IAR EWARM that abstracts so much from me,I checked various blog posts about using &lt;strong&gt;GCC&lt;/strong&gt; and &lt;strong&gt;Make&lt;/strong&gt; to develop firmware for this board,but the instructions were always outdated.&lt;/p&gt;

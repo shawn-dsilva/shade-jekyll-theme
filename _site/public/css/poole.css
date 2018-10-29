@@ -332,7 +332,6 @@ tbody tr:nth-child(odd) th {
 .page,
 .post {
   margin-bottom: 4em;
-  margin-right: -250px;
 }
 
 /* Blog post or page title */
@@ -349,6 +348,13 @@ tbody tr:nth-child(odd) th {
   margin-top: 0;
 }
 
+@media(min-width: 70rem) {
+  .post,
+  .page {
+    margin-right: -10rem;
+    margin-left: -2rem;
+  }
+}
 /* Meta data line below post title */
 .post-date {
   display: block;

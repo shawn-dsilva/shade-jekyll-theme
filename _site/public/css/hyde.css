@@ -137,6 +137,12 @@ html {
   }
 }
 
+@media (min-width: 1080px) {
+  .content {
+    margin-left: 22rem;
+    margin-right: -10rem;
+  }
+}
 
 /*
  * Reverse layout

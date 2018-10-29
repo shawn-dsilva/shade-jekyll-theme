@@ -11,8 +11,8 @@ tagline: 'Developer'
 description:      'Embedded software developer and Tinkerer'
 
 
-baseurl: /
-#baseurl:           https://shawn-dsilva.github.io/
+#baseurl: /
+baseurl:           https://shawn-dsilva.github.io/
 author:
   name:           "Shawn D'silva"
 

@@ -40,5 +40,5 @@ validation-report.json
 # Folders to ignore
 node_modules
 _site
-public/**/_site
-_includes/**/_site
+public/_site
+_includes/_site

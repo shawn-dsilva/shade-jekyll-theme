@@ -48,7 +48,8 @@ body {
 }
 
 html {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  /*font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;*/
+  font-family: "Source Sans Pro";
   font-size: 16px;
   line-height: 1.5;
 }
@@ -83,7 +84,7 @@ a:focus {
 /* Headings */
 h1, h2, h3, h4, h5, h6 {
   margin-bottom: .5rem;
-  font-weight: bold;
+  font-weight: 500;
   line-height: 1.25;
   color: #313131;
   text-rendering: optimizeLegibility;
@@ -151,7 +152,7 @@ abbr[title] {
 /* Code */
 code,
 pre {
-  font-family: Menlo, Monaco, "Courier New", monospace;
+  font-family: "Menlo, Monaco, "Courier New", monospace";
 }
 code {
   padding: .25em .5em;
@@ -336,8 +337,9 @@ tbody tr:nth-child(odd) th {
 
 /* Blog post or page title */
 /*.page-title,*/
+.page-title,
 .post-title a {
-  color: #268bd2;
+  color: #282c34;
 }
 .post-title a:hover,
 .post-title a:focus {
@@ -346,6 +348,21 @@ tbody tr:nth-child(odd) th {
 .page-title,
 .post-title {
   margin-top: 0;
+}
+
+/* Readmore Button */
+
+.button {
+  background-color: #68f;
+  border: none;
+  color: white;
+  padding: 10px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
 }
 
 @media(min-width: 70rem) {
@@ -400,7 +417,7 @@ tbody tr:nth-child(odd) th {
   overflow: hidden; /* clearfix */
   margin-left: -1rem;
   margin-right: -1rem;
-  font-family: "PT Sans", Helvetica, Arial, sans-serif;
+  font-family: "Source Sans Pro";
   color: #ccc;
   text-align: center;
 }

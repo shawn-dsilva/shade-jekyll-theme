@@ -35,18 +35,19 @@ First we start off with the Startup code,which has two main functions
 ## Writing  Startup.h
 The Vector Table is an array of `void` functions which is placed into a section in the memory,namely 
 `.vector_table` in this case,this name has to also be reflected in the linker script.
-The functions each map to an Interrupt index-wise,which is hardcoded into the microcontroller itself,
-the interrupt vector table is defined in the TM4C123GH6PM data sheet,pages 147-149,and we will be using it to write our own vector table
 <br>
-We will be having around ~120 or so function prototypes in our vector table,so we need to aliase undefined function prototypes to a default handler function,we do this by defining a macro in our 
+The functions each map to an Interrupt index-wise,which is hardcoded into the microcontroller itself,
+the interrupt vector table is defined in the TM4C123GH6PM data sheet, pages 147-149, and we will be using it to write our own vector table.
+<br>
+We will be having around ~120 or so function prototypes in our vector table, so we need to aliase undefined function prototypes to a default handler function, we do this by defining a macro in our 
 `startup.h` file like so
 <br>
 ```c
 #define DEFAULT __attribute__((weak, alias("Default_Handler")))
 ```
 This macro, `DEFAULT` will expand to `__attribute__((weak, alias("Default_Handler")))` which is a command to the GNU GCC compiler to aliase a given function to the `Default_Handler` if it is not defined
-
-For example,we are going to explicitly define the `Reset_Handler` function prototype in the `startup.c` file,but not the `NMI_Handler` or other functions for now,so we mark them as `DEFAULT`
+<br>
+For example,we are going to explicitly define the `Reset_Handler` function prototype in the `startup.c` file, but not the `NMI_Handler` or other functions for now, so we mark them as `DEFAULT`
 
 ```c
 void Reset_Handler(void);
@@ -71,16 +72,18 @@ DEFAULT void PWM0Fault_ISR(void);
 DEFAULT void PWM0Generator0_ISR(void);
 .........
 ```
-The rest of the ISR prototypes can be viewed on my [Github Repo(tm4c-linux-template)](https://github.com/shawn-dsilva/tm4c-linux-template.git),these prototypes conform to the **Interrupt
+The rest of the ISR prototypes can be viewed on my [Github Repo(tm4c-linux-template)](https://github.com/shawn-dsilva/tm4c-linux-template.git), these prototypes conform to the **Interrupt
 Vector Table** interrupts from the datasheet
 
 <br>
-These function prototypes are of return type `void`,and standard arrays cannot be declared as void,so we need to define new types for these
+These function prototypes are of return type `void`, and standard arrays cannot be declared as void, so we need to define new types for these
 ```c
 typedef void (*element_t)(void);
 ```
 Here, `*element_t` is a pointer passed to void function and cast as void
+
 <br>
+
 next we define a `union` for our main stack pointer and our ISRs
 ```c
 typedef union {
@@ -104,7 +107,7 @@ extern uint32_t _edata;
 extern uint32_t _bss;
 extern uint32_t _ebss;
 ```
-here the `extern` keyword simply tells to compiler to look for these keywords in another file external to this,the `uint32_t` means an unsigned,32 bit integer,to dispel ambiquity of int sizes on different architectures.<br>
+Here the `extern` keyword simply tells to compiler to look for these keywords in another file external to this,the `uint32_t` means an unsigned,32 bit integer,to dispel ambiquity of int sizes on different architectures.<br>
 `int main(void)` is the entry point to your `main()` program.<br>
 `_stack_ptr` is the pointer to the top of the stack,i.e the last address of RAM,this is defined in the linker script.<br>
 `_data` is the start of the `.data` section,and `_edata` is the end of the `.data` section,same convention applies to the other section variables too.
@@ -157,7 +160,7 @@ SPI0_ISR,
 Here,
 - The 0th element,`{.stack_top = &_stack_ptr}` assigns the  Main Stack Pointer defined in the Linker Script, `_stack_ptr`
 to the union element `.stack_top` defined in `vector_table_t` 
-- The 1st element is the `Reset_Handler`,that is called when the <RESET> Button on the microcontroller is pressed,or the reset flag is set
+- The 1st element is the `Reset_Handler`, that is called when the <RESET> Button on the microcontroller is pressed,or the reset flag is set
 <br>
 
 Finally we define the `Reset_Handler` and `Default_Hanlder`

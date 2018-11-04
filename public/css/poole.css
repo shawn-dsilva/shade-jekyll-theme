@@ -116,7 +116,6 @@ h4, h5, h6 {
 strong, b {
   font-family: "Source Sans Pro";
   font-style: regular;
-  font-size: 1.075em;
   font-weight: 500;
   color: #000000;
   text-rendering: optimizeLegibility;
@@ -393,13 +392,8 @@ span{
   cursor: pointer;
 }
 
-@media(min-width: 70rem) {
-  .post,
-  .page {
-    margin-right: -10rem;
-    margin-left: -2rem;
-  }
-}
+
+
 /* Meta data line below post title */
 .post-date {
   display: block;

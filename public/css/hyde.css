@@ -1,35 +1,3 @@
-/*
- *  __                  __
- * /\ \                /\ \
- * \ \ \___   __  __   \_\ \     __
- *  \ \  _ `\/\ \/\ \  /'_` \  /'__`\
- *   \ \ \ \ \ \ \_\ \/\ \_\ \/\  __/
- *    \ \_\ \_\/`____ \ \___,_\ \____\
- *     \/_/\/_/`/___/> \/__,_ /\/____/
- *                /\___/
- *                \/__/
- *
- * Designed, built, and released under MIT license by @mdo. Learn more at
- * https://github.com/poole/hyde.
- */
-
-
-/*
- * Contents
- *
- * Global resets
- * Sidebar
- * Container
- * Reverse layout
- * Themes
- */
-
-
-/*
- * Global resets
- *
- * Update the foundational and global aspects of the page.
- */
 
 html {
   font-family: "Source Sans Pro" sans-serif;
@@ -55,14 +23,20 @@ html {
  */
 
 .sidebar {
-  text-align: left;
+  position: fixed; /* Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
+  width: 100%; /* Full width */
   padding: 0.5rem 0.5rem;
   color: rgba(255,255,255,.5);
   background-color: #202020;
 }
 
 .lead {
-  font-size: 0;
+  display:none;
+}
+
+.copyright {
+display:none;
 }
 
 /* Sidebar links */
@@ -73,36 +47,29 @@ html {
 /* About section */
 .sidebar-about h1 {
   color: #fff;
+  text-align: center;
   margin-top: 0;
   font-size: 1.5rem;
 }
 
 /* Sidebar nav */
-.sidebar-nav {
-  margin-bottom: 1rem;
-}
+
 .sidebar-nav-item {
   margin-right: 10px;
-  margin-bottom: 15px;
 }
 
 .fa {
   margin-left: 10px;
-  margin-bottom: 15px;
 }
 
 .icons {
-  display: inline-block; 
 font-size: 20px;
-text-align: right;
+float:right;
 }
 .sidebar-nav-item.active {
   font-weight: bold;
 }
 
-.copyright {
-  font-size: 0;
-}
 
 @media (min-width: 48em) {
   .sidebar {
@@ -114,6 +81,18 @@ text-align: right;
     text-align: left;
   }
 
+  .sidebar-about h1 {
+    text-align: left;
+  }
+  .container {
+    max-width: 38rem;
+    padding-left:  1rem;
+    padding-right: 1rem;
+    margin-left: 0;
+    margin-right: 0;
+   
+  }
+
   .fa {
     margin-left: 10px;
     margin-bottom: 15px;
@@ -121,6 +100,7 @@ text-align: right;
 
   .icons {
     font-size: 30px;
+    float:none;
   }
 
   .sidebar-about h1 {
@@ -136,11 +116,13 @@ text-align: right;
   }
   
   .lead {  
+    display: inline;
     font-size: 1.25rem;
     font-weight: 300;
   }
   
   .copyright {
+    display: inline;
     font-size: 1rem;
   }
 
@@ -168,12 +150,15 @@ text-align: right;
  */
 
 .content {
-  padding-top:    4rem;
+  padding-top:    7.5rem;
   padding-bottom: 4rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 @media (min-width: 48em) {   /*1366*768 minimum width*/
   .content {
+    padding-top: 4rem;
     max-width: 40rem;
     margin-left: 20rem;
     margin-right: 2rem;
@@ -183,6 +168,7 @@ text-align: right;
 
 @media (min-width: 58em) {   /*1920*1080 minimum width*/
   .content {
+    padding-top: 4rem;
     max-width: 55rem;
     margin-left: 20rem;
     margin-right: 4rem;
@@ -198,109 +184,3 @@ text-align: right;
 
 
 
-/*
- * Reverse layout
- *
- * Flip the orientation of the page by placing the `.sidebar` on the right.
- */
-
-@media (min-width: 48em) {
-  .layout-reverse .sidebar {
-    left: auto;
-    right: 0;
-  }
-  .layout-reverse .content {
-    margin-left: 2rem;
-    margin-right: 20rem;
-  }
-}
-
-@media (min-width: 64em) {
-  .layout-reverse .content {
-    margin-left: 4rem;
-    margin-right: 22rem;
-  }
-}
-
-
-
-/*
- * Themes
- *
- * As of v1.1, Hyde includes optional themes to color the sidebar and links
- * within blog posts. To use, add the class of your choosing to the `body`.
- */
-
-/* Base16 (http://chriskempson.github.io/base16/#default) */
-
-/* Red */
-.theme-base-08 .sidebar {
-  background-color: #ac4142;
-}
-.theme-base-08 .content a,
-.theme-base-08 .related-posts li a:hover {
-  color: #ac4142;
-}
-
-/* Orange */
-.theme-base-09 .sidebar {
-  background-color: #d28445;
-}
-.theme-base-09 .content a,
-.theme-base-09 .related-posts li a:hover {
-  color: #d28445;
-}
-
-/* Yellow */
-.theme-base-0a .sidebar {
-  background-color: #f4bf75;
-}
-.theme-base-0a .content a,
-.theme-base-0a .related-posts li a:hover {
-  color: #f4bf75;
-}
-
-/* Green */
-.theme-base-0b .sidebar {
-  background-color: #90a959;
-}
-.theme-base-0b .content a,
-.theme-base-0b .related-posts li a:hover {
-  color: #90a959;
-}
-
-/* Cyan */
-.theme-base-0c .sidebar {
-  background-color: #75b5aa;
-}
-.theme-base-0c .content a,
-.theme-base-0c .related-posts li a:hover {
-  color: #75b5aa;
-}
-
-/* Blue */
-.theme-base-0d .sidebar {
-  background-color: #6a9fb5;
-}
-.theme-base-0d .content a,
-.theme-base-0d .related-posts li a:hover {
-  color: #6a9fb5;
-}
-
-/* Magenta */
-.theme-base-0e .sidebar {
-  background-color: #aa759f;
-}
-.theme-base-0e .content a,
-.theme-base-0e .related-posts li a:hover {
-  color: #aa759f;
-}
-
-/* Brown */
-.theme-base-0f .sidebar {
-  background-color: #8f5536;
-}
-.theme-base-0f .content a,
-.theme-base-0f .related-posts li a:hover {
-  color: #8f5536;
-}

@@ -23,18 +23,16 @@
           {% endif %}
         {% endif %}
       {% endfor %}
+      <div class="icons">
+      <a class="sidebar-nav-item fa fa-github"   href="{{ site.github.repo }}"> </a>
 
+     <a class="sidebar-nav-item fa fa-twitter"   href="{{ site.twitter }}">  </a>
 
-      <a class="sidebar-nav-item fa fa-github"  style="font-size:30px" href="{{ site.github.repo }}"> &nbsp;</a>
+    <a class="sidebar-nav-item fa fa-envelope-o"  href="{{ site.email }}"> </a>
+  </div>
 
-     <a class="sidebar-nav-item fa fa-twitter"  style="font-size:30px" href="{{ site.twitter }}"> &nbsp;  </a>
+      <p class="copyright">
 
-    <a class="sidebar-nav-item fa fa-envelope-o"  style="font-size:30px" href="{{ site.email }}"> &nbsp; </a>
-
-
-      <p>
-
-          <br>
           &copy; {{ site.time | date: '%Y' }} Shawn D'silva </p>
 
     </nav>

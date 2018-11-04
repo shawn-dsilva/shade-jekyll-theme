@@ -11,7 +11,7 @@ tagline: 'Developer'
 description:      'Full Stack developer and Embedded Systems guy'
 
 
-url:           https://shawn-dsilva.github.io/
+url:           https://shawn-dsilva.github.io
 #Uncomment the below baseurl if on a local server and comment out the other baseurl
 baseurl: /
 

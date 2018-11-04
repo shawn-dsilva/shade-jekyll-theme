@@ -55,20 +55,14 @@ html {
  */
 
 .sidebar {
-  text-align: center;
-  padding: 2rem 1rem;
+  text-align: left;
+  padding: 0.5rem 0.5rem;
   color: rgba(255,255,255,.5);
   background-color: #202020;
 }
-@media (min-width: 48em) {
-  .sidebar {
-    position: fixed;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    width: 18rem;
-    text-align: left;
-  }
+
+.lead {
+  font-size: 0;
 }
 
 /* Sidebar links */
@@ -80,7 +74,7 @@ html {
 .sidebar-about h1 {
   color: #fff;
   margin-top: 0;
-  font-size: 3.25rem;
+  font-size: 1.5rem;
 }
 
 /* Sidebar nav */
@@ -88,14 +82,69 @@ html {
   margin-bottom: 1rem;
 }
 .sidebar-nav-item {
-  display: block;
-  margin-top: 10px;
+  margin-right: 10px;
   margin-bottom: 15px;
+}
+
+.fa {
+  margin-left: 10px;
+  margin-bottom: 15px;
+}
+
+.icons {
+  display: inline-block; 
+font-size: 20px;
+text-align: right;
 }
 .sidebar-nav-item.active {
   font-weight: bold;
 }
 
+.copyright {
+  font-size: 0;
+}
+
+@media (min-width: 48em) {
+  .sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 18rem;
+    text-align: left;
+  }
+
+  .fa {
+    margin-left: 10px;
+    margin-bottom: 15px;
+  }
+
+  .icons {
+    font-size: 30px;
+  }
+
+  .sidebar-about h1 {
+    color: #fff;
+    margin-top: 0;
+    font-size: 3.25rem;
+  }
+  .sidebar-nav-item {
+    display: block;
+    margin-left: 0;
+    margin-top: 10px;
+    margin-bottom: 15px;
+  }
+  
+  .lead {  
+    font-size: 1.25rem;
+    font-weight: 300;
+  }
+  
+  .copyright {
+    font-size: 1rem;
+  }
+
+}
 /* Sticky sidebar
  *
  * Add the `sidebar-sticky` class to the sidebar's container to affix it the

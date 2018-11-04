@@ -125,7 +125,7 @@ html {
 
 @media (min-width: 48em) {   /*1366*768 minimum width*/
   .content {
-    max-width: 45rem;
+    max-width: 40rem;
     margin-left: 20rem;
     margin-right: 2rem;
   }
@@ -134,9 +134,9 @@ html {
 
 @media (min-width: 58em) {   /*1920*1080 minimum width*/
   .content {
-    max-width: 60rem;
+    max-width: 55rem;
     margin-left: 20rem;
-    margin-right: 2rem;
+    margin-right: 4rem;
   }
 }
 

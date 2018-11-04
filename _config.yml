@@ -10,11 +10,13 @@ title:            Shawn D'silva
 tagline: 'Developer'
 description:      'Full Stack developer and Embedded Systems guy'
 
+
+url:           https://shawn-dsilva.github.io/
 #Uncomment the below baseurl if on a local server and comment out the other baseurl
-#baseurl: /
+baseurl: /
 
 #Uncomment the below baseurl if deploying to GH-Pages and comment out the other baseurl
-baseurl:           https://shawn-dsilva.github.io/
+
 
 author:
   name:           "Shawn D'silva"

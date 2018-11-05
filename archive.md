@@ -12,7 +12,7 @@ permalink: /archive/
            {% assign postYear = year %}      
        {% endif %}
        <br>
-       <li style="list-style-type: none;">{{ post.date | date: "%B %-d, %Y" }}<h3><a href="{{ post.url }}">{{ post.title }}</a></h3></li>
+       <li style="list-style-type: none;">{{ post.date | date: "%B %-d, %Y" }}<h3 class="archive" ><a href="{{ post.url }}">{{ post.title }}</a></h3></li>
    {% endfor %}
 
 

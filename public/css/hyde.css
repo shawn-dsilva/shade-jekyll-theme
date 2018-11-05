@@ -32,7 +32,12 @@ html {
 }
 
 .lead {
-  display:none;
+  display: none;
+  /*
+  text-align:center;
+  margin-left: 2rem;     WIP
+  margin-right: 2rem;
+  */
 }
 
 .copyright {
@@ -119,6 +124,9 @@ float:right;
     display: inline;
     font-size: 1.25rem;
     font-weight: 300;
+    /*margin-left: 0;
+    margin-right: 0;*/
+
   }
   
   .copyright {

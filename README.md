@@ -8,4 +8,6 @@ Repo for my website,uses Hyde theme by mdo with a modified _config.yml file to m
 - code snippets using backticks have black text on grey background now
 - Read More button added to home page posts
 - Font-family changed site wide to Source Sans Pro
-- Workaround for Bold/Strong fonts that look "think" added
+- Workaround for Bold/Strong fonts that look "thin" added
+- Archives section added
+- Persistent top bar added for mobiles only

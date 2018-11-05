@@ -11,12 +11,12 @@
 }
 
 a {
-  color: inherit;
+  color: #68f;
   text-decoration: inherit;
   transition: color 0.2s ease-out;
 }
 
-a, b, strong, th {
+ b, strong, th {
   font-weight: 400;
   color: #202020;
 }
@@ -265,6 +265,12 @@ tbody tr:nth-child(odd) th {
 .post-title a:focus {
   text-decoration: underline;
 }
+
+.archive a:hover,
+.archive a:focus {
+  text-decoration: underline;
+}
+
 .page-title,
 .post-title {
   margin-top: 0;
@@ -280,15 +286,16 @@ tbody tr:nth-child(odd) th {
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  -webkit-border-bottom-right-radius: 10px;    
   border-bottom-right-radius: 10px;
-  -webkit-border-top-right-radius: 10px;    
   border-top-right-radius: 10px;
-  -webkit-border-bottom-left-radius: 10px;    
   border-bottom-left-radius: 10px;
-  -webkit-border-left-radius: 10px;    
   border-top-left-radius: 10px;
+  -webkit-border-bottom-right-radius: 10px;    
+  -webkit-border-top-right-radius: 10px;    
+  -webkit-border-bottom-left-radius: 10px;    
+  -webkit-border-left-radius: 10px;    
   font-size: 16px;
+  font-weight: 400;
   margin: 4px 2px;
   cursor: pointer;
 }

@@ -10,8 +10,8 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-a {
-  color: #68f;
+a {  
+  color: rgb(77, 113, 245);
   text-decoration: inherit;
   transition: color 0.2s ease-out;
 }
@@ -257,9 +257,12 @@ tbody tr:nth-child(odd) th {
 
 /* Blog post or page title */
 /*.page-title,*/
-.page-title,
-.post-title a {
+.page-title {
   color: #282c34;
+}
+
+.post-title a {
+  color: rgb(77, 113, 245);
 }
 .post-title a:hover,
 .post-title a:focus {

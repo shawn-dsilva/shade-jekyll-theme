@@ -12,6 +12,7 @@
 
 a {  
   color: rgb(77, 113, 245);
+  font-weight: 400;
   text-decoration: inherit;
   transition: color 0.2s ease-out;
 }
@@ -272,6 +273,11 @@ tbody tr:nth-child(odd) th {
 .archive a:hover,
 .archive a:focus {
   text-decoration: underline;
+}
+.title a:hover,
+.title a:focus {
+  text-decoration: underline;
+  font-weight: 600;
 }
 
 .page-title,

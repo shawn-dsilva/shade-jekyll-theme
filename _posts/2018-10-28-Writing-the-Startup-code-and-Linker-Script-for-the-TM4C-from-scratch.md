@@ -207,4 +207,4 @@ void Default_Handler(void)
 
 **With this,we are finally done writing the startup code**
 
-The rest of the code can be viewed on my [**Github Repo(tm4c-linux-template)**](https://github.com/shawn-dsilva/tm4c-linux-template.git)
+The rest of the code can be viewed on my [Github Repo(tm4c-linux-template)](https://github.com/shawn-dsilva/tm4c-linux-template.git)

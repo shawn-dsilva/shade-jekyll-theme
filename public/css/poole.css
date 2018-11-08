@@ -11,7 +11,7 @@
 }
 
 a {  
-  color: rgb(77, 113, 245);
+  color: #268bd2;
   font-weight: 400;
   text-decoration: inherit;
   transition: color 0.2s ease-out;
@@ -55,7 +55,7 @@ main {
 }
 
 article a {
-  color: #68f;
+  color: #268bd2;
 }
 
 header a, footer a {
@@ -72,11 +72,6 @@ header span, header time {
   color: #949494;
 }
 
-blockquote {
-  border-left: 5px solid #68f;
-  padding-left: 1.5em;
-  margin: 0;
-}
 
 body, aside, main {
   flex-direction: column;
@@ -185,7 +180,8 @@ blockquote {
   padding: .5rem 1rem;
   margin: .8rem 0;
   color: #7a7a7a;
-  border-left: .25rem solid #e5e5e5;
+  border-left: 5px solid #268bd2;
+  margin-left: .8rem;
 }
 blockquote p:last-child {
   margin-bottom: 0;
@@ -262,11 +258,16 @@ tbody tr:nth-child(odd) th {
   color: #282c34;
 }
 
-.post-title a {
-  color: rgb(77, 113, 245);
+.post-title {
+ font-size: 2.5rem;
+ text-align: center; 
 }
-.post-title a:hover,
-.post-title a:focus {
+
+.post-title-link a {
+  color: #268bd2;
+}
+.post-title-link a:hover,
+.post-title-link a:focus {
   text-decoration: underline;
 }
 
@@ -288,8 +289,7 @@ tbody tr:nth-child(odd) th {
 /* Readmore Button */
 
 .read-more {
-  background-color: #68f;
-  border: none;
+  background-color: #268bd2;
   color: white;
   padding: 10px 25px;
   text-align: center;
@@ -307,8 +307,16 @@ tbody tr:nth-child(odd) th {
   font-weight: 400;
   margin: 4px 2px;
   cursor: pointer;
+  border-style:solid;
 }
 
+.read-more:hover,
+.read-more:focus{
+  background-color: white;
+  color: #268bd2;
+  border-style:solid;
+  border-color: #268bd2;
+}
 
 
 /* Meta data line below post title */

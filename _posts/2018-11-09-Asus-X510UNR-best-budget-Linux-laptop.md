@@ -96,10 +96,22 @@ Info:      Processes: 308 Uptime: 1:45 Memory: 2009.2/7859.1MB Init: systemd run
 
 Altough this device packs all this hardware,and is yet still light,it is clear that Asus had to skimp out on the build quality of this laptop.
 <br>
+
 The plastic has this brushed metal finish on the lid,which makes it look very cheap,and is a finger-print magnet, 
 the chassis plastic seems flimsy and i can see a slight depression on the plastic between the 'G' and 'H' keys of the keyboard
 There is a lot of flex overall, altough the laptop can be opened with one hand most of the time(a small notch is provided,like you would see on a macbook).
 <br>
+
 The venting is inadequate,with only one narrow,yet long vent at the back of the laptop,in front of the hinge,this will cause airflow issues in the future,altough for now it doesn't seem to get hot.
 <br>
+
 On the literal flipside of this though,is a removable bottom cover,which is attached to the case by around 10 screws of the Phillips #000 variety it seems, This gives you easy access to the internals of this laptop,the battery modules are sadly **glued** to the casing it seems,hindering replace-ability
+
+
+## Conclusion
+
+Overall this is a good "It-Just-Works" **Linux** laptop in this price range of **60,000 INR**, with good hardware, 
+<br> out-of-the-box Linux support and relative ease of maintainence and upgradability.
+
+<br>
+altough the materials and finish leave something to be desired

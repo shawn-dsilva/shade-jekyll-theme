@@ -49,44 +49,6 @@ h4, h5, h6 {
 }
 
 
-
-main {
-  flex-grow: 1;
-}
-
-article a {
-  color: #5376f4;
-}
-
-header a, footer a {
-  color: inherit;
-  font-weight: 300;
-}
-
-hr {
-  border: 1px solid rgba(148, 148, 148, 0.16);
-  margin: 2em 0;
-}
-
-header span, header time {
-  color: #949494;
-}
-
-
-body, aside, main {
-  flex-direction: column;
-}
-
-img {
-  max-width: 100%;
-  height: auto;
-  border-radius: 2px;
-}
-
-figure {
-  margin: 1em 0;
-}
-
 code {
   background-color: rgba(148, 148, 148, 0.12);
   color: #515151;
@@ -157,24 +119,6 @@ ul, ol, dl {
   margin-bottom: 1rem;
 }
 
-dt {
-  font-weight: bold;
-}
-dd {
-  margin-bottom: .5rem;
-}
-
-/* Misc */
-hr {
-  position: relative;
-  margin: 1.5rem 0;
-  border: 0;
-  border-top: 1px solid #eee;
-  border-bottom: 1px solid #fff;
-}
-
-
-
 /* Quotes */
 blockquote {
   padding: .5rem 1rem;
@@ -198,23 +142,6 @@ img {
   max-width: 100%;
   margin: 0 0 1rem;
   border-radius: 5px;
-}
-
-/* Tables */
-table {
-  margin-bottom: 1rem;
-  width: 100%;
-  border: 1px solid #e5e5e5;
-  border-collapse: collapse;
-}
-td,
-th {
-  padding: .25rem .5rem;
-  border: 1px solid #e5e5e5;
-}
-tbody tr:nth-child(odd) td,
-tbody tr:nth-child(odd) th {
-  background-color: #f9f9f9;
 }
 
 
@@ -259,7 +186,7 @@ tbody tr:nth-child(odd) th {
 }
 
 .post-title {
- font-size: 2.5rem;
+ font-size: 2rem;
  text-align: center; 
 }
 

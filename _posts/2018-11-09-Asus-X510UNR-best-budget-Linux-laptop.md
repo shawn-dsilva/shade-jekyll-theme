@@ -5,7 +5,9 @@ excerpt_separator: <!--more-->
 ---
 
 I was at a Croma store window shopping when i happened upon this laptop,the **Asus X510UNR**.<br>
-Usually,people recommend laptops like those from the **Thinkpad** line,Dell **XPS** line and other such business class laptops for optimal **Linux** compatibility,considering they have **Intel WiFi** cards that are known to be well supported in **Linux** based systems,because Intel actively provides drivers and firmware for these cards And also because of the  high quality components,larger batteries,materials and 3 year warranty that come with these Business-class laptops <!-- more -->
+Usually,people recommend laptops like those from the **Thinkpad** line,Dell **XPS** line and other such business class laptops for optimal **Linux** compatibility,considering they have **Intel WiFi** cards that are known to be well supported in **Linux** based systems,because Intel actively provides drivers and firmware for these cards And also because of the  high quality components,larger batteries,materials and 3 year warranty that come with these Business-class laptops
+
+ <!--more-->
 
 But all these however,come at a steep price,most business grade laptops start at around the **1 Lakh INR** range,with no option except to play Russian roulette with budget laptops that may not have the correct parts for an optimal Linux experience,with various incompatibilities,people on the internet seem to recommend some 5-6 year old used Thinkpads that cost about 22K INR,for running linux,and although these things are "Built like tanks" they are too old and bulky for my purposes. This is where the **Asus X510UNR** surprisingly comes in, with it's good specs and relatively cheap price of around 58K,altough i got it for around 48K INR because of some Diwali offers Croma was running.<br>
 
@@ -14,12 +16,12 @@ But all these however,come at a steep price,most business grade laptops start at
 - **Intel i5 8250U** Quad Core processor
 - **8 GB DDR4** RAM,with space for another stick,for a total of 16GB
 - **Nvidia MX150** GPU
-- 1TB HDD that runs at 5400 RPM,altough this can be replaced with an M2 or SATA SSD
+- **1TB HDD** that runs at 5400 RPM,altough this can be replaced with an **M2** or SATA **SSD**
 - **3 Cell 42 Whr battery**,altough this is still less for this config,i doubt one can get better capacity at this price
 - **15.6" 1080p** screen,no idea whether it is IPS or TN,the color reproduction is bad though
 - **Centered Keyboard**(no Numpad) with white **backlight**
 - **Intel 8256** 2x2 WiFi and Bluetooth
-- HDMI, 2 x USB, 1 x USB3.0, 1 x USBC, headphone jack and card reader slot
+- **HDMI**, 2 x USB, 1 x USB3.0, 1 x **USBC**, headphone jack and card reader slot
 
 # Linux Compatibility
 
@@ -92,4 +94,12 @@ Info:      Processes: 308 Uptime: 1:45 Memory: 2009.2/7859.1MB Init: systemd run
 
 ## Build Quality/ Durability :
 
-Altought this device packs all this hardware,it is clear that Asus had to skimp out on the build quality of this laptop
+Altough this device packs all this hardware,and is yet still light,it is clear that Asus had to skimp out on the build quality of this laptop.
+<br>
+The plastic has this brushed metal finish on the lid,which makes it look very cheap,and is a finger-print magnet, 
+the chassis plastic seems flimsy and i can see a slight depression on the plastic between the 'G' and 'H' keys of the keyboard
+There is a lot of flex overall, altough the laptop can be opened with one hand most of the time(a small notch is provided,like you would see on a macbook).
+<br>
+The venting is inadequate,with only one narrow,yet long vent at the back of the laptop,in front of the hinge,this will cause airflow issues in the future,altough for now it doesn't seem to get hot.
+<br>
+On the literal flipside of this though,is a removable bottom cover,which is attached to the case by around 10 screws of the Phillips #000 variety it seems, This gives you easy access to the internals of this laptop,the battery modules are sadly **glued** to the casing it seems,hindering replace-ability

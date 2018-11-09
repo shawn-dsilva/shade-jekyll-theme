@@ -7,7 +7,9 @@ excerpt_separator: <!--more-->
 
 Nearly every ARM Cortex-M needs needs a **startup code** file to define it's  **Main Stack Pointer**, **Reset Handler** and **Vector Table** and a **linker script** telling it to place which sections into which parts of memory,these two files are crucial,without which even a simple blinky program cannot be run.
 <br>
-Usually,the vendor provided versions of these files are sufficient,but the TI provided ones require a ~500MB download,and registration on the TI website,to top it all off,nearly every file in the TI package has this license in it :
+Usually,the vendor provided versions of these files are sufficient,but the TI provided ones require a ~500MB download,and registration on the TI website,labyrnthine folder structure with very little documentation of what goes where or how is the project structured<br>
+<!--more-->
+To top it all off,nearly every file in the TI package has this license in it :
 
 > Texas Instruments (TI) is supplying this software for use solely and
 > exclusively on TI's microcontroller products. The software is owned by
@@ -17,7 +19,7 @@ Usually,the vendor provided versions of these files are sufficient,but the TI pr
 
 Which is why i decided to write my own **Open Source** Startup code and Linker Script,and document how both of them work on this blog.
 
-<!--more-->
+
 <br>
 
 

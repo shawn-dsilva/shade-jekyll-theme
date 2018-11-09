@@ -92,7 +92,7 @@ Info:      Processes: 308 Uptime: 1:45 Memory: 2009.2/7859.1MB Init: systemd run
 
 ```
 
-## Build Quality/ Durability :
+# Build Quality/ Durability :
 
 Altough this device packs all this hardware,and is yet still light,it is clear that Asus had to skimp out on the build quality of this laptop.
 <br>
@@ -108,7 +108,7 @@ The venting is inadequate,with only one narrow,yet long vent at the back of the 
 On the literal flipside of this though,is a removable bottom cover,which is attached to the case by around 10 screws of the Phillips #000 variety it seems, This gives you easy access to the internals of this laptop,the battery modules are sadly **glued** to the casing it seems,hindering replace-ability
 
 
-## Conclusion
+# Conclusion
 
 Overall this is a good "It-Just-Works" **Linux** laptop in this price range of **60,000 INR**, with good hardware, 
 <br> out-of-the-box Linux support and relative ease of maintainence and upgradability.

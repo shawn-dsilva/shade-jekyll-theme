@@ -87,6 +87,7 @@ float:right;
 
   .sidebar-about h1 {
     text-align: left;
+    text-rendering: optimizeLegibility;
   }
   .container {
     max-width: 38rem;
@@ -96,6 +97,8 @@ float:right;
     margin-right: 0;
    
   }
+
+  
 
   .fa {
     padding-right: 10px;

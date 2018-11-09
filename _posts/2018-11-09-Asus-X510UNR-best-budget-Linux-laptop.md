@@ -112,6 +112,5 @@ On the literal flipside of this though,is a removable bottom cover,which is atta
 
 Overall this is a good "It-Just-Works" **Linux** laptop in this price range of **60,000 INR**, with good hardware, 
 <br> out-of-the-box Linux support and relative ease of maintainence and upgradability.
-
 <br>
 altough the materials and finish leave something to be desired

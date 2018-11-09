@@ -63,7 +63,7 @@ display:none;
 }
 
 .fa {
-  margin-left: 5px;
+  margin-left: 10px;
 }
 
 .icons {
@@ -81,7 +81,7 @@ float:right;
     top: 0;
     left: 0;
     bottom: 0;
-    width: 18rem;
+    width: 16rem;
     text-align: left;
   }
 

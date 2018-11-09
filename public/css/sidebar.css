@@ -93,6 +93,7 @@ float:right;
     max-width: 38rem;
     padding-left:  1rem;
     padding-right: 1rem;
+    margin-top:0;
     margin-left: 0;
     margin-right: 0;
    
@@ -177,7 +178,7 @@ float:right;
 
 @media (min-width: 48em) {   /*1366*768 minimum width*/
   .content {
-    padding-top: 4rem;
+    padding-top: 2rem;
     max-width: 40rem;
     margin-left: 20rem;
     margin-right: 2rem;
@@ -187,7 +188,7 @@ float:right;
 
 @media (min-width: 58em) {   /*1920*1080 minimum width*/
   .content {
-    padding-top: 4rem;
+    padding-top: 2rem;
     max-width: 55rem;
     margin-left: 20rem;
     margin-right: 4rem;

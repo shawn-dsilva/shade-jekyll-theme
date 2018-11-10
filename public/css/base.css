@@ -215,8 +215,8 @@ img {
 /* Post title for a post and links to post on homepage */
 
 .post-title {
- font-size: 2rem;
  text-align: center; 
+ font-size: 1.8rem;
 }
 
 .post-title-link  {
@@ -282,7 +282,7 @@ img {
   -webkit-border-left-radius: 10px;    
   font-size: 16px;
   font-weight: 400;
-  margin: 4px 2px;
+  margin: 16px 2px;
   cursor: pointer;
   border-style:solid;
 }

@@ -4,7 +4,7 @@ title: 'ASUS X510UNR : Best Budget Linux laptop'
 excerpt_separator: <!--more-->
 ---
 
-I was at a Croma store window shopping when i happened upon this laptop,the **Asus X510UNR**.<br>
+I was at a Croma store window shopping when i happened upon this laptop,the **Asus X510UNR**.
 Usually,people recommend laptops like those from the **Thinkpad** line,Dell **XPS** line and other such business class laptops for optimal **Linux** compatibility,considering they have **Intel WiFi** cards that are known to be well supported in **Linux** based systems,because Intel actively provides drivers and firmware for these cards And also because of the  high quality components,larger batteries,materials and 3 year warranty that come with these Business-class laptops
 
  <!--more-->

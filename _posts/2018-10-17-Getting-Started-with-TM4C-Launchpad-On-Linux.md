@@ -6,10 +6,7 @@ excerpt_separator: <!--more-->
 
 
 
-This is a guide to getting up-and-running to develop firmware for the **TM4C123GH6PM** evaluation board from Texas Instruments on a Linux based system.
-
-The TM4C was my first microcontroller,and i found it very uninteresting to use a bulky IDE like Keil or IAR EWARM that abstracts so much from me,I checked various blog posts about using **GCC** and **Make** to develop firmware for this board,but the instructions were always outdated.
-
+This is a guide to getting up-and-running to develop firmware for the **TM4C123GH6PM** evaluation board from Texas Instruments on a Linux based system.The TM4C was my first microcontroller,and i found it very uninteresting to use a bulky IDE like Keil or IAR EWARM that abstracts so much from me,I checked various blog posts about using **GCC** and **Make** to develop firmware for this board,but the instructions were always outdated.
 The steps here are tested on an **Ubuntu 18.04 LTS** system,but should work on any other Linux based system
 
 

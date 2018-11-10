@@ -15,8 +15,9 @@ title: Home
 
     <span class="post-date-homepage">{{ post.date | date: "%B %-d, %Y" }}</span>
 
-    {{ post.excerpt }}
-    <a href="{{post.url}}" class="read-more">Read More...</a>
+    {{ post.excerpt | truncate:380 }}
+    <br>
+    <a href="{{post.url}}" class="read-more">Continue Reading &nbsp; ⇒	 </a>
 
   </div>
   {% endfor %}

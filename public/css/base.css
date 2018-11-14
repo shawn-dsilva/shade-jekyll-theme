@@ -65,7 +65,7 @@ h4, h5, h6 {
   height: 1px; 
   font-size: 2rem; 
   border-color:var(--main-para-color);
-  margin: 2rem 1rem;
+  margin: 3rem 1rem;
   overflow: visible;
   border-style:solid;
 }
@@ -308,9 +308,7 @@ img {
 
 /* Related posts */
 .related {
-  padding-top: 2rem;
   padding-bottom: 2rem;
-  border-top: 1px solid #eee;
 }
 .related-posts {
   padding-left: 0;

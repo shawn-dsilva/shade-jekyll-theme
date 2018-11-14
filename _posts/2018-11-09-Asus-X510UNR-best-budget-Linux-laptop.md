@@ -9,19 +9,39 @@ Usually,people recommend laptops like those from the **Thinkpad** line,Dell **XP
 
  <!--more-->
 
-But all these however,come at a steep price,most business grade laptops start at around the **1 Lakh INR** range,with no option except to play Russian roulette with budget laptops that may not have the correct parts for an optimal Linux experience,with various incompatibilities,people on the internet seem to recommend some 5-6 year old used Thinkpads that cost about 22K INR,for running linux,and although these things are "Built like tanks" they are too old and bulky for my purposes. This is where the **Asus X510UNR** surprisingly comes in, with it's good specs and relatively cheap price of around 58K,altough i got it for around 48K INR because of some Diwali offers Croma was running.<br>
+But all these however,come at a steep price,most business grade laptops start at around the **1 Lakh INR** range,with no option except to play Russian roulette with budget laptops that may not have the correct parts for an optimal Linux experience,with various incompatibilities,people on the internet seem to recommend some 5-6 year old used Thinkpads that cost about 22K INR,for running linux,and although these things are "Built like tanks" they are too old and bulky for my purposes. This is where the **Asus X510UNR** surprisingly comes in, with it's good specs and relatively cheap price of around **58K MRP**,altough i got it for around **48K INR** because of some Diwali offers Croma was running.<br>
 
 # Specifications
+<br>
+<table>
+    <tr><th>OS</th><td>Windows 10 Home Single Language, pre-installed</td></tr>
+    <tr><th>CPU</th><td>Intel i5 8250U Quad Core processor</td></tr>
+    <tr><th>RAM</th><td>8GB DDR4 SODIMM,expandable to 16GB</td></tr>
+    <tr><th>iGPU</th><td>Intel HD Graphics 620</td></tr>
+    <tr><th>Discrete GPU</th><td>Nvidia MX150 2GB</td></tr>
+    <tr><th>Screen</th><td>15.6", Full HD 1920x1080, TN Panel, 45% NTSC color reproduction </td></tr>
+    <tr><th>Storage</th><td>SATA Toshiba 1TB 5400 RPM HDD, Empty M.2 slot</td></tr>
+    <tr><th>Keyboard</th><td>Centered, No Numpad,White LED Backlit</td></tr>
+    <tr><th>Connectivity</th><td>Intel 8256 2x2 WiFi + BT, No Ethernet port</td></tr>
+    <tr><th>Ports</th><td>HDMI, 2 x USB 2.0(Type-A), 1 x USB 3.0(Type-A), 1 x USB 3.0(USB-C), 3.5mm jack,Barrel jack for charging  and SD card reader slot</td></tr>
+    <tr><th>Batteries</th><td>42 Whr, 3 cell</td></tr>
+   
+</table>
 
-- **Intel i5 8250U** Quad Core processor
-- **8 GB DDR4** RAM,with space for another stick,for a total of 16GB
-- **Nvidia MX150** GPU
-- **1TB HDD** that runs at 5400 RPM,altough this can be replaced with an **M2** or SATA **SSD**
-- **3 Cell 42 Whr battery**,altough this is still less for this config,i doubt one can get better capacity at this price
-- **15.6" 1080p** screen,no idea whether it is IPS or TN,the color reproduction is bad though
-- **Centered Keyboard**(no Numpad) with white **backlight**
-- **Intel 8256** 2x2 WiFi and Bluetooth
-- **HDMI**, 2 x USB, 1 x USB3.0, 1 x **USBC**, headphone jack and card reader slot
+# Laptop Review
+
+The screen is some kind of TN Panel i think, because Asus doesn't seem to mention the panel type anywhere.
+It is 1080p, but color reproduction and viewing angles are bad,The default scaling lets you get more screen real estate compared to a 720p display, a boon for programmers like me.
+The speakers are decent,not too low volume, not too loud,just average.
+<br>
+The keyboard is decent to type on, and has a backlight whose intensity can be controlled by the Function Keys, The touchpad is one of the clickable ones,with no physical left,right or middle click keys, further
+the top right of the touchpad is taken up by the finger print reader.
+<br>
+Thermals seem to be ok,with the laptop idling at 38 C and reaching 45 C on light load,altought the laptop gets hot while charging.
+<br>
+By default the Windows 10 installation comes with pre-installed bloatware just like any other manufacturer, This makes no difference to me,as i run Ubuntu anyway
+
+
 
 # Linux Compatibility
 
@@ -59,7 +79,7 @@ As mentioned before, nearly everything works,but i will list them below just for
 
 <br>
 
-**The output of `inxi -Fxs`** :
+**The output of `inxi -B`** :
 ```shell
 shawn@Asus-X510U:~$ inxi -Fxs
 System:    Host: Asus-X510U Kernel: 4.15.0-38-generic x86_64 bits: 64 gcc: 7.3.0
@@ -115,7 +135,21 @@ Overall this is a good "It-Just-Works" **Linux** laptop in this price range of *
 <br>
 altough the materials and finish leave something to be desired
 
-<span style="color: green; font-weight:400;">PROS</span><br>
-
-
-<span style="color: red; font-weight:400;">CONS </span><br>
+<span style="color: green; font-size:1.2rem; font-weight:400;">PROS</span><br>
+- Latest 8th gen i5 Quad-Core processor
+- Modular RAM,M2 SSD and SATA Drive slots
+- Decent selection of Ports
+- Light weight
+- Intel Wifi
+- Full HD Display
+- Good out-of-the-box Linux support
+- Centered Keyboard with backlight
+  
+<br>
+<span style="color: red; font-size:1.2rem; font-weight:400;">CONS </span><br>
+- Build quality
+- Venting/Cooling
+- No Ethernet port
+- No Thunderbolt 3 inspite of a USB-C port
+- 2x USB 2.0 Ports in 2018
+- 42Whr battery

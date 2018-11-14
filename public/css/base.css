@@ -1,12 +1,14 @@
 
  :root {
-  --main-para-color: #4F4F4F; 
-  --main-heading-color: #3D3D3D;
+  --main-para-color: #1C1C1C; 
+  --main-heading-color: #0A0A0A;
+  --main-link-color:  #5376f4;
+  --main-light-color: #3D3D3D;
 }
  
  
  body {
-  color: var (--main-para-color);
+  color: var(--main-para-color);
   font-family: "Source Sans Pro";
   font-weight: 300;
   font-size: 18px;
@@ -17,7 +19,7 @@
 }
 
 a {  
-  color: #5376f4;
+  color: var(--main-link-color);
   font-weight: 400;
   text-decoration: inherit;
   transition: color 0.2s ease-out;
@@ -25,26 +27,26 @@ a {
 
  b, strong, th {
   font-weight: 400;
-  color: var (--main-heading-color);
+  color: var(--main-heading-color);
 }
 
 h1, h2, h3, h4, h5, h6 {
   font-weight: 400;
   margin-bottom: .5rem;
   line-height: 1.25;
-  color: var (--main-heading-color);
+  color: var(--main-heading-color);
   text-rendering: optimizeLegibility;
 }
 h1 {
-  font-size: 1.8rem;
+  font-size: 1.5rem;
 }
 h2 {
   margin-top: 1rem;
-  font-size: 1.5rem;
+  font-size: 1.25rem;
 }
 h3 {
   /*margin-top: 1rem;*/
-  font-size: 1.25rem;
+  font-size: 1rem;
   margin-bottom: 0.5em;
   margin-top:0;
 
@@ -62,7 +64,7 @@ h4, h5, h6 {
   line-height: 1px;
   height: 1px; 
   font-size: 2rem; 
-  border-color:var (--main-para-color);
+  border-color:var(--main-para-color);
   margin: 2rem 1rem;
   overflow: visible;
   border-style:solid;
@@ -70,7 +72,7 @@ h4, h5, h6 {
 
 .hr-posts:after {
   content: "< / >"; 
-  color: var (--main-para-color);
+  color: var(--main-para-color);
   font-weight: 400;
   display: inline;
   background-color: white; 
@@ -80,11 +82,12 @@ h4, h5, h6 {
 
 code {
   background-color: rgba(148, 148, 148, 0.12);
-  color: var (--main-para-color);
+  color: var(--main-light-color);
   border-radius: 2px;
   font-size: 0.8em;
   margin: 0 0.2em;
   padding: 0.4em 0.4em;
+  font-weight: 200;
 }
 
 pre {
@@ -116,9 +119,8 @@ tr:hover {
 th, td {
   box-shadow: 0px 0px 0px 1px rgba(148, 148, 148, 0.16);
   padding: 0.5em 1em;
+  text-align: left;
 }
-
-
 
 * {
   -webkit-box-sizing: border-box;
@@ -152,8 +154,8 @@ ul, ol, dl {
 blockquote {
   padding: .5rem 1rem;
   margin: .8rem 0;
-  color: #7a7a7a;
-  border-left: 5px solid #5376f4;
+  color: #3d3d33;
+  border-left: 5px solid var(--main-link-color);
   margin-left: .8rem;
 }
 blockquote p:last-child {
@@ -228,7 +230,7 @@ img {
 }
 
 .post-title-link  {
-  color: #5376f4;
+  color: var(--main-para-color);
   font-size: 1.5rem;
 }
 
@@ -244,7 +246,7 @@ img {
   display: block;
   margin-top: 0.5rem;
   margin-bottom: 1.2rem;
-  color: var (--main-para-color);
+  color: var(--main-para-color);
   font-weight: 400;
 }
 
@@ -253,7 +255,7 @@ img {
   display: block;
   margin-top: 0.5rem;
   margin-bottom: 1.2rem;
-  color: var (--main-para-color);
+  color: var(--main-para-color);
   font-weight: 400;
 }
 
@@ -274,7 +276,7 @@ img {
 /* Readmore Button */
 
 .read-more {
-  background-color: #5376f4;
+  background-color: var(--main-link-color);
   color: white;
   padding: 10px 25px;
   text-align: center;
@@ -298,9 +300,9 @@ img {
 .read-more:hover,
 .read-more:focus{
   background-color: white;
-  color: #5376f4;
+  color: var(--main-link-color);
   border-style:solid;
-  border-color: #5376f4;
+  border-color: var(--main-link-color);
 }
 
 
@@ -322,7 +324,7 @@ img {
   color: #999;
 }
 .related-posts li a:hover {
-  color: #5376f4;
+  color: var(--main-link-color);
   text-decoration: none;
 }
 .related-posts li a:hover small {

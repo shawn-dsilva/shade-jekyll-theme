@@ -1,6 +1,12 @@
 
+ :root {
+  --main-para-color: #4F4F4F; 
+  --main-heading-color: #3D3D3D;
+}
+ 
+ 
  body {
-  color: #515151;
+  color: var (--main-para-color);
   font-family: "Source Sans Pro";
   font-weight: 300;
   font-size: 18px;
@@ -19,18 +25,18 @@ a {
 
  b, strong, th {
   font-weight: 400;
-  color: #202020;
+  color: var (--main-heading-color);
 }
 
 h1, h2, h3, h4, h5, h6 {
   font-weight: 400;
   margin-bottom: .5rem;
   line-height: 1.25;
-  color: #202020;
+  color: var (--main-heading-color);
   text-rendering: optimizeLegibility;
 }
 h1 {
-  font-size: 2rem;
+  font-size: 1.8rem;
 }
 h2 {
   margin-top: 1rem;
@@ -55,14 +61,16 @@ h4, h5, h6 {
   text-align: center; 
   line-height: 1px;
   height: 1px; 
-  font-size: 1.5rem; 
-  border-color:#515151;
+  font-size: 2rem; 
+  border-color:var (--main-para-color);
   margin: 2rem 1rem;
   overflow: visible;
+  border-style:solid;
 }
+
 .hr-posts:after {
-  content: "</>"; 
-  color: #515151;
+  content: "< / >"; 
+  color: var (--main-para-color);
   font-weight: 400;
   display: inline;
   background-color: white; 
@@ -72,7 +80,7 @@ h4, h5, h6 {
 
 code {
   background-color: rgba(148, 148, 148, 0.12);
-  color: #515151;
+  color: var (--main-para-color);
   border-radius: 2px;
   font-size: 0.8em;
   margin: 0 0.2em;
@@ -216,7 +224,7 @@ img {
 
 .post-title {
  text-align: center; 
- font-size: 1.8rem;
+ font-size: 1.5rem;
 }
 
 .post-title-link  {
@@ -236,7 +244,7 @@ img {
   display: block;
   margin-top: 0.5rem;
   margin-bottom: 1.2rem;
-  color: #515151;
+  color: var (--main-para-color);
   font-weight: 400;
 }
 
@@ -245,7 +253,7 @@ img {
   display: block;
   margin-top: 0.5rem;
   margin-bottom: 1.2rem;
-  color: #515151;
+  color: var (--main-para-color);
   font-weight: 400;
 }
 

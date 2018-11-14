@@ -114,3 +114,8 @@ Overall this is a good "It-Just-Works" **Linux** laptop in this price range of *
 <br> out-of-the-box Linux support and relative ease of maintainence and upgradability.
 <br>
 altough the materials and finish leave something to be desired
+
+<span style="color: green; font-weight:400;">PROS</span><br>
+
+
+<span style="color: red; font-weight:400;">CONS </span><br>

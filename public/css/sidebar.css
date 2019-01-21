@@ -31,11 +31,16 @@ html {
   background-color: #202020;
 }
 
+.title {
+  margin:0;
+ }
+
 .lead {
   /*display: none;*/
   text-align: center;
   padding-left: 4rem;     
   padding-right: 4rem;
+  margin:0;
 }
 
 
@@ -57,7 +62,12 @@ display:none;
 }
 
 /* Sidebar nav */
-
+.sidebar-nav {
+   margin:0;
+   padding:0;
+   height:0;
+ }
+ 
 .sidebar-nav-item {
   margin-right: 5px;
 }
@@ -88,6 +98,9 @@ float:right;
   .sidebar-about h1 {
     text-align: left;
     text-rendering: optimizeLegibility;
+    color: #fff;
+    margin-top: 0;
+    font-size: 3.8rem;
   }
   .container {
     max-width: 38rem;
@@ -112,10 +125,8 @@ float:right;
     float:none;
   }
 
-  .sidebar-about h1 {
-    color: #fff;
-    margin-top: 0;
-    font-size: 3.8rem;
+  .sidebar-about p {
+    font-size: 1.1rem;
   }
   .sidebar-nav-item {
     display: block;
@@ -126,7 +137,6 @@ float:right;
   
   .lead {  
     display: block;
-    font-size: 1.25rem;
     font-weight: 300;
     margin-left: 0;
     margin-right: 0;

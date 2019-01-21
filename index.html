@@ -3,7 +3,7 @@ layout: default
 title: Home
 ---
 
-<h1 class="latest-posts"> Recent Posts </h1>
+<h1 class="latest-posts"><u> Latest Posts</u> </h1>
 <div class="posts">
   {% for post in paginator.posts %}
   <div class="post">
@@ -17,7 +17,7 @@ title: Home
 
     {{ post.excerpt | truncate:380 }}
     <br>
-    <a href="{{post.url}}" class="read-more">Continue Reading &nbsp; >	 </a>
+    <a href="{{post.url}}" class="read-more">Continue Reading &nbsp; » </a>
 
   </div>
   {% endfor %}

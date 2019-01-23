@@ -11,3 +11,4 @@ Repo for my website,uses Hyde theme by mdo with a modified _config.yml file to m
 - Workaround for Bold/Strong fonts that look "thin" added
 - Archives section added
 - Persistent top bar added for mobiles only
+- Contacts/Socials now have text for the URL's or Profile names of said social networks/contacts along with icons.

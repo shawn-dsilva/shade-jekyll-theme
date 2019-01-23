@@ -71,7 +71,9 @@ display:none;
 .sidebar-nav-item {
   margin-right: 5px;
 }
-
+.socials {
+  display:none;
+}
 .fa {
   margin-left: 10px;
 }
@@ -121,7 +123,7 @@ float:right;
   }
 
   .icons {
-    font-size: 30px;
+    font-size: 25px;
     float:none;
   }
 
@@ -129,12 +131,18 @@ float:right;
     font-size: 1.1rem;
   }
   .sidebar-nav-item {
+    font-family: 'Source Sans Pro';
     display: block;
     margin-left: 0;
     margin-top: 10px;
     margin-bottom: 15px;
   }
   
+  .socials{
+    display: inline;
+    font-size:15px;
+    font-family: monospace;
+  }
   .lead {  
     display: block;
     font-weight: 300;
@@ -147,7 +155,7 @@ float:right;
   }
   
   .copyright {
-    display: inline;
+    display: block;
     font-size: 1rem;
   }
 

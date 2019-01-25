@@ -12,3 +12,9 @@ Repo for my website,uses Hyde theme by mdo with a modified _config.yml file to m
 - Archives section added
 - Persistent top bar added for mobiles only
 - Contacts/Socials now have text for the URL's or Profile names of said social networks/contacts along with icons.
+
+## How it looks
+
+Desktop homepage 
+
+<img src="https://imgur.com/MDH3BzA">

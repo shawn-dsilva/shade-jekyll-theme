@@ -1,6 +1,6 @@
 # Shade Jekyll Theme
 
-A simple jekyll theme suited for a personal website + blog
+A simple jekyll theme suited for a personal website + blog, currently used for my personal website
 
 ## Features
 - Uses excerpts instead of displaying full post content
@@ -13,6 +13,7 @@ for highlighting code blocks
 - Archives section
 - Projects section ( WIP )
 - Persistent top bar added for mobiles only
+- short intro text vanishes on scrolling,leaving only top navbar
 - Contacts/Socials now have text for the URL's or Profile names of said social networks/contacts along with icons.
 
 ## Usage
@@ -24,8 +25,8 @@ for highlighting code blocks
 ```
 - git clone and cd into this repo
 ```
- git clone https://github.com/shawn-dsilva/shade-jekyll-theme
- cd shade-jekyll-theme
+    git clone https://github.com/shawn-dsilva/shade-jekyll-theme
+    cd shade-jekyll-theme
 ```
 - Run Jekyll server
 ```

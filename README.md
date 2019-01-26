@@ -17,4 +17,16 @@ Repo for my website,uses Hyde theme by mdo with a modified _config.yml file to m
 
 Desktop homepage 
 
-<img src="https://imgur.com/MDH3BzA">
+<img src="https://i.imgur.com/MDH3BzA.png">
+
+Desktop Blog Post 
+
+<img src="https://i.imgur.com/GyHADVT.png">
+
+Mobile Homepage
+
+<img src="https://i.imgur.com/SPbZrfv.png">
+
+Mobile view on scrolling( persistent top navbar )
+
+<img src="https://i.imgur.com/Cp3x9uY.png">

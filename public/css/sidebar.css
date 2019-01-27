@@ -52,7 +52,6 @@ html {
 }
 
 .collapsible-menu label {
-  font-family: 'Sedgwick Ave Display', cursive;
   font-size: 32px;
   display: block;
   cursor: pointer;
@@ -111,7 +110,6 @@ input:checked~.menu-content {
 }
 
 .collapsible-menu label {
-  font-family: 'Sedgwick Ave Display', cursive;
   font-size: 32px;
   display: block;
   cursor: pointer;

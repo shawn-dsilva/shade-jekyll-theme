@@ -183,7 +183,7 @@ input:checked~.menu-content {
 
   .container {
     max-width: 38rem;
-    padding-left: 1rem;
+    padding-left: 0.5rem;
     padding-right: 1rem;
     margin-top: 0;
     margin-left: 0;
@@ -194,7 +194,6 @@ input:checked~.menu-content {
 
 
   .fa {
-    padding-right: 10px;
     margin-left: 10px;
     margin-bottom: 15px;
   }

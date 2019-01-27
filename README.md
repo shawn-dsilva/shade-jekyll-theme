@@ -3,17 +3,16 @@
 A simple jekyll theme suited for a personal website + blog, currently used for my personal website
 
 ## Features
+- Sidebar for Desktop
+- Collapsible menu with persistent top-bar for mobiles
 - Uses excerpts instead of displaying full post content
-- No underline on links when hovering(except post title links to full posts)
 - uses `highlight.js` with `atom-one-dark` syntax highlight theme compared to `rouge` or `pygments` 
 for highlighting code blocks
 - code snippets using backticks have black text on grey background
 - Read More button added to home page posts,supports pagination, 5 post excrepts per page
 - Font-family changed site wide to Source Sans Pro, Header and bold tags use font weight of 400 instead of the default 600
-- Archives section
+- Archives section, displays all blog posts by year, with only date and title, no excrepts
 - Projects section ( WIP )
-- Persistent top bar added for mobiles only
-- short intro text vanishes on scrolling,leaving only top navbar
 - Contacts/Socials now have text for the URL's or Profile names of said social networks/contacts along with icons.
 
 ## Usage

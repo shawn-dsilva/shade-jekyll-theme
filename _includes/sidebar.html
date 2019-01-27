@@ -1,42 +1,51 @@
 <div class="sidebar">
   <div class="container">
-    <div class="sidebar-about">
       <h1 class="title">
-          <a href="{{ site.baseurl }}">{{site.title }}</a> 
+        <a href="{{ site.baseurl }}">{{site.title }}</a>
       </h1>
-      <p class="lead unhidden" id="lead">{{ site.description }}</p>
+
+    <div class="collapsible-menu">
+        <input type="checkbox" id="menu">
+        <label for="menu"> <h1 class="title-navbar">
+            <a href="{{ site.baseurl }}">{{site.title }}</a>
+          </h1></label>
+        <div class="menu-content">
+          <p class="lead unhidden">{{ site.description }}</p>
+
+        <nav class="sidebar-nav">
+          <!--  <a class="sidebar-nav-item{% if page.url == site.baseurl %} active{% endif %}" href="{{ site.baseurl }}">Home</a> -->
+
+          {% comment %}
+          The code below dynamically generates a sidebar nav of pages with
+          `layout: page` in the front-matter. See readme for usage.
+          {% endcomment %}
+          {% assign pages_list = site.pages %}
+          {% for node in pages_list %}
+          {% if node.title != null %}
+          {% if node.layout == "page" %}
+          <a class="sidebar-nav-item{% if page.url == node.url %} active{% endif %}" href="{{ node.url }}">{{
+            node.title }}</a>
+          {% endif %}
+          {% endif %}
+          {% endfor %}
+
+
+          <div class="icons">
+            <a class="sidebar-nav-item fa fa-github" href="{{ site.github.repo }}"> <span class="socials">github.com/shawn-dsilva</span>
+            </a>
+            <a class="sidebar-nav-item fa fa-envelope-o" href="{{ site.email }}"> 
+              <span class="socials"> name@yourdomain.com </span>
+            </a>
+          </div>
+      </div>
     </div>
 
-    <nav class="sidebar-nav">
-    <!--  <a class="sidebar-nav-item{% if page.url == site.baseurl %} active{% endif %}" href="{{ site.baseurl }}">Home</a> -->
+</div>
+<p class="copyright">
+  &copy; {{ site.time | date: '%Y' }} Shawn D'silva
+</p>
 
-      {% comment %}
-        The code below dynamically generates a sidebar nav of pages with
-        `layout: page` in the front-matter. See readme for usage.
-      {% endcomment %}
+</nav>
 
-      {% assign pages_list = site.pages %}
-      {% for node in pages_list %}
-        {% if node.title != null %}  
-        {% if node.layout == "page" %}
-            <a class="sidebar-nav-item{% if page.url == node.url %} active{% endif %}" href="{{ node.url }}">{{ node.title }}</a>
-          {% endif %}
-        {% endif %}
-      {% endfor %}
-
-      <div class="icons">
-      <a class="sidebar-nav-item fa fa-github"   href="{{ site.github.repo }}"> <span class="socials">github.com/shawn-dsilva</span> </a>
-
-
-    <a class="sidebar-nav-item fa fa-envelope-o"  href="{{ site.email }}"> <span class="socials"> email goes here </span></a>
-      </div>
-
-      <p class="copyright">
-
-          &copy; {{ site.time | date: '%Y' }} Shawn D'silva
-         </p>
-
-    </nav>
-
-  </div>
+</div>
 </div>

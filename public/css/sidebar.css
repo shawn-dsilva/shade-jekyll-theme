@@ -1,13 +1,14 @@
-
 html {
-  font-family: "Source Sans Pro" sans-serif;
+  font-family: "Source Sans Pro"sans-serif;
   font-weight: 300;
 }
+
 @media (min-width: 48em) {
   html {
     font-size: 16px;
   }
 }
+
 @media (min-width: 58em) {
   html {
     font-size: 20px;
@@ -21,71 +22,141 @@ html {
  * Flexible banner for housing site name, intro, and "footer" content. Starts
  * out above content in mobile and later moves to the side with wider viewports.
  */
-
 .sidebar {
-  position: fixed; /* Set the navbar to fixed position */
-  top: 0; /* Position the navbar at the top of the page */
-  width: 100%; /* Full width */
+  position: fixed;
+  /* Set the navbar to fixed position */
+  top: 0;
+  /* Position the navbar at the top of the page */
+  width: 100%;
+  /* Full width */
   padding: 0.5rem 0.5rem;
-  color: rgba(255,255,255,.5);
+  color: rgba(255, 255, 255, .5);
   background-color: #202020;
 }
 
 .title {
-  margin:0;
- }
+  margin: 0;
+}
 
 .lead {
   /*display: none;*/
   text-align: center;
-  padding-left: 4rem;     
+  padding-left: 4rem;
   padding-right: 4rem;
-  margin:0;
+  margin: 0;
 }
 
 
 .copyright {
-display:none;
+  display: none;
 }
+
+.collapsible-menu label {
+  font-family: 'Sedgwick Ave Display', cursive;
+  font-size: 32px;
+  display: block;
+  cursor: pointer;
+  background: url(/menu.png) no-repeat right center;
+}
+
+input#menu {
+  display: none;
+}
+
+input:checked+label {
+  background-image: url(/close.png);
+}
+
+.menu-content {
+  max-height: 0;
+  overflow: hidden;
+  /*padding: 0 0 0 50px;*/
+}
+
+input:checked~.menu-content {
+  max-height: 100%;
+}
+
 
 /* Sidebar links */
 .sidebar a {
   color: #fff;
 }
 
-/* About section */
-.sidebar-about h1 {
+/* Name/Title of website*/
+.title {
+  display: none;
+}
+
+.title-navbar {
   color: #fff;
   text-align: center;
   margin-top: 0;
-  font-size: 1.5rem;
+  font-size: 2rem;
+  padding:0;
+  margin:0;
 }
 
 /* Sidebar nav */
 .sidebar-nav {
-   margin:0;
-   padding:0;
-   height:0;
- }
- 
+  margin: 0;
+  padding: 0;
+}
+
 .sidebar-nav-item {
-  margin-right: 5px;
+  display: block;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 15px;
 }
-.socials {
-  display:none;
+
+.collapsible-menu label {
+  font-family: 'Sedgwick Ave Display', cursive;
+  font-size: 32px;
+  display: block;
+  cursor: pointer;
+  background: url(/menu.png) no-repeat right center;
 }
+
+input#menu {
+  display: none;
+}
+
+input:checked+label {
+  background-image: url(/close.png);
+}
+
+.menu-content {
+  max-height: 0;
+  overflow: hidden;
+  /*padding: 0 0 0 50px;*/
+}
+
+input:checked~.menu-content {
+  max-height: 100%;
+}
+
+
+
 .fa {
   margin-left: 10px;
 }
 
 .icons {
-font-size: 20px;
-float:right;
-}
-.sidebar-nav-item.active {
-  font-weight: bold;
+  font-size: 30px;
+  text-align: center;
 }
 
+.socials {
+  display: inline;
+  font-size: 15px;
+  font-family: monospace;
+}
+
+.sidebar-nav-item.active {
+  font-weight: bold;
+  text-decoration: underline;
+}
 
 @media (min-width: 48em) {
   .sidebar {
@@ -97,24 +168,30 @@ float:right;
     text-align: left;
   }
 
-  .sidebar-about h1 {
+  .title {
+    display: block;
     text-align: left;
     text-rendering: optimizeLegibility;
     color: #fff;
     margin-top: 0;
-    font-size: 3.8rem;
-  }
-  .container {
-    max-width: 38rem;
-    padding-left:  1rem;
-    padding-right: 1rem;
-    margin-top:0;
-    margin-left: 0;
-    margin-right: 0;
-   
+    font-size: 4rem;
   }
 
-  
+  .title-navbar {
+    display:none;
+  }
+
+  .container {
+    max-width: 38rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin-top: 0;
+    margin-left: 0;
+    margin-right: 0;
+
+  }
+
+
 
   .fa {
     padding-right: 10px;
@@ -123,27 +200,30 @@ float:right;
   }
 
   .icons {
-    font-size: 25px;
-    float:none;
+    font-size: 30px;
+    text-align: left;
   }
 
-  .sidebar-about p {
+  .lead{
     font-size: 1.1rem;
   }
+
   .sidebar-nav-item {
     font-family: 'Source Sans Pro';
     display: block;
     margin-left: 0;
     margin-top: 10px;
     margin-bottom: 15px;
+    text-align:left;
   }
-  
-  .socials{
+
+  .socials {
     display: inline;
-    font-size:15px;
+    font-size: 15px;
     font-family: monospace;
   }
-  .lead {  
+
+  .lead {
     display: block;
     font-weight: 300;
     margin-left: 0;
@@ -153,18 +233,40 @@ float:right;
     text-align: left;
 
   }
-  
+
   .copyright {
     display: block;
     font-size: 1rem;
   }
 
 
-.post-title {
-  font-size: 1.8rem;
-  text-align: center; 
- }
+  .post-title {
+    font-size: 1.8rem;
+    text-align: center;
+  }
+
+  .collapsible-menu label {
+    all: unset;
+  }
+
+  input#menu {
+    all: unset;
+  }
+
+  input:checked+label {
+    all: unset;
+  }
+
+  .menu-content {
+    all: unset;
+  }
+
+  input:checked~.menu-content {
+    all: unset;
+  }
+
 }
+
 /* Sticky sidebar
  *
  * Add the `sidebar-sticky` class to the sidebar's container to affix it the
@@ -174,9 +276,9 @@ float:right;
 @media (min-width: 48em) {
   .sidebar-sticky {
     position: absolute;
-    right:  1rem;
+    right: 1rem;
     bottom: 1rem;
-    left:   1rem;
+    left: 1rem;
   }
 }
 
@@ -188,13 +290,15 @@ float:right;
  */
 
 .content {
-  padding-top:    12rem;
+  padding-top: 4rem;
   padding-bottom: 4rem;
   padding-left: 1rem;
   padding-right: 1rem;
 }
 
-@media (min-width: 48em) {   /*1366*768 minimum width*/
+@media (min-width: 48em) {
+
+  /*1366*768 minimum width*/
   .content {
     padding-top: 2rem;
     max-width: 40rem;
@@ -204,7 +308,9 @@ float:right;
 }
 
 
-@media (min-width: 58em) {   /*1920*1080 minimum width*/
+@media (min-width: 58em) {
+
+  /*1920*1080 minimum width*/
   .content {
     padding-top: 2rem;
     max-width: 55rem;
@@ -213,12 +319,11 @@ float:right;
   }
 }
 
-@media (min-width: 64em) { /* x 1024 minimum width*/
+@media (min-width: 64em) {
+
+  /* x 1024 minimum width*/
   .content {
     margin-left: 20rem;
     margin-right: 4rem;
   }
 }
-
-
-

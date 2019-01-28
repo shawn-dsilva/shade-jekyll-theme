@@ -1,6 +1,6 @@
 html {
-  font-family: "Source Sans Pro"sans-serif;
-  font-weight: 300;
+  font-family: "Nunito", sans-serif;
+  font-weight: 400;
 }
 
 @media (min-width: 48em) {
@@ -41,6 +41,7 @@ html {
 .lead {
   /*display: none;*/
   text-align: center;
+  padding-top: 0.5rem;
   padding-left: 4rem;
   padding-right: 4rem;
   margin: 0;
@@ -69,7 +70,6 @@ input:checked+label {
 .menu-content {
   max-height: 0;
   overflow: hidden;
-  /*padding: 0 0 0 50px;*/
 }
 
 input:checked~.menu-content {
@@ -96,6 +96,11 @@ input:checked~.menu-content {
   margin:0;
 }
 
+.title-navbar a {
+  font-weight: bold;
+  font-family: 'Roboto', sans-serif;
+}
+
 /* Sidebar nav */
 .sidebar-nav {
   margin: 0;
@@ -108,33 +113,6 @@ input:checked~.menu-content {
   margin-top: 10px;
   margin-bottom: 15px;
 }
-
-.collapsible-menu label {
-  font-size: 32px;
-  display: block;
-  cursor: pointer;
-  background: url(/menu.png) no-repeat right center;
-}
-
-input#menu {
-  display: none;
-}
-
-input:checked+label {
-  background-image: url(/close.png);
-}
-
-.menu-content {
-  max-height: 0;
-  overflow: hidden;
-  /*padding: 0 0 0 50px;*/
-}
-
-input:checked~.menu-content {
-  max-height: 100%;
-}
-
-
 
 .fa {
   margin-left: 10px;
@@ -169,12 +147,15 @@ input:checked~.menu-content {
   .title {
     display: block;
     text-align: left;
-    text-rendering: optimizeLegibility;
     color: #fff;
     margin-top: 0;
     font-size: 4rem;
   }
 
+  .title a {
+    font-weight: 400;
+    font-family: 'Roboto', sans-serif;
+  }
   .title-navbar {
     display:none;
   }
@@ -206,7 +187,7 @@ input:checked~.menu-content {
   }
 
   .sidebar-nav-item {
-    font-family: 'Source Sans Pro';
+    font-family: 'Nunito', sans-serif;
     display: block;
     margin-left: 0;
     margin-top: 10px;
@@ -287,7 +268,7 @@ input:checked~.menu-content {
  */
 
 .content {
-  padding-top: 4rem;
+  padding-top: 6rem;
   padding-bottom: 4rem;
   padding-left: 1rem;
   padding-right: 1rem;
@@ -297,7 +278,7 @@ input:checked~.menu-content {
 
   /*1366*768 minimum width*/
   .content {
-    padding-top: 2rem;
+    padding-top: 4rem;
     max-width: 40rem;
     margin-left: 20rem;
     margin-right: 2rem;
@@ -309,7 +290,7 @@ input:checked~.menu-content {
 
   /*1920*1080 minimum width*/
   .content {
-    padding-top: 2rem;
+    padding-top: 4rem;
     max-width: 55rem;
     margin-left: 20rem;
     margin-right: 4rem;

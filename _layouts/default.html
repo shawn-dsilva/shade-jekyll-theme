@@ -7,18 +7,7 @@
 
     {% include sidebar.html %}
 
-    <script>
-        if (document.documentElement.clientWidth < 900) {
-        document.addEventListener("scroll", function() {
-            if (window.pageYOffset > 200) {
-              document.getElementById('lead').style.display = "none";
-            }
-            else {
-              document.getElementById('lead').style.display = "block";
-            }
-      });
-      }
-      </script>
+    
     <div class="content container">
       {{ content }}
     </div>

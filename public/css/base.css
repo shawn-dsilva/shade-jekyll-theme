@@ -9,8 +9,8 @@
  
  body {
   color: var(--main-para-color);
-  font-family: "Source Sans Pro";
-  font-weight: 300;
+  font-family: "Nunito";
+  font-weight: 400;
   font-size: 18px;
   line-height: 1.65;
   margin: 0;
@@ -26,12 +26,12 @@ a {
 }
 
  b, strong, th {
-  font-weight: 400;
+  font-weight: 700;
   color: var(--main-heading-color);
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-weight: 400;
+  font-weight: 700;
   margin-bottom: .5rem;
   line-height: 1.25;
   color: var(--main-heading-color);
@@ -59,7 +59,7 @@ h4, h5, h6 {
 
 
 .hr-posts {
-  font-family: Source Sans Pro;
+  font-family: Nunito;
   text-align: center; 
   line-height: 1px;
   height: 1px; 
@@ -197,8 +197,9 @@ img {
 
 
 .latest-posts {
+  font-family: 'Roboto', sans-serif;
   font-size: 2rem;
-  font-weight: 400;
+  font-weight: 700;
   color:#282c34;
   padding-bottom: 1rem;
 }
@@ -219,18 +220,23 @@ img {
 /* Blog post or page title */
 /*.page-title,*/
 .page-title {
+  font-family: 'Roboto', sans-serif;
   color: #282c34;
+  font-size: 2rem;
 }
 
 /* Post title for a post and links to post on homepage */
 
 .post-title {
+  color: #282c34;
  text-align: center; 
- font-size: 1.5rem;
+ font-size: 2rem;
 }
 
-.post-title-link  {
-  color: var(--main-para-color);
+.post-title-link a {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  color: var(--main-link-color);
   font-size: 1.5rem;
 }
 
@@ -305,6 +311,11 @@ img {
   border-color: var(--main-link-color);
 }
 
+.archive a {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 1.5rem;
+}
 
 /* Related posts */
 .related {
@@ -341,7 +352,7 @@ img {
   overflow: hidden; /* clearfix */
   margin-left: -1rem;
   margin-right: -1rem;
-  font-family: "Source Sans Pro" sans-serif;
+  font-family: "Nunito" sans-serif;
   color: #ccc;
   text-align: center;
 }

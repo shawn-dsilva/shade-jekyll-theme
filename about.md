@@ -4,7 +4,7 @@ title: About Me
 ---
 
 
-
+<br>
 I am a Full Stack Javascript developer,Embedded Systems entusiast and Electronics hobbyist ,the purpose of this blog is to document my projects and other posts related to the <b>Web Development</b>,<b>embedded Linux</b>,<b>RTOSes</b> and  **firmware/bare-metal development**.
 
 I enjoy writing <b>C</b>  code and reading stuff related to <b>Computer Architecture</b> and <b>Digital Electronics</b>

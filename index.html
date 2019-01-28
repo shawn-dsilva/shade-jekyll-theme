@@ -15,7 +15,7 @@ title: Home
 
     <span class="post-date-homepage">{{ post.date | date: "%B %-d, %Y" }}</span>
 
-    {{ post.excerpt | truncate:380 }}
+    {{ post.excerpt | truncate:250  | strip_html }}
     <br>
     <a href="{{post.url}}" class="read-more">Continue Reading &nbsp; » </a>
 

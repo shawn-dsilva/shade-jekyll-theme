@@ -197,7 +197,6 @@ img {
 
 
 .latest-posts {
-  font-family: 'Roboto', sans-serif;
   font-size: 2rem;
   font-weight: 700;
   color:#282c34;
@@ -234,7 +233,6 @@ img {
 }
 
 .post-title-link a {
-  font-family: 'Roboto', sans-serif;
   font-weight: 400;
   color: var(--main-link-color);
   font-size: 1.5rem;

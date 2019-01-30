@@ -9,7 +9,7 @@
  
  body {
   color: var(--main-para-color);
-  font-family: "Poppins";
+  font-family: "Open Sans";
   font-weight: 400;
   font-size: 18px;
   line-height: 1.65;
@@ -59,7 +59,7 @@ h4, h5, h6 {
 
 
 .hr-posts {
-  font-family: Poppins;
+  font-family: Open Sans;
   text-align: center; 
   line-height: 1px;
   height: 1px; 
@@ -82,14 +82,14 @@ h4, h5, h6 {
 
 
 code {
-  font-family: "Poppins";
+  font-family: "Open Sans";
   background-color: rgba(148, 148, 148, 0.12);
   color: var(--main-light-color);
   border-radius: 2px;
-  font-size: 0.8em;
+  font-size: 15px;
   margin: 0 0.2em;
   padding: 0.4em 0.4em;
-  font-weight: 500;
+  font-weight: 400;
 }
 
 pre {
@@ -221,7 +221,7 @@ img {
 /* Blog post or page title */
 /*.page-title,*/
 .page-title {
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   color: #282c34;
   font-size: 2rem;
 }
@@ -235,7 +235,7 @@ img {
 }
 
 .post-title-link a {
-  font-weight: 500;
+  font-weight: 600;
   color: var(--main-link-color);
   font-size: 1.5rem;
 }
@@ -312,8 +312,8 @@ img {
 }
 
 .archive a {
-  font-family: 'Poppins', sans-serif;
-  font-weight: 400;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
   font-size: 1.5rem;
 }
 
@@ -352,7 +352,7 @@ img {
   overflow: hidden; /* clearfix */
   margin-left: -1rem;
   margin-right: -1rem;
-  font-family: "Poppins" sans-serif;
+  font-family: "Open Sans" sans-serif;
   color: #ccc;
   text-align: center;
 }

@@ -9,7 +9,7 @@
  
  body {
   color: var(--main-para-color);
-  font-family: "Nunito";
+  font-family: "Poppins";
   font-weight: 400;
   font-size: 18px;
   line-height: 1.65;
@@ -59,7 +59,7 @@ h4, h5, h6 {
 
 
 .hr-posts {
-  font-family: Nunito;
+  font-family: Poppins;
   text-align: center; 
   line-height: 1px;
   height: 1px; 
@@ -74,6 +74,7 @@ h4, h5, h6 {
   content: "< / >"; 
   color: var(--main-para-color);
   font-weight: 400;
+  font-family: sans-serif;
   display: inline;
   background-color: white; 
   padding: 0 0.5em; 
@@ -81,13 +82,14 @@ h4, h5, h6 {
 
 
 code {
+  font-family: "Poppins";
   background-color: rgba(148, 148, 148, 0.12);
   color: var(--main-light-color);
   border-radius: 2px;
   font-size: 0.8em;
   margin: 0 0.2em;
   padding: 0.4em 0.4em;
-  font-weight: 200;
+  font-weight: 500;
 }
 
 pre {
@@ -219,7 +221,7 @@ img {
 /* Blog post or page title */
 /*.page-title,*/
 .page-title {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Poppins', sans-serif;
   color: #282c34;
   font-size: 2rem;
 }
@@ -229,11 +231,11 @@ img {
 .post-title {
   color: #282c34;
  text-align: center; 
- font-size: 2rem;
+ font-size: 1.75rem;
 }
 
 .post-title-link a {
-  font-weight: 400;
+  font-weight: 500;
   color: var(--main-link-color);
   font-size: 1.5rem;
 }
@@ -310,7 +312,7 @@ img {
 }
 
 .archive a {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-weight: 400;
   font-size: 1.5rem;
 }
@@ -350,7 +352,7 @@ img {
   overflow: hidden; /* clearfix */
   margin-left: -1rem;
   margin-right: -1rem;
-  font-family: "Nunito" sans-serif;
+  font-family: "Poppins" sans-serif;
   color: #ccc;
   text-align: center;
 }

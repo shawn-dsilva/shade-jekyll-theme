@@ -1,16 +1,18 @@
 <div class="sidebar">
   <div class="container">
-      <h1 class="title">
-        <a href="{{ site.baseurl }}">{{site.title }}</a>
-      </h1>
+    <h1 class="title">
+      <a href="{{ site.baseurl }}">{{site.title }}</a>
+    </h1>
 
     <div class="collapsible-menu">
-        <input type="checkbox" id="menu">
-        <label for="menu"> <h1 class="title-navbar">
-            <a href="{{ site.baseurl }}">{{site.title }}</a>
-          </h1></label>
-        <div class="menu-content">
-          <p class="lead unhidden">{{ site.description }}</p>
+      <input type="checkbox" id="menu">
+      <label for="menu">
+        <h1 class="title-navbar">
+          <a href="{{ site.baseurl }}">{{site.title }}</a>
+        </h1>
+      </label>
+      <div class="menu-content">
+        <p class="lead unhidden">{{ site.description }}</p>
 
         <nav class="sidebar-nav">
           <!--  <a class="sidebar-nav-item{% if page.url == site.baseurl %} active{% endif %}" href="{{ site.baseurl }}">Home</a> -->
@@ -31,23 +33,27 @@
 
 
           <div class="icons">
-            <a class="sidebar-nav-item fa fa-github" href="https://{{ site.github.repo }}"> <span class="socials">{{ site.github.repo }}</span>
+            <a class="sidebar-nav-item fa fa-github" href="https://{{ site.github.repo }}"> <span class="socials">{{
+                site.github.repo }}</span>
             </a>
-            <a class="sidebar-nav-item fa fa-envelope-o" href="mailto:{{ site.email }}"> 
+            <a class="sidebar-nav-item fa fa-envelope-o" href="mailto:{{ site.email }}">
               <span class="socials"> {{site.email}} </span>
-            </a>            
+            </a>
             <a class="sidebar-nav-item fa fa-twitter" href="https://{{ site.twitter }}"> <span class="socials">{{site.twitter}}</span>
             </a>
           </div>
+
+
+          <p class="copyright">
+            Generated with <a href="https://jekyllrb.com">Jekyll</a>, using my <a href="https://github.com/shawn-dsilva/shade-jekyll-theme">Shade</a>
+            theme.<br>
+            &copy; {{ site.time | date: '%Y' }} Shawn D'silva, All rights reserved.
+          </p>
       </div>
     </div>
+  </div>
 
-</div>
-<p class="copyright">
-  &copy; {{ site.time | date: '%Y' }} Shawn D'silva
-</p>
-
-</nav>
+  </nav>
 
 </div>
 </div>

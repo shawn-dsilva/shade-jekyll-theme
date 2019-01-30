@@ -49,7 +49,9 @@ html {
 
 
 .copyright {
-  display: none;
+  padding-top: 1rem;
+  text-align: center;
+  font-size: 1rem;
 }
 
 .collapsible-menu label {
@@ -215,6 +217,10 @@ input:checked~.menu-content {
   .copyright {
     display: block;
     font-size: 1rem;
+    font-weight: 300;
+    text-align: left;
+    position: absolute;
+    bottom:0;
   }
 
 

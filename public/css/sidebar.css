@@ -30,7 +30,7 @@ html {
   width: 100%;
   /* Full width */
   padding: 0.5rem 0.5rem;
-  color: rgba(255, 255, 255, .5);
+  color: rgba(255, 255, 255, 0.644);
   background-color: #202020;
 }
 
@@ -51,7 +51,7 @@ html {
 .copyright {
   padding-top: 1rem;
   text-align: center;
-  font-size: 1rem;
+  font-size: 0.8rem;
 }
 
 .collapsible-menu label {
@@ -111,9 +111,14 @@ input:checked~.menu-content {
 
 .sidebar-nav-item {
   display: block;
-  text-align: center;
   margin-top: 10px;
   margin-bottom: 15px;
+}
+
+.center {
+margin:auto;
+width:33%;
+
 }
 
 .fa {
@@ -121,7 +126,7 @@ input:checked~.menu-content {
 }
 
 .icons {
-  font-size: 30px;
+  font-size: 25px;
   text-align: center;
 }
 
@@ -129,6 +134,7 @@ input:checked~.menu-content {
   display: inline;
   font-size: 15px;
   font-family: monospace;
+  font-weight: 400;
 }
 
 .sidebar-nav-item.active {
@@ -180,7 +186,7 @@ input:checked~.menu-content {
   }
 
   .icons {
-    font-size: 30px;
+    font-size: 25px;
     text-align: left;
   }
 
@@ -197,10 +203,17 @@ input:checked~.menu-content {
     text-align:left;
   }
 
+  .center {
+    padding-left: 0;
+    padding-right: 0;
+    width:auto;
+  }
+
   .socials {
     display: inline;
     font-size: 15px;
     font-family: monospace;
+    font-weight: 400;
   }
 
   .lead {
@@ -216,7 +229,7 @@ input:checked~.menu-content {
 
   .copyright {
     display: block;
-    font-size: 1rem;
+    font-size: 0.7rem;
     font-weight: 300;
     text-align: left;
     position: absolute;

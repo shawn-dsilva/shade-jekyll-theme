@@ -29,8 +29,8 @@
           <a class="sidebar-nav-item {% if page.url == node.url %} active{% endif %} " href="{{ node.url }}">
             <i class="icons
             {% if node.title == 'About Me' %} fas fa-info-circle {% endif %}
-            {% if node.title == 'Archive' %} fas fa-archive {% endif %}
-            {% if node.title == 'Projects' %} fas fa-drafting-compass {% endif %}">
+            {% if node.title == 'Blog Archive' %} fas fa-pencil-alt {% endif %}
+            {% if node.title == 'My Projects' %} fas fa-drafting-compass {% endif %}">
             </i>      &nbsp;{{node.title}}</a>
           </div>
           {% endif %}

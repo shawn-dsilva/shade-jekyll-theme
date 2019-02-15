@@ -39,4 +39,4 @@ linkedin: linkedin.com/yourprofile
   
 plugins_dir: [jekyll-paginate, jekyll-gist]
 
-gems: [jekyll-paginate]
+plugins: [jekyll-paginate]

@@ -11,7 +11,7 @@
   color: var(--main-para-color);
   font-family: "Open Sans";
   font-weight: 400;
-  font-size: 18px;
+  font-size: 17px;
   line-height: 1.65;
   margin: 0;
   -webkit-font-smoothing: antialiased;
@@ -67,7 +67,7 @@ figcaption {
   height: 1px; 
   font-size: 2rem; 
   border-color:var(--main-para-color);
-  margin: 3rem 1rem;
+  margin: 2rem 1rem;
   overflow: visible;
   border-style:solid;
 }
@@ -233,7 +233,7 @@ img {
 .post-title {
   color: #282c34;
  text-align: center; 
- font-size: 1.75rem;
+ font-size: 2.2rem;
 }
 
 .post-title-link a {
@@ -252,8 +252,8 @@ img {
 .post-date {
   text-align: center;
   display: block;
-  margin-top: 0.5rem;
-  margin-bottom: 1.2rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
   color: var(--main-para-color);
   font-weight: 400;
 }

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting started with the TM4C Launchpad on Linux
+title: Getting started with the TM4C Launchpad on a Linux System
 excerpt_separator: <!--more-->
 ---
 

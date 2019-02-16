@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Writing the Startup code and Linker Script for the TM4C from scratch
+title: Writing the Startup code and Linker Script for the TM4C ARM Microcontroller
 excerpt_separator: <!--more-->
 
 ---

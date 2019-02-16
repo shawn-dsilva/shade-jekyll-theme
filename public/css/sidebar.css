@@ -96,7 +96,7 @@ input:checked~.menu-content {
   color: #fff;
   text-align: center;
   margin-top: 0;
-  font-size: 2rem;
+  font-size: 1.2em;
   padding:0;
   margin:0;
 
@@ -151,7 +151,7 @@ width:33%;
 }
 
 .post-title {
-  font-size: 1.5rem;
+  font-size: 2em;
   text-align: center;
 }
 
@@ -170,7 +170,7 @@ width:33%;
     text-align: left;
     color: #fff;
     margin-top: 0;
-    font-size: 4rem;
+    font-size: 5em;
   }
 
   .title a {
@@ -250,7 +250,7 @@ width:33%;
 
 
   .post-title {
-    font-size: 1.75rem;
+    font-size: 3em;
     text-align: center;
   }
 
@@ -299,7 +299,7 @@ width:33%;
  */
 
 .content {
-  padding-top: 4rem;
+  padding-top: 5rem;
   padding-bottom: 2rem;
   padding-left: 1rem;
   padding-right: 1rem;

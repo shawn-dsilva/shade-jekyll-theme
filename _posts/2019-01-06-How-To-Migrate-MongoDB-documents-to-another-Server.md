@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 'How to Migrate or Copy MongoDB documents to another Server or Computer'
+title: 'How to Migrate or Copy MongoDB documents to another Server'
 excerpt_separator: <!--more-->
 ---
 

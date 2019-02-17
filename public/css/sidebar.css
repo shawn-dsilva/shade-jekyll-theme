@@ -153,9 +153,13 @@ width:33%;
 .post-title {
   font-size: 2em;
   text-align: center;
+  font-weight: 600;
 }
 
 @media (min-width: 48em) {
+  body {
+    font-size: 18px;
+  }
   .sidebar {
     position: fixed;
     top: 0;
@@ -170,7 +174,7 @@ width:33%;
     text-align: left;
     color: #fff;
     margin-top: 0;
-    font-size: 5em;
+    font-size: 4rem;
   }
 
   .title a {
@@ -299,7 +303,7 @@ width:33%;
  */
 
 .content {
-  padding-top: 5rem;
+  padding-top: 5.5rem;
   padding-bottom: 2rem;
   padding-left: 1rem;
   padding-right: 1rem;

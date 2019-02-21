@@ -1,11 +1,11 @@
 html {
-  font-family: "Open Sans", sans-serif;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-weight: 400;
 }
 
 @media (min-width: 48em) {
   html {
-    font-size: 16px;
+    font-size: 15px;
   }
 }
 
@@ -96,7 +96,7 @@ input:checked~.menu-content {
   color: #fff;
   text-align: center;
   margin-top: 0;
-  font-size: 1.2em;
+  font-size: 2rem;
   padding:0;
   margin:0;
 
@@ -104,7 +104,7 @@ input:checked~.menu-content {
 
 .title-navbar a {
   font-weight: 700;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
 /* Sidebar nav */
@@ -151,8 +151,8 @@ width:33%;
 }
 
 .post-title {
-  font-size: 2em;
-  text-align: center;
+  font-size: 1.8em;
+  text-align: left;
   font-weight: 600;
 }
 
@@ -179,7 +179,7 @@ width:33%;
 
   .title a {
     font-weight: 600;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
   }
   .title-navbar {
     display:none;
@@ -211,7 +211,7 @@ width:33%;
   }
 
   .sidebar-nav-item {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
     display: block;
     margin-left: 0;
     margin-top: 10px;
@@ -255,7 +255,7 @@ width:33%;
 
   .post-title {
     font-size: 3em;
-    text-align: center;
+    text-align: left;
   }
 
   .collapsible-menu label {
@@ -303,7 +303,7 @@ width:33%;
  */
 
 .content {
-  padding-top: 5.5rem;
+  padding-top: 5rem;
   padding-bottom: 2rem;
   padding-left: 1rem;
   padding-right: 1rem;
@@ -315,7 +315,7 @@ width:33%;
   .content {
     padding-top: 4rem;
     max-width: 40rem;
-    margin-left: 20rem;
+    margin-left: 18rem;
     margin-right: 2rem;
   }
 }
@@ -326,8 +326,8 @@ width:33%;
   /*1920*1080 minimum width*/
   .content {
     padding-top: 4rem;
-    max-width: 55rem;
-    margin-left: 20rem;
+    max-width: 50rem;
+    margin-left: 18rem;
     margin-right: 4rem;
   }
 }
@@ -336,7 +336,7 @@ width:33%;
 
   /* x 1024 minimum width*/
   .content {
-    margin-left: 20rem;
-    margin-right: 4rem;
+    margin-left: 18rem;
+    margin-right: 2rem;
   }
 }

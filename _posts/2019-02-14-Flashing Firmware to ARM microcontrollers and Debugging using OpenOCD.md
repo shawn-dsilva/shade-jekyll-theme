@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Using OpenOCD to Flash Firmware to ARM microcontrollers
+title: Using OpenOCD to Flash Firmware to ARM  microcontrollers
 excerpt_separator: <!--more-->
 ---
 

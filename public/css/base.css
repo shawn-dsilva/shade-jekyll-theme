@@ -9,9 +9,8 @@
  
  body {
   color: var(--main-para-color);
-  font-family: "Open Sans";
+  font-family: 'Helvetica Neue', Helvetica, Arial;
   font-weight: 400;
-  font-size: 16px;
   line-height: 1.65;
   margin: 0;
   -webkit-font-smoothing: antialiased;
@@ -84,7 +83,7 @@ figcaption {
 
 
 code {
-  font-family: "Open Sans";
+  font-family: 'Helvetica Neue', Helvetica, Arial;
   background-color: rgba(148, 148, 148, 0.12);
   color: var(--main-light-color);
   border-radius: 2px;
@@ -223,7 +222,7 @@ img {
 /* Blog post or page title */
 /*.page-title,*/
 .page-title {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
   color: #282c34;
   font-size: 2rem;
 }
@@ -250,12 +249,12 @@ img {
 /* Post Dates for blog post and homepage */
 
 .post-date {
-  text-align: center;
+  text-align: left;
   display: block;
   margin-top: 1rem;
   margin-bottom: 1rem;
-  color: var(--main-para-color);
-  font-weight: 400;
+  color: var(--main-light-color);
+  font-weight: bold;
 }
 
 .post-date-homepage {
@@ -263,7 +262,7 @@ img {
   display: block;
   margin-top: 0.5rem;
   margin-bottom: 1.2rem;
-  color: var(--main-para-color);
+  color: var(--main-light-color);
   font-weight: 400;
 }
 
@@ -314,7 +313,7 @@ img {
 }
 
 .archive a {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-weight: 600;
   font-size: 1.5rem;
 }
@@ -354,7 +353,7 @@ img {
   overflow: hidden; /* clearfix */
   margin-left: -1rem;
   margin-right: -1rem;
-  font-family: "Open Sans" sans-serif;
+  font-family: 'Helvetica Neue', Helvetica, Arial sans-serif;
   color: #ccc;
   text-align: center;
 }

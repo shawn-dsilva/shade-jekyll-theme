@@ -30,6 +30,7 @@ a {
 }
 
 h1, h2, h3, h4, h5, h6 {
+  font-family: monospace;
   font-weight: 700;
   margin-bottom: .5rem;
   line-height: 1.25;
@@ -37,21 +38,21 @@ h1, h2, h3, h4, h5, h6 {
   text-rendering: optimizeLegibility;
 }
 h1 {
-  font-size: 1.5rem;
+  font-size: 1.8rem;
 }
 h2 {
-  margin-top: 1rem;
-  font-size: 1.25rem;
+  margin-top: 1.5rem;
+  font-size: 1.5rem;
 }
 h3 {
   /*margin-top: 1rem;*/
-  font-size: 1rem;
+  font-size: 1.5rem;
   margin-bottom: 0.5em;
   margin-top:0;
 
 }
 h4, h5, h6 {
-  margin-top: 1rem;
+  margin-top: 1.5rem;
   font-size: 1rem;
 }
 
@@ -60,7 +61,7 @@ figcaption {
 }
 
 .hr-posts {
-  font-family: Open Sans;
+  font-family: monospace;
   text-align: center; 
   line-height: 1px;
   height: 1px; 
@@ -83,7 +84,7 @@ figcaption {
 
 
 code {
-  font-family: 'Helvetica Neue', Helvetica, Arial;
+  font-family: monospace;
   background-color: rgba(148, 148, 148, 0.12);
   color: var(--main-light-color);
   border-radius: 2px;
@@ -91,6 +92,7 @@ code {
   margin: 0 0.2em;
   padding: 0.1em 0.3em;
   font-weight: 400;
+
 }
 
 pre {
@@ -100,6 +102,7 @@ pre {
   font-size: 0.7em;
   padding: 0.8em 1.2em;
   white-space: pre-wrap;
+  font-family: 'Inconsolata', monospace;
 }
 
 pre code {
@@ -108,6 +111,8 @@ pre code {
   font-size: initial;
   margin: initial;
   padding: initial;
+  font-family: 'Inconsolata', monospace;
+
 }
 
 table {
@@ -200,10 +205,10 @@ img {
 
 
 .latest-posts {
-  font-size: 2rem;
+  font-size: 2.5rem;
   font-weight: 700;
   color:#282c34;
-  padding-bottom: 1rem;
+  margin:0;
 }
 
 
@@ -222,9 +227,10 @@ img {
 /* Blog post or page title */
 /*.page-title,*/
 .page-title {
-  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: monospace;
   color: #282c34;
-  font-size: 2rem;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
 }
 
 /* Post title for a post and links to post on homepage */
@@ -233,12 +239,14 @@ img {
   color: #282c34;
  text-align: center; 
  font-size: 2.2rem;
+ font-family:  monospace;
 }
 
 .post-title-link a {
   font-weight: 600;
   color: var(--main-link-color);
   font-size: 1.5rem;
+  font-family:  monospace;
 }
 
 .post-title-link a:hover,
@@ -263,7 +271,7 @@ img {
   margin-top: 0.5rem;
   margin-bottom: 1.2rem;
   color: var(--main-light-color);
-  font-weight: 400;
+  font-weight: bold;
 }
 
 .archive a:hover,

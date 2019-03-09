@@ -40,6 +40,7 @@ html {
 
 .lead {
   /*display: none;*/
+  font-family: 'Open Sans';
   text-align: center;
   padding-top: 1rem;
   padding-left: 2.5rem;
@@ -151,7 +152,7 @@ width:33%;
 }
 
 .post-title {
-  font-size: 1.8em;
+  font-size: 2.5em;
   text-align: left;
   font-weight: 600;
 }

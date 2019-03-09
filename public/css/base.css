@@ -227,7 +227,7 @@ img {
 /* Blog post or page title */
 /*.page-title,*/
 .page-title {
-  font-family: monospace;
+  font-family: 'Courier New', Courier, monospace;
   color: #282c34;
   font-size: 2.5rem;
   margin-bottom: 1rem;
@@ -238,15 +238,15 @@ img {
 .post-title {
   color: #282c34;
  text-align: center; 
- font-size: 2.2rem;
- font-family:  monospace;
+ font-size: 1.7rem;
+ font-family: 'Courier New', Courier, monospace;
 }
 
 .post-title-link a {
   font-weight: 600;
   color: var(--main-link-color);
-  font-size: 1.5rem;
-  font-family:  monospace;
+  font-size: 1.1rem;
+  font-family:  'Courier New', Courier, monospace;
 }
 
 .post-title-link a:hover,

@@ -157,6 +157,15 @@ width:33%;
   text-align: left;
 }
 
+
+.post-date {
+  font-size: 1.3rem;
+  }
+
+  .post-date-homepage {
+  font-size: 1.3rem;
+  }
+
 @media (min-width: 48em) {
   body {
     font-size: 18px;
@@ -278,6 +287,14 @@ width:33%;
     all: unset;
   }
 
+
+  .post-date {
+  font-size: 1rem;
+  }
+
+  .post-date-homepage {
+  font-size: 1rem;
+  }
 }
 
 /* Sticky sidebar

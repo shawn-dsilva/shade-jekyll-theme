@@ -4,13 +4,13 @@ html {
 }
 
 @media (min-width: 48em) {
-  html {
-    font-size: 15px;
+  p {
+    font-size: 20px;
   }
 }
 
 @media (min-width: 58em) {
-  html {
+  p {
     font-size: 20px;
   }
 }
@@ -153,17 +153,17 @@ width:33%;
 }
 
 .post-title {
-  font-size: 2em;
+  font-size: 2.25em;
   text-align: left;
 }
 
 
 .post-date {
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   }
 
   .post-date-homepage {
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   }
 
 @media (min-width: 48em) {

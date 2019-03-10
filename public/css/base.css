@@ -148,6 +148,7 @@ th, td {
 p {
   margin-top: 0;
   margin-bottom: 1rem;
+  font-size:18px;
 }
 
 
@@ -258,7 +259,7 @@ img {
 /* Post Dates for blog post and homepage */
 
 .post-date {
-  font-family: monospace;
+  font-family: 'Barlow', sans-serif;
   text-align: left;
   display: block;
   margin-top: 1rem;
@@ -268,7 +269,7 @@ img {
 }
 
 .post-date-homepage {
-  font-family: monospace;
+  font-family: 'Barlow', sans-serif;
   text-align: left;
   display: block;
   margin-top: 0.5rem;

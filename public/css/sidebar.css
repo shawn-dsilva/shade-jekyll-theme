@@ -154,7 +154,7 @@ width:33%;
 .post-title {
   font-size: 2em;
   text-align: left;
-  font-weight: 600;
+  font-weight: bold;
 }
 
 @media (min-width: 48em) {

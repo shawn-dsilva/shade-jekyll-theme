@@ -243,7 +243,7 @@ img {
 }
 
 .post-title-link a {
-  font-weight: 600;
+  font-weight: bold;
   color: var(--main-link-color);
   font-size: 1.5rem;
   font-family:  monospace;
@@ -257,6 +257,7 @@ img {
 /* Post Dates for blog post and homepage */
 
 .post-date {
+  font-family: monospace;
   text-align: left;
   display: block;
   margin-top: 1rem;
@@ -266,6 +267,7 @@ img {
 }
 
 .post-date-homepage {
+  font-family: monospace;
   text-align: left;
   display: block;
   margin-top: 0.5rem;

@@ -10,7 +10,7 @@ A simple jekyll theme suited for a personal website + blog, currently used for m
 for highlighting code blocks
 - code snippets using backticks have black text on grey background
 - Read More button added to home page posts,supports pagination, 5 post excrepts per page
-- Font-family changed site wide to Source Sans Pro, Header and bold tags use font weight of 400 instead of the default 600
+- Uses Barlow font family for text, and monospace for code snippets
 - Archives section, displays all blog posts by year, with only date and title, no excrepts
 - Projects section ( WIP )
 - Contacts/Socials now have text for the URL's or Profile names of said social networks/contacts along with icons.
@@ -60,21 +60,21 @@ for highlighting code blocks
 
 ## How it looks
 
-Desktop homepage 
+**Desktop homepage** 
 
-<img src="https://i.imgur.com/MDH3BzA.png">
+<img src="https://i.imgur.com/GS37d0e.png">
 
-Desktop Blog Post 
+**Desktop Blog Post**
 
-<img src="https://i.imgur.com/GyHADVT.png">
+<img src="https://imgur.com/wKfKymK.png">
 
-Mobile Homepage
+**Blog Post in Mobile View**
 
-<img src="https://i.imgur.com/SPbZrfv.png">
+<img src="https://imgur.com/qT8ebAx.png">
 
-Mobile view on scrolling( persistent top navbar )
+**Mobile view with Menu Open**
 
-<img src="https://i.imgur.com/Cp3x9uY.png">
+<img src="https://imgur.com/TJTORb6.png">
 
 ## Credits
 

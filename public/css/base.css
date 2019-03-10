@@ -9,7 +9,7 @@
  
  body {
   color: var(--main-para-color);
-  font-family: 'Helvetica Neue', Helvetica, Arial;
+  font-family: 'Barlow', sans-serif;
   font-weight: 400;
   line-height: 1.65;
   margin: 0;
@@ -30,7 +30,7 @@ a {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: monospace;
+  font-family: 'Barlow', sans-serif;
   font-weight: 700;
   margin-bottom: .5rem;
   line-height: 1.25;
@@ -209,6 +209,7 @@ img {
   font-weight: 700;
   color:#282c34;
   margin:0;
+  padding-bottom: 1rem;
 }
 
 
@@ -221,13 +222,13 @@ img {
 
 .page,
 .post {
-  margin-bottom: 4em;
+  margin-bottom: 2em;
 }
 
 /* Blog post or page title */
 /*.page-title,*/
 .page-title {
-  font-family: 'Courier New', Courier, monospace;
+  font-family: 'Barlow', sans-serif;
   color: #282c34;
   font-size: 2.5rem;
   margin-bottom: 1rem;
@@ -238,15 +239,15 @@ img {
 .post-title {
   color: #282c34;
  text-align: center; 
- font-size: 1.7rem;
- font-family: 'Courier New', Courier, monospace;
+ font-family: 'Barlow', sans-serif;
+ font-weight: 700;
 }
 
 .post-title-link a {
-  font-weight: bold;
+  font-weight: 600;
   color: var(--main-link-color);
-  font-size: 1.1rem;
-  font-family:  'Courier New', Courier, monospace;
+  font-size: 1.8rem;
+  font-family: 'Barlow', sans-serif;
 }
 
 .post-title-link a:hover,
@@ -308,7 +309,7 @@ img {
   -webkit-border-bottom-left-radius: 10px;    
   -webkit-border-left-radius: 10px;    
   font-size: 16px;
-  font-weight: 400;
+  font-weight: 500;
   margin: 16px 2px;
   cursor: pointer;
   border-style:solid;
@@ -323,7 +324,7 @@ img {
 }
 
 .archive a {
-  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: 'Barlow', sans-serif;
   font-weight: 600;
   font-size: 1.5rem;
 }

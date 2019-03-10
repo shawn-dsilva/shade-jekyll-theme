@@ -1,5 +1,5 @@
 html {
-  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family:'Barlow', sans-serif;
   font-weight: 400;
 }
 
@@ -40,11 +40,11 @@ html {
 
 .lead {
   /*display: none;*/
-  font-family: 'Open Sans';
+  font-family: 'Barlow', sans-serif;
   text-align: center;
   padding-top: 1rem;
-  padding-left: 2.5rem;
-  padding-right: 2.5rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
   padding-bottom: 1rem;
   font-size: 1.2rem;
   margin: 0;
@@ -105,7 +105,7 @@ input:checked~.menu-content {
 
 .title-navbar a {
   font-weight: 700;
-  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: 'Barlow', sans-serif;
 }
 
 /* Sidebar nav */
@@ -119,6 +119,7 @@ input:checked~.menu-content {
   margin-top: 10px;
   margin-bottom: 15px;
   text-align: center;
+  font-size: 20px;
 }
 
 /*.center {
@@ -152,9 +153,8 @@ width:33%;
 }
 
 .post-title {
-  font-size: 1.7em;
+  font-size: 2em;
   text-align: left;
-  font-weight: bold;
 }
 
 @media (min-width: 48em) {
@@ -175,12 +175,12 @@ width:33%;
     text-align: left;
     color: #fff;
     margin-top: 0;
-    font-size: 4rem;
+    font-size: 4.5rem;
   }
 
   .title a {
     font-weight: 600;
-    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-family: 'Barlow', sans-serif;
   }
   .title-navbar {
     display:none;
@@ -212,7 +212,6 @@ width:33%;
   }
 
   .sidebar-nav-item {
-    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
     display: block;
     margin-left: 0;
     margin-top: 10px;
@@ -247,7 +246,7 @@ width:33%;
   .copyright {
     display: block;
     font-size: 0.7rem;
-    font-weight: 300;
+    font-weight: 400;
     text-align: left;
     position: absolute;
     bottom:0;

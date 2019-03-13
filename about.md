@@ -3,10 +3,10 @@ layout: page
 title: About Me
 ---
 I am Shawn D’silva, a full stack developer using the versatility of JavaScript and an electronics hobbyist.
-
-The purpose of this website is to document my projects and other blog posts related to Web fevelopment, Embedded Linux, RTOSes, hobby Electronics and Microcontroller Firmware programming.
-
-I am fascinated about the low-level, inner workings of computers and modern electronics in general that are abstracted away from the average user, both hardware and firmware, and love reading material related to Computer Architecture and Digital Electronics
+<br>
+The purpose of this website is to document my projects and other blog posts related to Full Stack Web Development, Embedded Linux, Operating Systems, hobby Electronics and Microcontroller Firmware programming.
+<br>
+I am fascinated about the low-level, inner workings of processors and modern electronics in general that are abstracted away from the average user, both hardware and firmware, and love reading material related to Computer Architecture, Digital Electronics and Embedded Systems.
 {% comment %}
     # Skills
     ## Frameworks, Databases, Languages and other technologies
@@ -27,8 +27,8 @@ I am fascinated about the low-level, inner workings of computers and modern elec
     ## Embedded Systems related IDEs, Compilers, Electronics and other tools
     - Keil MDK & IAR EWM
     - GCC as the compiler,assembler,linker package and Make for the build system,and GDB for debugging
-    - EK-TM4C123GXL evaluation board by Texas Instruments,based around a ARM Cortex-M4F core microcontroller 
+    - EK-TM4C123GXL evaluation board by Texas Instruments,based around a ARM Cortex-M4F core microcontroller
 
 {% endcomment %}
 
-You can check out my <a href="/public/assets/resume/resume.pdf"> resume here </a>
+You can check out my  Resume as an <a href="/public/assets/resume/resume.html"> HTML web page </a> or a  <a href="/public/assets/resume/resume.pdf"> PDF</a>

@@ -7,7 +7,7 @@ permalink:        pretty
 
 # Setup
 title:            Shawn D'silva
-tagline: 'Programmer'
+tagline: 'Full Stack Develope & Tinkerer'
 description:      'Passionate about code, from Web Apps to Microcontroller Firmware and everything in between'
 
 
@@ -36,7 +36,7 @@ email:  shawn@shawndsilva.com
 youtube: youtube.com/yourname
 
 linkedin: linkedin.com/yourprofile
-  
+
 plugins_dir: [jekyll-paginate, jekyll-gist]
 
 plugins: [jekyll-paginate]

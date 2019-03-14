@@ -1,12 +1,12 @@
 
  :root {
-  --main-para-color: #1C1C1C; 
+  --main-para-color: #1C1C1C;
   --main-heading-color: #0A0A0A;
   --main-link-color:  #5376f4;
   --main-light-color: #3D3D3D;
 }
- 
- 
+
+
  body {
   color: var(--main-para-color);
   font-family: 'Barlow', sans-serif;
@@ -17,7 +17,7 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-a {  
+a {
   color: var(--main-link-color);
   font-weight: 400;
   text-decoration: inherit;
@@ -62,10 +62,10 @@ figcaption {
 
 .hr-posts {
   font-family: monospace;
-  text-align: center; 
+  text-align: center;
   line-height: 1px;
-  height: 1px; 
-  font-size: 2rem; 
+  height: 1px;
+  font-size: 2rem;
   border-color:var(--main-para-color);
   margin: 2rem 1rem;
   overflow: visible;
@@ -73,13 +73,13 @@ figcaption {
 }
 
 .hr-posts:after {
-  content: "< / >"; 
+  content: "< / >";
   color: var(--main-para-color);
   font-weight: 400;
   font-family: sans-serif;
   display: inline;
-  background-color: white; 
-  padding: 0 0.5em; 
+  background-color: white;
+  padding: 0 0.5em;
 }
 
 
@@ -194,14 +194,14 @@ img {
   padding-right: 1rem;
   margin-left: 0;
   margin-right: 0;
- 
+
 } */
 
 .container {
   max-width: 38rem;
   margin-left: 0;
   margin-right: 0;
- 
+
 }
 
 
@@ -239,7 +239,7 @@ img {
 
 .post-title {
   color: #282c34;
- text-align: center; 
+ text-align: center;
  font-family: 'Barlow', sans-serif;
  font-weight: 700;
 }
@@ -265,7 +265,7 @@ img {
   margin-top: 1rem;
   margin-bottom: 1rem;
   color: var(--main-light-color);
-  font-size: 1rem;
+  font-weight: 500;
 }
 
 .post-date-homepage {
@@ -275,7 +275,8 @@ img {
   margin-top: 0.5rem;
   margin-bottom: 1.2rem;
   color: var(--main-light-color);
-  font-size: 1rem;
+  font-weight: 500;
+
 }
 
 .archive a:hover,
@@ -305,10 +306,10 @@ img {
   border-top-right-radius: 10px;
   border-bottom-left-radius: 10px;
   border-top-left-radius: 10px;
-  -webkit-border-bottom-right-radius: 10px;    
-  -webkit-border-top-right-radius: 10px;    
-  -webkit-border-bottom-left-radius: 10px;    
-  -webkit-border-left-radius: 10px;    
+  -webkit-border-bottom-right-radius: 10px;
+  -webkit-border-top-right-radius: 10px;
+  -webkit-border-bottom-left-radius: 10px;
+  -webkit-border-left-radius: 10px;
   font-size: 16px;
   font-weight: 500;
   margin: 16px 2px;

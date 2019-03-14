@@ -289,11 +289,11 @@ width:33%;
 
 
   .post-date {
-  font-size: 1rem;
+  font-size: 1.25em;
   }
 
   .post-date-homepage {
-  font-size: 1rem;
+  font-size: 1.25em;
   }
 }
 
@@ -320,7 +320,7 @@ width:33%;
  */
 
 .content {
-  padding-top: 5rem;
+  padding-top: 3.5rem;
   padding-bottom: 2rem;
   padding-left: 1rem;
   padding-right: 1rem;
@@ -330,7 +330,7 @@ width:33%;
 
   /*1366*768 minimum width*/
   .content {
-    padding-top: 4rem;
+    padding-top: 2.5rem;
     max-width: 40rem;
     margin-left: 18rem;
     margin-right: 2rem;
@@ -342,7 +342,7 @@ width:33%;
 
   /*1920*1080 minimum width*/
   .content {
-    padding-top: 4rem;
+    padding-top: 2.5rem;
     max-width: 50rem;
     margin-left: 18rem;
     margin-right: 4rem;

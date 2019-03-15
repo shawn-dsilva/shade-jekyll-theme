@@ -1,17 +1,19 @@
 ---
 layout: post
 title: 'How to Migrate or Copy MongoDB documents to another Server'
+categories: [Systems Administration/ DevOps,]
+tags : [mongodb, database, linux]
 excerpt_separator: <!--more-->
 ---
 
 I recently installed Kubuntu 18.04 on my desktop PC, after doing a wipe-and-reinstall of my Windows 10 installation on the SSD.
 Altough most of my code is backed up either locally or on Github my MongoDB documents are not, because i never found it necessary.
 The current version of my chat app needs some filler data so as to test certain functionality, and so i decided to migrate MongoDB documents from my
-laptop to my Kubuntu install on the desktop, this will be accomplished through native MongoDB utilities for backup and restore, and Secure Copy or `scp` 
+laptop to my Kubuntu install on the desktop, this will be accomplished through native MongoDB utilities for backup and restore, and Secure Copy or `scp`
 to copy files from Laptop to Desktop over the network through SSH
 
-## Setup 
-- The Receiver PC running `openssh-server` , installable on Ubuntu/Debian based systems by 
+## Setup
+- The Receiver PC running `openssh-server` , installable on Ubuntu/Debian based systems by
 ```
     sudo apt install openssh-server
 ```
@@ -22,14 +24,14 @@ to copy files from Laptop to Desktop over the network through SSH
     sudo apt install net-tools
 ```
 
-## Migrations 
+## Migrations
 - On your sender PC and receiver PC, make a directory called `mongobackups` in your home folder or any other location
     ```
     mkdir ~/mongobackups
     ```
 - Again on the sender PC, backup your mongoDB documents to the `mongobackups` folder, `yourdb` here is just the name of your MongoDB collection
     ```
-    sudo mongodump --db yourdb --out ~/mongobackups/`date +"%d-%m-%y"` 
+    sudo mongodump --db yourdb --out ~/mongobackups/`date +"%d-%m-%y"`
     ```
     This `date +"%d-%m-%y"`  creates a folder with the current date stamp, inside this folder there will be `.bson` files containing your documents
 

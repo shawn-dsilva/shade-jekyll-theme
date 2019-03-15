@@ -9,7 +9,7 @@
 
  body {
   color: var(--main-para-color);
-  font-family: 'Barlow', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-weight: 400;
   line-height: 1.65;
   margin: 0;
@@ -30,7 +30,7 @@ a {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Barlow', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-weight: 700;
   margin-bottom: .5rem;
   line-height: 1.25;
@@ -229,7 +229,7 @@ img {
 /* Blog post or page title */
 /*.page-title,*/
 .page-title {
-  font-family: 'Barlow', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   color: #282c34;
   font-size: 2.5rem;
   margin-bottom: 1rem;
@@ -240,7 +240,7 @@ img {
 .post-title {
   color: #282c34;
  text-align: center;
- font-family: 'Barlow', sans-serif;
+ font-family: 'Montserrat', sans-serif;
  font-weight: 700;
 }
 
@@ -248,7 +248,7 @@ img {
   font-weight: 600;
   color: var(--main-link-color);
   font-size: 1.8rem;
-  font-family: 'Barlow', sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .post-title-link a:hover,
@@ -259,7 +259,7 @@ img {
 /* Post Dates for blog post and homepage */
 
 .post-date {
-  font-family: 'Barlow', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   text-align: left;
   display: block;
   margin-top: 1rem;
@@ -269,7 +269,7 @@ img {
 }
 
 .post-date-homepage {
-  font-family: 'Barlow', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   text-align: left;
   display: block;
   margin-top: 0.5rem;
@@ -326,7 +326,7 @@ img {
 }
 
 .archive a {
-  font-family: 'Barlow', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-weight: 600;
   font-size: 1.5rem;
 }

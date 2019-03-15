@@ -1,6 +1,9 @@
 ---
 layout: post
 title: Writing the Startup Code and Linker Script for the TM4C ARM Microcontroller from scratch
+categories: [Embedded Systems,]
+tags : [arm cortex-m, c programming, tm4c, microcontrollers, linux]
+
 excerpt_separator: <!--more-->
 
 ---
@@ -33,13 +36,13 @@ First we start off with the Startup code,which has two main functions
 <br>
 
 ## Writing  Startup.h
-The Vector Table is an array of `void` functions which is placed into a section in the memory,namely 
+The Vector Table is an array of `void` functions which is placed into a section in the memory,namely
 `.vector_table` in this case,this name has to also be reflected in the linker script.
 <br>
 The functions each map to an Interrupt index-wise,which is hardcoded into the microcontroller itself,
 the interrupt vector table is defined in the TM4C123GH6PM data sheet, pages 147-149, and we will be using it to write our own vector table.
 <br>
-We will be having around ~120 or so function prototypes in our vector table, so we need to aliase undefined function prototypes to a default handler function, we do this by defining a macro in our 
+We will be having around ~120 or so function prototypes in our vector table, so we need to aliase undefined function prototypes to a default handler function, we do this by defining a macro in our
 `startup.h` file like so
 <br>
 ```c
@@ -87,8 +90,8 @@ Here, `*element_t` is a pointer passed to void function and cast as void
 next we define a `union` for our main stack pointer and our ISRs
 ```c
 typedef union {
-    element_t isr;   
-    void *stack_top; 
+    element_t isr;
+    void *stack_top;
 } vector_table_t;
 ```
 `void *stack_top` is a pointer to the top of the stack,and the 0th element of the vector table.
@@ -120,10 +123,10 @@ We start by including our `startup.h` header file with out definitions and the `
 #include <stdint.h>
 #include "startup.h"
 ```
-Next we direct the compiler to place the following vector table into the section `.vector_table` 
+Next we direct the compiler to place the following vector table into the section `.vector_table`
 in the `.data` segment
 ```c
-__attribute__((section(".vector_table"))) 
+__attribute__((section(".vector_table")))
 ```
 <br>
 
@@ -131,35 +134,35 @@ Now we define our vector table like so
 ```c
 const vector_table_t vectors[] = {
 {.stack_top = &_stack_ptr},
-Reset_Handler,        
-NMI_Handler,          
-HardFault_Handler,    
+Reset_Handler,
+NMI_Handler,
+HardFault_Handler,
 MemManageFault_Handler,
-BusFault_Handler,           
-UsageFault_Handler,         
-0,                          
-0,                          
-0,                          
-0,                          
-SVC_Handler,                
-DebugMonitor_Handler,       
-0,                          
-PendSV_Handler,             
-SysTick_Handler,            
-GPIOPortA_ISR,              
-GPIOPortB_ISR,              
-GPIOPortC_ISR,              
-GPIOPortD_ISR,              
-GPIOPortE_ISR,              
-UART0_ISR,                  
-UART1_ISR,                  
-SPI0_ISR,                   
+BusFault_Handler,
+UsageFault_Handler,
+0,
+0,
+0,
+0,
+SVC_Handler,
+DebugMonitor_Handler,
+0,
+PendSV_Handler,
+SysTick_Handler,
+GPIOPortA_ISR,
+GPIOPortB_ISR,
+GPIOPortC_ISR,
+GPIOPortD_ISR,
+GPIOPortE_ISR,
+UART0_ISR,
+UART1_ISR,
+SPI0_ISR,
     /*MORE ISRS FOLLOW FROM HERE */
 };
 ```
 Here,
 - The 0th element,`{.stack_top = &_stack_ptr}` assigns the  Main Stack Pointer defined in the Linker Script, `_stack_ptr`
-to the union element `.stack_top` defined in `vector_table_t` 
+to the union element `.stack_top` defined in `vector_table_t`
 - The 1st element is the `Reset_Handler`, that is called when the <RESET> Button on the microcontroller is pressed,or the reset flag is set
 <br>
 

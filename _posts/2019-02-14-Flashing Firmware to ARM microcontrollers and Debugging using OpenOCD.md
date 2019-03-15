@@ -1,6 +1,8 @@
 ---
 layout: post
-title: Flashing Firmware to ARM Microcontrollers using OpenOCD
+title: Flashing Firmware to ARM Cortex-M Microcontrollers using OpenOCD
+categories: [Embedded Systems,]
+tags : [arm cortex-m, openOCD, tm4c, microcontrollers, linux]
 excerpt_separator: <!--more-->
 ---
 
@@ -21,7 +23,7 @@ On the other hand, most Microcontroller Evaluation boards come with an inbuilt h
 ## What is OpenOCD?
 
  OpenOCD is a program that when installed on a Linux system can be used to connect to a Microcontroller to flash and debug it, using either purpose built debug adapter hardware like a Bus Pirate or Olimex ARM-OCD-H, or vendor supplied ICDIs like ST-Link etc
- <br> 
+ <br>
  It provides a GDB server than can be connected to for debugging, and a Telnet server that can be used to pass OpenOCD commands for Flashing,OpenOCD also supports a wide variety of microntrollers for debugging and flashing
  <br>
 **Note** : The TM4C123GXL evaluation board is being used for the purposes of this guide, but other well-known ARM microcontrollers like STM32 + attached ICDI debugger can also be used.<br>
@@ -41,7 +43,7 @@ Now we run bootstrap and config scripts with our needed options
 Both the `--enable-stlink` and `--enable-ti-icdi` options here are specified to include support for these two ICDI's in your openOCD install, altough i have seen these features being activated automatically also
 ```shell
 ./bootstrap
-./configure --prefix=/usr  --enable-stlink 
+./configure --prefix=/usr  --enable-stlink
 --enable-ti-icdi
 ```
 Finally we run make to build OpenOCD and sudo make install to install it.By default it is installed to  `/usr/local/bin/openocd`
@@ -63,7 +65,7 @@ You should be greeted with this output
 <img style="text-align:left;" src="/public/assets/images/OpenOCDmain.png">
 
 Now open a new terminal tab or window
-and connect to the Telnet OpenOCD server by 
+and connect to the Telnet OpenOCD server by
 ```
     telnet localhost 4444
 ```
@@ -84,12 +86,12 @@ Next we have to halt our microcontroller, without which it can't be flashed
 ```
 > reset halt
 ```
-Then we need to erase the contents of its flash by 
+Then we need to erase the contents of its flash by
 ```
 > stellaris mass_erase 0
 ```
 Here, `stellaris` is a driver command, different for each microcontroller family or brand, you should put your microcontroller driver's command here instead of `stellaris` if you use a different microcontroller/ eval board <br>
-You can find the flash driver commands for your board here on this <a href="http://openocd.org/doc/html/Flash-Commands.html"> OpenOCD docs page</a>. 
+You can find the flash driver commands for your board here on this <a href="http://openocd.org/doc/html/Flash-Commands.html"> OpenOCD docs page</a>.
 <br>
 `mass_erase` is the command used to erase the flash, and 0 is the location of the flash that we found from `flash banks`
 
@@ -111,7 +113,7 @@ Finally we reset our board to run our program
 Alternatively, all the flashing can be done in this single, succinct command
 
 ```
-sudo openocd -f /usr/share/openocd/scripts/board/ek-tm4c123gxl.cfg -c "program bin/main.bin reset" 
+sudo openocd -f /usr/share/openocd/scripts/board/ek-tm4c123gxl.cfg -c "program bin/main.bin reset"
 ```
 
 the `-c` option allows you to specify commands to openOCD like `"program bin/main.bin reset"` in this case, where `program bin/main.bin` tells OpenOCD to flash `main.bin` to the board, and `reset` tells it to reset the board
@@ -121,4 +123,3 @@ you can also specify an `exit` command to make openOCD exit after it has finishe
 <br>
 <br>
 You have to use Ctrl + D to quit OpenOCD, this will also shut down the GDB server
-

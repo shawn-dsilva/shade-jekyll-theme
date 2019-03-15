@@ -1,6 +1,8 @@
 ---
 layout: post
 title: Getting started with the TM4C Launchpad on a Linux System
+categories: [Embedded Systems,]
+tags : [arm cortex-m, tm4c, microcontrollers, linux]
 excerpt_separator: <!--more-->
 ---
 
@@ -12,7 +14,7 @@ The steps here are tested on an **Ubuntu 18.04 LTS** system,but should work on a
 
 <!--more-->
 
-  
+
 
 **To start writing firmware for the TM4C we need:**
 
@@ -26,11 +28,11 @@ The steps here are tested on an **Ubuntu 18.04 LTS** system,but should work on a
 
 - A flasher program,I use `lm4flash` in this guide,although OpenOCD may also be used
 
-  
+
 
 ## Toolchain installation
 
-  
+
 
   **1**.First we install the dependencies needed by our tool chain
 ```shell
@@ -38,14 +40,14 @@ sudo apt install flex bison libgmp3-dev libmpfr-dev libncurses5-dev libmpc-dev a
 ```
  **2**. Then we install the **GCC for ARM** package
 
-  
+
 ``` shell
 sudo apt install gcc-arm-none-eabi
 ```
 
 **3**. And finally the `lm4flash` flashing tool
 
-  
+
 ```shell
 git clone https://github.com/utzig/lm4tools.git
 cd lm4tools/lm4flash
@@ -99,10 +101,9 @@ once you run `make` this will be the directory structure:
  - `inc` contains your `*.h` Header files,like `startup.h`
  - `obj` contains the `*.o` object files and `*.d` dependency files
  - `bin` contains an ELF executable `main.elf`,this contains debugging symbols used by  the `gdb` debugger,and `main.bin`,the final binary that is stripped off the debugging symbols and will be flashed to your board
- 
+
 
 Run `make flash` to invoke `lm4flash` and burn your `main.bin` binary to the board,press the RESET button on your board,and hold SW1 to cause the red LED on board to blink as long as it is pressed
 
-Additional library and driver files for this board can be acquired by downloading the `SW-TM4C-2.1.4.178.exe` package from this 
+Additional library and driver files for this board can be acquired by downloading the `SW-TM4C-2.1.4.178.exe` package from this
 [TI Website here](http://software-dl.ti.com/tiva-c/SW-TM4C/latest/index_FDS.html)
-

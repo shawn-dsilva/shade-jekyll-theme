@@ -1,6 +1,8 @@
 ---
 layout: post
 title: 'ASUS X510UNR : Best Budget Linux laptop'
+categories: [General,]
+tags : [misc, hardware, linux]
 excerpt_separator: <!--more-->
 ---
 
@@ -25,7 +27,7 @@ But all these however,come at a steep price,most business grade laptops start at
     <tr><th>Connectivity</th><td>Intel 8256 2x2 WiFi + BT, No Ethernet port</td></tr>
     <tr><th>Ports</th><td>HDMI, 2 x USB 2.0(Type-A), 1 x USB 3.0(Type-A), 1 x USB 3.0(USB-C), 3.5mm jack,Barrel jack for charging  and SD card reader slot</td></tr>
     <tr><th>Batteries</th><td>42 Whr, 3 cell</td></tr>
-   
+
 </table>
 
 # Laptop Review
@@ -100,7 +102,7 @@ Graphics:  Card-1: Intel UHD Graphics 620 bus-ID: 00:02.0
 Audio:     Card Intel Sunrise Point-LP HD Audio driver: snd_hda_intel bus-ID: 00:1f.3
            Sound: Advanced Linux Sound Architecture v: k4.15.0-38-generic
 Network:   Card: Intel Wireless 8265 / 8275 driver: iwlwifi bus-ID: 02:00.0
-           IF: wlp2s0 state: up 
+           IF: wlp2s0 state: up
 Drives:    HDD Total Size: 1000.2GB (1.4% used)
            ID-1: /dev/sda model: TOSHIBA_MQ04ABF1 size: 1000.2GB
 Partition: ID-1: / size: 56G used: 13G (25%) fs: ext4 dev: /dev/sda5
@@ -117,7 +119,7 @@ Info:      Processes: 308 Uptime: 1:45 Memory: 2009.2/7859.1MB Init: systemd run
 Altough this device packs all this hardware,and is yet still light,it is clear that Asus had to skimp out on the build quality of this laptop.
 <br>
 
-The plastic has this brushed metal finish on the lid,which makes it look very cheap,and is a finger-print magnet, 
+The plastic has this brushed metal finish on the lid,which makes it look very cheap,and is a finger-print magnet,
 the chassis plastic seems flimsy and i can see a slight depression on the plastic between the 'G' and 'H' keys of the keyboard
 There is a lot of flex overall, altough the laptop can be opened with one hand most of the time(a small notch is provided,like you would see on a macbook).
 <br>
@@ -130,7 +132,7 @@ On the literal flipside of this though,is a removable bottom cover,which is atta
 
 # Conclusion
 
-Overall this is a good "It-Just-Works" **Linux** laptop in this price range of **60,000 INR**, with good hardware, 
+Overall this is a good "It-Just-Works" **Linux** laptop in this price range of **60,000 INR**, with good hardware,
 <br> out-of-the-box Linux support and relative ease of maintainence and upgradability.
 <br>
 altough the materials and finish leave something to be desired
@@ -144,7 +146,7 @@ altough the materials and finish leave something to be desired
 - Full HD Display
 - Good out-of-the-box Linux support
 - Centered Keyboard with backlight
-  
+
 <br>
 <span style="color: red; font-size:1.2rem; font-weight:400;">CONS </span><br>
 - Build quality

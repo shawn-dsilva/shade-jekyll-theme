@@ -8,8 +8,8 @@ for file in os.listdir(directory):
     print (file)
     f = open('_posts/' + file)
     lines = f.read().splitlines()
-    for index, line in zip(range(4), lines):
-        if index == 3: # Post Tags are in 4th line of a Post
+    for index, line in zip(range(5), lines):
+        if index == 4: # Post Tags are in 4th line of a Post
             #print (line)
             line = line.split(':')
             line = line[1].split(' [')

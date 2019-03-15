@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 'How to Migrate or Copy MongoDB documents to another Server'
-categories: [Systems Administration/ DevOps,]
+categories: [SysAdmin/ DevOps,]
 tags : [mongodb, database, linux]
 excerpt_separator: <!--more-->
 ---

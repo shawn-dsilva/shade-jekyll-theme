@@ -2,7 +2,7 @@
 layout: post
 title: Writing the Startup Code and Linker Script for the TM4C ARM Microcontroller from scratch
 categories: [Embedded Systems,]
-tags : [arm cortex-m, c programming, tm4c, microcontrollers, linux]
+tags : [arm cortex-m, C , tm4c, microcontrollers, linux]
 
 excerpt_separator: <!--more-->
 

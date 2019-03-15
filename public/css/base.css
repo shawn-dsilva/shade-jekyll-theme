@@ -115,6 +115,17 @@ pre code {
 
 }
 
+
+.tags {
+  background-color: #788cfd;
+  color: white;
+  border-radius: 4px;
+  font-size: 1.4rem;
+  margin: 0 0.2em;
+  padding: 0.1em 0.3em;
+  font-weight: 400;
+
+}
 table {
   border-spacing: 1px;
   box-shadow: 0px 0px 0px 1px rgba(148, 148, 148, 0.16) inset;

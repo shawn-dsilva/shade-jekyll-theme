@@ -17,10 +17,10 @@ Designed and Developed a real time chat web app from scratch to teach myself ful
 - Direct messaging between two users in real-time, with time stamp.
 - Recent message loading on clicking user entry in left pane.
 - Displays messages received when user is offline.
-- Scroll-to-Bottom on new message sent/received. 
+- Scroll-to-Bottom on new message sent/received.
 
 
-GITHUB CODE: | <a href="https://github.com/shawn-dsilva/client-realtime-chat-app">  Angular Front-End </a> | <a href="https://github.com/shawn-dsilva/client-realtime-chat-app"> NodeJS Back-End </a>
+GITHUB CODE: | <a href="https://github.com/shawn-dsilva/client-realtime-chat-app">  Angular Front-End </a> | <a href="https://github.com/shawn-dsilva/server-realtime-chat-app"> NodeJS Back-End </a>
 
 <br>
 <hr>

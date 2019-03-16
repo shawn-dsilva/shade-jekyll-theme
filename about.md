@@ -4,7 +4,9 @@ title: About Me
 ---
 I am Shawn D’silva, a full stack developer using the versatility of JavaScript and an electronics hobbyist.
 <br>
+<br>
 The purpose of this website is to document my projects and other blog posts related to Full Stack Web Development, Embedded Linux, Operating Systems, hobby Electronics and Microcontroller Firmware programming.
+<br>
 <br>
 I am fascinated about the low-level, inner workings of processors and modern electronics in general that are abstracted away from the average user, both hardware and firmware, and love reading material related to Computer Architecture, Digital Electronics and Embedded Systems.
 {% comment %}

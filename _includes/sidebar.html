@@ -16,6 +16,8 @@
 
         <nav class="sidebar-nav">
           <!--  <a class="sidebar-nav-item{% if page.url == site.baseurl %} active{% endif %}" href="{{ site.baseurl }}">Home</a> -->
+          <div class="center">
+          <div class="sidebar-container">
 
           {% comment %}
           The code below dynamically generates a sidebar nav of pages with
@@ -25,18 +27,18 @@
           {% for node in pages_list %}
           {% if node.title != null %}
           {% if node.layout == "page" %}
-          <div class="center">
           <a class="sidebar-nav-item sidebar-nav-item-menu {% if page.url == node.url %} active{% endif %} " href="{{ node.url }}">
             <i class="icons
             {% if node.title == 'About Me' %} fas fa-info-circle {% endif %}
             {% if node.title == 'Blog Archive' %} fas fa-pencil-alt {% endif %}
             {% if node.title == 'My Projects' %} fas fa-drafting-compass {% endif %}
             {% if node.title == 'Tags' %} fas fa-tags {% endif %}">   &nbsp;
-            </i>{{node.title}}</a>
-          </div>
+            </i>{{node.title}}</a><br>
           {% endif %}
           {% endif %}
           {% endfor %}
+        </div>
+      </div>
 
 
           <div class="icons">

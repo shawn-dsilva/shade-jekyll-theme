@@ -1,5 +1,5 @@
 html {
-  font-family:'Montserrat', sans-serif;
+  font-family:'Roboto', sans-serif;
   font-weight: 400;
 }
 
@@ -40,7 +40,7 @@ html {
 
 .lead {
   /*display: none;*/
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   text-align: center;
   padding-top: 1rem;
   padding-left: 2rem;
@@ -105,7 +105,7 @@ input:checked~.menu-content {
 
 .title-navbar a {
   font-weight: 700;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 
 /* Sidebar nav */
@@ -114,11 +114,19 @@ input:checked~.menu-content {
   padding: 0;
 }
 
-.sidebar-nav-item {
-  display: block;
-  margin-top: 10px;
-  margin-bottom: 15px;
+.center {
   text-align: center;
+}
+.sidebar-container {
+  display: inline-block;
+  text-align: left;
+}
+
+.sidebar-nav-item {
+  display: inline-block;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  text-align: left;
   font-size: 30px;
 }
 
@@ -161,7 +169,8 @@ width:33%;
 }
 
 .post-title {
-  font-size: 1.9em;
+  font-family: 'Roboto', sans-serif;
+  font-size: 2.25rem;
   text-align: left;
 }
 
@@ -192,12 +201,12 @@ width:33%;
     text-align: left;
     color: #fff;
     margin-top: 0;
-    font-size: 4rem;
+    font-size: 4.5rem;
   }
 
   .title a {
     font-weight: 600;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Roboto', sans-serif;
   }
   .title-navbar {
     display:none;
@@ -228,19 +237,23 @@ width:33%;
     font-size: 1rem;
   }
 
+  .center {
+    text-align: left;
+  }
+  .sidebar-container {
+    display: i;
+    text-align: left;
+  }
+
   .sidebar-nav-item {
-    display: block;
+    display: inline-block;
     margin-left: 0;
     margin-top: 10px;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
     text-align:left;
   }
 
-  /*.center {
-    padding-left: 0;
-    padding-right: 0;
-    width:auto;
-  }*/
+
 
   .socials {
     display: inline;

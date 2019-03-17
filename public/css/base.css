@@ -9,7 +9,7 @@
 
  body {
   color: var(--main-para-color);
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-weight: 400;
   line-height: 1.65;
   margin: 0;
@@ -30,7 +30,7 @@ a {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-weight: 700;
   margin-bottom: .5rem;
   line-height: 1.25;
@@ -117,28 +117,40 @@ pre code {
 
 
 .tags {
-  background-color: #788cfd;
-  color: white;
+  display:inline-block;
+  background-color: white;
+  border-color: #788cfd;
+  border-width: 2px;
+  color:#788cfd;
   border-radius: 4px;
-  font-size: 1.4rem;
-  margin: 0 0.2em;
-  padding: 0.1em 0.3em;
+  font-size: 1.2rem;
+  margin: 10px 2px;
+  padding: 5px 12px;
   font-weight: 400;
+  border-style:solid;
 }
 
 .mini-tags {
-  background-color: #788cfd;
-  color: white;
+  display:inline-block;
+  background-color: white;
+  border-color: #788cfd;
+  border-width: 2px;
+  color:#788cfd;
+  border-style: solid;
   border-radius: 4px;
   font-size: 18px;
-  margin: 0 0.2em;
-  padding: 0.1em 0.3em;
+  margin: 8px 2px;
+  padding: 2px 8px;
   font-weight: 400;
 }
 
 .categories {
-  background-color: #00c58a;
-  color: white;
+  display:inline-block;
+  background-color: white;
+  border-color: #00c58a;
+  border-width: 2px;
+  color:#00c58a;
+  border-style:solid;
   border-radius: 4px;
   font-size: 20px;
   margin: 0 0.2em;
@@ -147,10 +159,14 @@ pre code {
 }
 
 .categories-main {
-  background-color: #00c58a;
-  color: white;
+  display:inline-block;
+  background-color: white;
+  border-color: #00c58a;
+  border-width: 2px;
+  color:#00c58a;
+  border-style:solid;
   border-radius: 4px;
-  font-size: 1.7rem;
+  font-size: 1.6rem;
   margin: 0 0.2em;
   padding: 0.1em 0.3em;
   font-weight: 400;
@@ -186,6 +202,7 @@ th, td {
 
 /* Body text */
 p {
+  font-family: 'Open Sans';
   margin-top: 0;
   margin-bottom: 1rem;
   font-size:18px;
@@ -269,7 +286,7 @@ img {
 /* Blog post or page title */
 /*.page-title,*/
 .page-title {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Roboto', sans-serif;
   color: #282c34;
   font-size: 2.5rem;
   margin-bottom: 1rem;
@@ -280,15 +297,15 @@ img {
 .post-title {
   color: #282c34;
  text-align: center;
- font-family: 'Montserrat', sans-serif;
- font-weight: 700;
+ font-family: 'Roboto', sans-serif;
+ font-weight: 600;
 }
 
 .post-title-link a {
-  font-weight: 600;
+  font-weight: 500;
   color: var(--main-link-color);
-  font-size: 1.8rem;
-  font-family: 'Montserrat', sans-serif;
+  font-size: 1.7rem;
+  font-family: 'Roboto', sans-serif;
 }
 
 .post-title-link a:hover,
@@ -299,23 +316,23 @@ img {
 /* Post Dates for blog post and homepage */
 
 .post-date {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   text-align: left;
   display: block;
   margin-top: 1rem;
   margin-bottom: 1rem;
   color: var(--main-light-color);
-  font-weight: 500;
+  font-weight: 400;
 }
 
 .post-date-homepage {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   text-align: left;
   display: block;
   margin-top: 0.5rem;
   margin-bottom: 1.2rem;
   color: var(--main-light-color);
-  font-weight: 500;
+  font-weight: 400;
 
 }
 
@@ -366,8 +383,8 @@ img {
 }
 
 .archive a {
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 600;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
   font-size: 1.5rem;
 }
 

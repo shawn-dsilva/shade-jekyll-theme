@@ -7,7 +7,9 @@ layout: default
   <span class="post-date">{{ page.date | date: "%A, %B %-d, %Y"  }}</span>
 
 
-  <span style="font-size:20px;"> Posted in <a class="categories" href="/tags#{{page.categories}}">{{page.categories}}</a> <br> <i class="icons fas fa-tags"></i> Tags : </span>
+  <span style="font-size:20px;"> <i class="icons fas fa-folder-open"></i> Posted in
+    <a class="categories" href="/tags#{{page.categories}}">{{page.categories}}</a> <br>
+    <i class="icons fas fa-tags"></i> Tags : </span>
   {% for tag in page.tags %}
     <a class="mini-tags" href="/tags/{{ tag }}/">{{ tag }}</a>
     {% endfor %}

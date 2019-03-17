@@ -14,6 +14,7 @@ for highlighting code blocks
 - Archives section, displays all blog posts by year, with only date and title, no excrepts
 - Projects section ( WIP )
 - Contacts/Socials now have text for the URL's or Profile names of said social networks/contacts along with icons.
+- ✨ NEW ✨ Tags and Category support added for Blog Posts, with a list of all Tags on the Tags page and Categories listed
 
 ## Usage
 - Install jekyll
@@ -27,6 +28,8 @@ for highlighting code blocks
     git clone https://github.com/shawn-dsilva/shade-jekyll-theme
     cd shade-jekyll-theme
 ```
+
+- Run `tagfile-gen.py`, this will generate the tagfile pages listing posts for each tag.
 - Run Jekyll server
 ```
     jekyll serve
@@ -57,6 +60,8 @@ for highlighting code blocks
 - The `index.html` file in the route directory is how your homepage will look, the `truncate` value can be adjusted to reduce the characters in the excrept of a post
 - Blog Posts go in the `_posts` directory posts have to be made in Markdown `.md` format with a file name like this `YYYY-MM-DD-Title-of-your-post-here.md`
 - About,Projects and Archive HTML files are in the root directory of this repo
+- Tags should be specified as a YAML array `Tags : [some, tags, for this, blog]` in your blog posts, tags are read as comma seperated values by `tagfile-gen.py`
+- Categories should be specified as `categories: [A Category,]` in your blog posts
 
 ## How it looks
 
@@ -66,15 +71,24 @@ for highlighting code blocks
 
 **Desktop Blog Post**
 
-<img src="https://imgur.com/wKfKymK.png">
+<img src="https://imgur.com/GM34O07.png">
+
+**Desktop Tags Page**
+
+<img src="https://imgur.com/oIwGNC9.png">
 
 **Blog Post in Mobile View**
 
-<img src="https://imgur.com/qT8ebAx.png">
+<img src="https://imgur.com/6v5ap3W.png">
 
 **Mobile view with Menu Open**
 
 <img src="https://imgur.com/TJTORb6.png">
+
+**Mobile Tags Page**
+
+<img src="https://imgur.com/mDiKkjA.png">
+
 
 ## Credits
 

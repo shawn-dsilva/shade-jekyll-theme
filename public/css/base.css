@@ -4,6 +4,8 @@
   --main-heading-color: #0A0A0A;
   --main-link-color:  #5376f4;
   --main-light-color: #3D3D3D;
+  --main-lead-color: #c7c7c7;
+
 }
 
 
@@ -138,8 +140,8 @@ pre code {
   color:#788cfd;
   border-style: solid;
   border-radius: 4px;
-  font-size: 18px;
-  margin: 8px 2px;
+  font-size: 16px;
+  margin: 6px 2px;
   padding: 2px 8px;
   font-weight: 400;
 }
@@ -262,7 +264,7 @@ img {
 }
 
 
-.latest-posts {
+.big-header {
   font-size: 2.5rem;
   font-weight: 700;
   color:#282c34;
@@ -270,6 +272,20 @@ img {
   padding-bottom: 1rem;
 }
 
+
+.intro-container {
+  text-align: center;
+  width:100%;
+  height:100%;
+}
+
+.intro {
+  display:inline-block;
+  text-align: left;
+}
+.intro p {
+  font-size: 25px;
+}
 
 /*
  * Posts and pages
@@ -303,14 +319,14 @@ img {
 
 .post-title-link a {
   font-weight: 500;
-  color: var(--main-link-color);
+  color: var(--main-para-color);
   font-size: 1.7rem;
   font-family: 'Roboto', sans-serif;
 }
 
 .post-title-link a:hover,
 .post-title-link a:focus {
-  text-decoration: underline;
+  border-bottom: 5px solid var(--main-para-color);
 }
 
 /* Post Dates for blog post and homepage */
@@ -353,20 +369,22 @@ img {
 /* Readmore Button */
 
 .read-more {
-  background-color: var(--main-link-color);
-  color: white;
-  padding: 10px 25px;
+  background-color: white;
+  color: var(--main-title-color);
+  border-style:solid;
+  border-color: var(--main-title-color);
+  padding: 10px 18px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  border-bottom-right-radius: 10px;
+  /*border-bottom-right-radius: 10px;
   border-top-right-radius: 10px;
   border-bottom-left-radius: 10px;
   border-top-left-radius: 10px;
   -webkit-border-bottom-right-radius: 10px;
   -webkit-border-top-right-radius: 10px;
   -webkit-border-bottom-left-radius: 10px;
-  -webkit-border-left-radius: 10px;
+  -webkit-border-left-radius: 10px;*/
   font-size: 16px;
   font-weight: 500;
   margin: 16px 2px;
@@ -443,6 +461,19 @@ a.pagination-item:hover {
   background-color: #f5f5f5;
 }
 
+.devicon-large {
+  font-size:5rem;
+}
+
+.devicon-nodejs-plain-wordmark {
+  font-size:7rem;
+}
+
+.skills {
+  font-weight: 500;
+  font-size: 1.5rem;
+  color: var(--main-para-color)
+}
 @media (min-width: 30em) {
   .pagination {
     margin: 3rem 0;

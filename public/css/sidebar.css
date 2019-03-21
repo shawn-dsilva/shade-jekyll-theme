@@ -30,6 +30,8 @@ html {
   width: 100%;
   /* Full width */
   padding: 0.5rem 0.5rem;
+  padding-left: 2rem;
+  padding-right:2rem;
   color: rgba(255, 255, 255, 0.644);
   background-color: #202020;
 }
@@ -44,8 +46,6 @@ html {
   font-family: 'Open Sans', sans-serif;
   text-align: center;
   padding-top: 1rem;
-  padding-left: 2rem;
-  padding-right: 2rem;
   padding-bottom: 1rem;
   font-size: 1.2rem;
   margin: 0;
@@ -221,6 +221,36 @@ width:33%;
     font-size: 20px;
   }
 
+  .web-presence {
+    overflow: hidden;
+    text-align: center;
+    font-size: 18px;
+    color:white;
+    font-weight: 400;
+    text-transform: capitalize;
+  }
+
+  .web-presence:before,
+  .web-presence:after {
+    background-color: #fff;
+    content: "";
+    display: inline-block;
+    height: 3px;
+    position: relative;
+    vertical-align: middle;
+    width: 50%;
+  }
+
+  .web-presence:before {
+    right: 0.5em;
+    margin-left: -50%;
+  }
+
+  .web-presence:after {
+    left: 0.5em;
+    margin-right: -50%;
+  }
+
 @media (min-width: 48em) {
   body {
     font-size: 18px;
@@ -232,6 +262,9 @@ width:33%;
     bottom: 0;
     width: 16rem;
     text-align: left;
+    padding-left: 0;
+    padding-right: 0;
+    padding: 0.5em 0.5em;
   }
 
   .title {

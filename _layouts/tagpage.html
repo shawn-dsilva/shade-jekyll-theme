@@ -1,7 +1,7 @@
 ---
 layout: page
 ---
-<h1>Posts Tagged with <i class="icons fas fa-tags"></i> {{ page.tag }} : </h1>
+<h1>Posts Tagged with <i class="icons fas fa-tags"></i> <span style="font-size: 30px;" class="tags">{{ page.tag }} </span></h1>
 <br>
 <ul>
     {% for post in site.tags[page.tag] %}

@@ -4,7 +4,7 @@
   --main-heading-color: #0A0A0A;
   --main-link-color:  #5376f4;
   --main-light-color: #3D3D3D;
-  --main-lead-color: #c7c7c7;
+  --main-lead-color: white ; /*#c7c7c7*/
 
 }
 
@@ -269,7 +269,6 @@ img {
   font-weight: 700;
   color:#282c34;
   margin:0;
-  padding-bottom: 1rem;
 }
 
 
@@ -279,6 +278,9 @@ img {
   height:100%;
 }
 
+.date-icon {
+  font-size: 30px;
+}
 .intro {
   display:inline-block;
   text-align: left;

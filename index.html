@@ -52,6 +52,10 @@ title: Home
   <script src="public/js/script.js"></script>
   <script src="public/js/checkHandler.js"></script>
 
+  <div class="master-container">
+    {% include short-about.html %}
+  </div>
+
 <h1 class="big-header">Latest Posts</h1>
 <div class="posts">
   {% for post in paginator.posts %}

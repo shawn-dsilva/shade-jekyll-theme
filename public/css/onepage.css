@@ -165,15 +165,13 @@ h3 {
                 } */
 
 .about-container {
-  padding-top: 4rem;
-  padding-bottom: 1rem;
+  padding-bottom: 3rem;
 }
 
 .about-content {
-  width:85%;
+  width:auto;
   font-size: 18px;
-  font-weight: 300;
-  padding-bottom: 1.5rem;
+  font-weight: 400;
 }
 
 .contact-content {
@@ -184,7 +182,7 @@ h3 {
   padding-bottom: 1.5rem;
 }
 .about-content p {
-  font-weight: 300;
+  font-weight: 400;
 }
 
 .flex-container {
@@ -784,7 +782,6 @@ td {
     max-width: 85%;
     font-size: 18px;
     font-weight: 400;
-    padding-bottom: 1.5rem;
   }
 
   .about-content p {
@@ -793,22 +790,19 @@ td {
 
   .view-all-container {
     display: inline-block;
-    width: 50%;
+    width: auto;
   }
 
   .view-all {
     background-color: var(--main-link-color);
     border-color: var(--main-link-color);
-    border-width: 3px;
     color: #ffffff;
     border-radius: 8px;
-    font-size: 1.6rem;
+    font-size: 1rem;
     margin: 6px 2px;
-    padding: 5px 12px;
-    font-weight: 400;
+    padding: 3px 20px;
+    font-weight: 500;
     border-style: solid;
-    margin-top: 3rem;
-    margin-bottom: 3rem;
   }
 
   .contact-box-container {
@@ -998,14 +992,13 @@ td {
   } */
 
   .about-content, .contact-content {
-    width: 80%;
+    max-width: 100%;
     font-size: 20px;
     font-weight: 400;
-    padding-bottom: 1.5rem;
   }
 
   .about-content p {
-    font-size: 20px;
+    font-size: 18px;
   }
 
   .flex-container {

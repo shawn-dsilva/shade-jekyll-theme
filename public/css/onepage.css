@@ -208,7 +208,7 @@ h3 {
   transform: scale(1.015);
 } */
 .skill-elem p {
-  font-weight: 300;
+  font-weight: 400;
 }
 
 .skill-elem h2 {
@@ -425,8 +425,9 @@ h3 {
   text-align: left;
   display: block;
   margin-top: 0.5rem;
-  margin-bottom: 1.2rem;
-  color: var(--main-light-color);
+  margin-bottom: 0.5rem;
+  color: var(--main-background-color);
+  font-size: 14px;
   font-weight: 400;
 }
 
@@ -438,9 +439,9 @@ h3 {
   color: #788cfd;
   border-style: solid;
   border-radius: 4px;
-  font-size: 16px;
-  margin: 6px 2px;
-  padding: 2px 8px;
+  font-size: 14px;
+  margin: 4px 2px;
+  padding: 2px 4px;
   font-weight: 400;
 }
 
@@ -547,7 +548,7 @@ h3 {
   color: var(--main-title-color);
   border-style: solid;
   border-color: var(--main-title-color);
-  padding: 10px 18px;
+  padding: 6px 8px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
@@ -559,10 +560,12 @@ border-top-left-radius: 10px;
 -webkit-border-top-right-radius: 10px;
 -webkit-border-bottom-left-radius: 10px;
 -webkit-border-left-radius: 10px;*/
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 500;
-  margin: 16px 2px;
+  margin: 8px 2px;
   cursor: pointer;
+  border-width: 2px;
+  border-radius: 5px;
   border-style: solid;
 }
 
@@ -851,8 +854,7 @@ td {
   }
 
   .skill-elem p {
-    font-weight: 300;
-    padding: 0 8px;
+    font-weight: 400;
     max-width: 480px;
     display: inline-flex;
     font-size: 16px;
@@ -1014,8 +1016,7 @@ td {
     display: inline-flex;
     justify-content: center;
     max-width: 100%;
-    /*flex-wrap: nowrap;*/
-    margin: 0 2rem;
+    flex-wrap: nowrap;
   }
   .skill-icons {
     font-size: 5.5em;
@@ -1026,14 +1027,12 @@ td {
   .skill-elem {
     height: auto;
     text-align: left;
-    margin: 1rem 1rem;
-    width: 60%;
+    margin: 0.5rem 0.5rem;
+    width: 50%;
   }
 
   .skill-elem p {
     font-weight: 400;
-    padding-left: 2rem;
-    padding-right: 2rem;
     max-width: 480px;
     display: inline-flex;
     font-size: 15px;

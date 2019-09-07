@@ -473,7 +473,7 @@ width:33%;
 
   /* x 1024 minimum width*/
   .content {
-    margin-left: 20rem;
-    margin-right: 10rem;
+    max-width: 90%;
+    margin: 0 auto;
   }
 }

@@ -3,12 +3,12 @@ layout: post
 title: Writing the Startup Code and Linker Script for the TM4C ARM Microcontroller from scratch
 categories: [Embedded Systems,]
 tags : [arm cortex-m, C, tm4c, microcontrollers, linux]
-
+description: Nearly every ARM Cortex-M needs needs a **startup code** file to define it's  Main Stack Pointer, Reset Handler and Vector Table and a linker script telling it to place which sections into which parts of memory,
 excerpt_separator: <!--more-->
 
 ---
 
-Nearly every ARM Cortex-M needs needs a **startup code** file to define it's  **Main Stack Pointer**, **Reset Handler** and **Vector Table** and a **linker script** telling it to place which sections into which parts of memory,these two files are crucial,without which even a simple blinky program cannot be run. Usually,the vendor provided versions of these files are sufficient,but the TI provided ones require a ~500MB download,and registration on the TI website,labyrnthine folder structure with very little documentation of what goes where or how is the project structured<br>
+{{page.description}} these two files are crucial,without which even a simple blinky program cannot be run. Usually,the vendor provided versions of these files are sufficient,but the TI provided ones require a ~500MB download,and registration on the TI website,labyrnthine folder structure with very little documentation of what goes where or how is the project structured<br>
 <!--more-->
 To top it all off,nearly every file in the TI package has this license in it :
 

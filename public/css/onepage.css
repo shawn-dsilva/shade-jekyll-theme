@@ -201,12 +201,12 @@ h3 {
   border-radius: 15px;
   border-style: solid;
   box-shadow: 0 0  10px 5px #e0e0e0;
-  transform: .2s;
+
 }
 
-.skill-elem:hover{
-  transform: scale(1.075);
-}
+/* .skill-elem:hover{
+  transform: scale(1.015);
+} */
 .skill-elem p {
   font-weight: 300;
 }
@@ -400,9 +400,18 @@ h3 {
 .post-title-link a {
   font-weight: 500;
   color: var(--main-bg-color);
-  font-size: 1.7rem;
+  font-size: 1rem;
   font-family: "Inter", sans-serif;
   text-decoration: none;
+  line-height: 1;
+}
+
+.blog-heading-intro {
+  font-weight: 600;
+  color: var(--main-bg-color);
+  font-size: 1.1rem;
+  font-family: 'Inter', sans-serif;
+
 }
 
 .post-title-link a:hover,
@@ -616,8 +625,8 @@ img {
 }
 
 a {
-  color: var(--main-link-color);
-  font-weight: 400;
+  color: inherit;
+  font-weight: inherit;
   text-decoration: inherit;
   transition: color 0.2s ease-out;
 }
@@ -1016,18 +1025,18 @@ td {
   }
   .skill-elem {
     height: auto;
-    text-align: center;
+    text-align: left;
     margin: 1rem 1rem;
-    width: auto;
+    width: 60%;
   }
 
   .skill-elem p {
-    font-weight: 300;
+    font-weight: 400;
     padding-left: 2rem;
     padding-right: 2rem;
     max-width: 480px;
     display: inline-flex;
-    font-size: 18px;
+    font-size: 15px;
   }
 
 

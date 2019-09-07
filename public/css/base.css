@@ -20,7 +20,7 @@
 }
 
 a {
-  color: var(--main-link-color);
+  color: inherit;
   font-weight: 400;
   text-decoration: inherit;
   transition: color 0.2s ease-out;
@@ -322,7 +322,7 @@ img {
 .post-title-link a {
   font-weight: 500;
   color: var(--main-para-color);
-  font-size: 1.7rem;
+  font-size: 1.125rem;
   font-family: 'Roboto', sans-serif;
 }
 

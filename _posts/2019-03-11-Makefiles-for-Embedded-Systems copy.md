@@ -3,10 +3,11 @@ layout: post
 title: Bare-Metal ARM Cortex-M Firmware Development with GCC and Makefiles
 categories: [Embedded Systems,]
 tags : [arm cortex-m, gcc, make, tm4c, microcontrollers, linux]
+description: This post is a guide to using the GCC package and the GNU Make utility along with basic code organization, to produce usable bare-metal firmware binaries for ARM Cortex-M Microcontrollers.
 excerpt_separator: <!--more-->
 ---
 
-This post is a guide to using the GCC package and the GNU Make utility along with basic code organization, to produce usable bare-metal firmware binaries for ARM Cortex-M Microcontrollers.
+{{page.description}}
 This guide is based on the TI TM4C123GXL ARM Cortex-M4 microcontrollers, the compiler flags may vary depending on your cortex-m version and manufacturer
 <!--more-->
 # Why GCC and Make?

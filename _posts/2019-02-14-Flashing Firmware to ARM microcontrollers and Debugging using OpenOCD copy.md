@@ -4,13 +4,12 @@ title: Flashing Firmware to ARM Cortex-M Microcontrollers using OpenOCD
 categories: [Embedded Systems,]
 tags : [arm cortex-m, openOCD, tm4c, microcontrollers, linux]
 excerpt_separator: <!--more-->
+description: Althought it is relatively easy to compile code as a part of a build system for your ARM microcontroller using GCC and Make, It is much more confusing about which toolchain to use to flash a firmware binary
 ---
 
-
-Althought it is relatively easy to compile code as a part of a build system for your ARM microcontroller using GCC and Make,
-It is much more confusing about which toolchain to use to flash a firmware binary to your microcontroller, and debug it.<br>
+{{page.description}}
+<!--more-->  to your microcontroller, and debug it.<br>
 The Segger J-Link seems to be the preferred product, as it is a hardware programmer( i.e flasher/burner ) that is vendor-independent i.e works with many different microcontrollers from various manufacturers and also serves as a debugger, It is also Linux compatible, which adds to its popularity, altough it is expensive( the base model starts at $200 ), and the J-Link EDU altough cheaper, are not cheap enough for those simply starting out writing firmware, also, these J-Link EDU variants come with other restrictions.
-<!--more-->
 
 <figure>
     <img src="https://canusb-shop.com/image/cache/data/canshop_images/Segger-JLINK-BASE-500x500.jpg">

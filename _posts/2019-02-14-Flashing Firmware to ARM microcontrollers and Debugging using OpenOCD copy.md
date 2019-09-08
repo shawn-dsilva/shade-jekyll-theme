@@ -5,6 +5,7 @@ categories: [Embedded Systems,]
 tags : [arm cortex-m, openOCD, tm4c, microcontrollers, linux]
 excerpt_separator: <!--more-->
 description: Althought it is relatively easy to compile code as a part of a build system for your ARM microcontroller using GCC and Make, It is much more confusing about which toolchain to use to flash a firmware binary
+image: https://i.imgur.com/1lM2irG.jpg
 ---
 
 {{page.description}}

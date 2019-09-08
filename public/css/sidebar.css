@@ -1,5 +1,5 @@
 html {
-  font-family:'Roboto', sans-serif;
+  font-family: "Merriweather Sans", sans-serif;
   font-weight: 400;
   height: 100%;
 }
@@ -44,7 +44,7 @@ html {
 .lead {
   /*display: none;*/
   color: var(--main-lead-color);
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Merriweather Sans', sans-serif;
   text-align: center;
   padding-top: 1rem;
   padding-bottom: 1rem;
@@ -107,7 +107,7 @@ input:checked~.menu-content {
 
 .title-navbar a {
   font-weight: 700;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Merriweather Sans', sans-serif;
 }
 
 /* Sidebar nav */
@@ -145,9 +145,9 @@ margin:auto;
 width:33%;
 }*/
 
-.fa {
+/* .fa {
   margin-left: 10px;
-}
+} */
 
 .icons{
   font-size: 25px;
@@ -176,7 +176,7 @@ width:33%;
 }
 
 .post-title {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Merriweather Sans', sans-serif;
   font-size: 2.25rem;
   text-align: left;
 }
@@ -277,7 +277,7 @@ width:33%;
 
   .title a {
     font-weight: 600;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Merriweather Sans', sans-serif;
   }
   .title-navbar {
     display:none;
@@ -294,11 +294,11 @@ width:33%;
   }
 
 
-
+/*
   .fa {
     margin-left: 10px;
     margin-bottom: 15px;
-  }
+  } */
 
   .icons {
     text-align: left;

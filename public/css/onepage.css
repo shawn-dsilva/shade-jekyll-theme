@@ -19,9 +19,9 @@
   scroll-behavior: smooth;
 }
 
-@import url("https://rsms.me/inter/inter.css");
+@import url("https://rsms.me/Merriweather Sans/Merriweather Sans.css");
 html {
-  font-family: "Inter", sans-serif;
+  font-family: "Merriweather Sans", sans-serif;
 }
 
 .master-container {
@@ -48,7 +48,7 @@ html {
 }
 
 body {
-  font-family: "Inter", sans-serif;
+  font-family: "Merriweather Sans", sans-serif;
   padding: 0;
   margin: 0;
   color: var(--main-light-color);
@@ -194,7 +194,10 @@ h3 {
 }
 
 .skill-elem {
-  text-align: center;
+  display: flex;
+  flex-direction: row;
+  /* align-items: flex-end; */
+  flex-wrap: wrap;
   padding: 15px;
   border-color: #d3d3d3;
   font-weight: 300;
@@ -403,7 +406,7 @@ h3 {
   font-weight: 500;
   color: var(--main-bg-color);
   font-size: 1rem;
-  font-family: "Inter", sans-serif;
+  font-family: "Merriweather Sans", sans-serif;
   text-decoration: none;
   line-height: 1;
 }
@@ -412,7 +415,7 @@ h3 {
   font-weight: 600;
   color: var(--main-bg-color);
   font-size: 1.1rem;
-  font-family: 'Inter', sans-serif;
+  font-family: 'Merriweather Sans', sans-serif;
 
 }
 
@@ -423,7 +426,7 @@ h3 {
 }
 
 .post-date-homepage {
-  font-family: "Inter", sans-serif;
+  font-family: "Merriweather Sans", sans-serif;
   text-align: left;
   display: block;
   margin-top: 0.5rem;
@@ -432,9 +435,14 @@ h3 {
   font-size: 14px;
   font-weight: 400;
 }
+.mini-tags-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-self: flex-start;
+}
 
 .mini-tags {
-  display: inline-block;
   background-color: white;
   border-color: #788cfd;
   border-width: 2px;
@@ -464,6 +472,7 @@ h3 {
 .link-tag-container {
   display: flex;
   flex-wrap: wrap;
+  align-self: flex-end;
 }
 
 .link-tags {
@@ -471,9 +480,9 @@ h3 {
   display: inline-block;
   color: white;
  border-width: 3px;
-  font-size: 1.1rem;
+  font-size: 0.8rem;
   margin: 6px 4px;
-  padding: 8px 8px;
+  padding: 4px 4px;
   font-weight: 500;
   border-style: solid;
   text-align: center;
@@ -565,7 +574,7 @@ border-top-left-radius: 10px;
   font-size: 14px;
   font-weight: 500;
   margin: 8px 2px;
-  cursor: pointer;
+  cursor: poMerriweather Sans;
   border-width: 2px;
   border-radius: 5px;
   border-style: solid;
@@ -846,6 +855,8 @@ td {
     border-width: 1px;
     border-radius: 15px;
     border-style: solid;
+
+
   }
 
   .skill-elem h2 {
@@ -856,6 +867,7 @@ td {
   }
 
   .skill-elem p {
+    align-self: flex-start;
     font-weight: 400;
     max-width: 480px;
     display: inline-flex;
@@ -1192,7 +1204,7 @@ td {
   }
 
   .link-tags a {
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
 
 }

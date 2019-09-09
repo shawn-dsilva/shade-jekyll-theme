@@ -260,11 +260,11 @@ width:33%;
     top: 0;
     left: 0;
     bottom: 0;
-    width: 16rem;
+    width: 15%;
     text-align: left;
     padding-left: 0;
     padding-right: 0;
-    padding: 0.5em 0.5em;
+    padding: 1em 1em;
   }
 
   .title {
@@ -272,7 +272,7 @@ width:33%;
     text-align: left;
     color: #fff;
     margin-top: 0;
-    font-size: 4.3rem;
+    font-size: 3.6rem;
   }
 
   .title a {
@@ -284,9 +284,7 @@ width:33%;
   }
 
   .container {
-    max-width: 38rem;
-    padding-left: 0.5rem;
-    padding-right: 1rem;
+    max-width: 100%;
     margin-top: 0;
     margin-left: 0;
     margin-right: 0;
@@ -305,7 +303,7 @@ width:33%;
   }
 
   .lead{
-    font-size: 1rem;
+    font-size: 0.9rem;
   }
 
   .center {

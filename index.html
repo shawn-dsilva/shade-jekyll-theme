@@ -22,12 +22,12 @@ title: Home
 
 <p>    {{ post.excerpt | truncate:150 | strip_html }}  </p>
 
-    <div class="mini-tags-container">
+    <!-- <div class="mini-tags-container">
     <i style="font-size: 18px;" class="fas fa-tags"></i> : &nbsp;
     {% for tag in post.tags %}
     <a class="mini-tags" href="/tags/{{ tag }}/">{{ tag }}</a>
     {% endfor %}
-  </div>
+  </div> -->
     <br>
     <a href="{{post.url}}" class="read-more"> Read More <i class="fas fa-arrow-right"></i>
     </a>

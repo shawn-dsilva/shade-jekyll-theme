@@ -23,7 +23,8 @@ author:
 
 paginate:         3
 
-
+collections:
+  - projects
 
 github:
   repo:           github.com/shawn-dsilva

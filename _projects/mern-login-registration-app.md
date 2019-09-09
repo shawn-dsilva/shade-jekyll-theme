@@ -3,6 +3,8 @@ title: 'MERN Login/Registration App'
 image: https://i.imgur.com/mjdMhvd.png
 stack: [React, Redux, Bootstrap, Nodejs, MongoDB]
 description: Minimalistic, fully responsive and  ready-to-use component for Sessions based Login and Sign-Up   that can be used as a starting point for another project that needs authentication. Uses Cookies
+gitrepo: https://github.com/shawn-dsilva/mern-login-signup-component
+live: '#'
 ---
 
 

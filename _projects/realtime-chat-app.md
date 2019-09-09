@@ -3,6 +3,8 @@ title: 'Realtime Chat App'
 image: https://imgur.com/Ekpd2o3.png
 stack: [Angular2, Socketio, Nodejs, MongoDB ]
 description: Features user to user direct messaging in realtime and JWT token based authentication.Uses Angular 2 for Single Page App functionality. Real Time chat functionality achieved using RxJs and socket.io
+gitrepo: https://github.com/shawn-dsilva/client-realtime-chat-app
+live: '#'
 ---
 
 # # Realtime Chat App

@@ -2,8 +2,7 @@
 title: 'Realtime Chat App'
 image: https://imgur.com/Ekpd2o3.png
 stack: [Angular2, Socketio, Nodejs, MongoDB ]
-description: Shade is a modern, well documented, responsive theme for the Jekyll static-site generator
-Best suited for a personal website + blog, currently used for this website.
+description: Features user to user direct messaging in realtime and JWT token based authentication.Uses Angular 2 for Single Page App functionality. Real Time chat functionality achieved using RxJs and socket.io
 ---
 
 # # Realtime Chat App

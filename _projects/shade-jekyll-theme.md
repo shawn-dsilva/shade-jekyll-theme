@@ -1,9 +1,8 @@
 ---
-title: 'MERN Login/Registration App'
+title: 'Shade Jekyll Theme'
 image: https://i.imgur.com/GS37d0e.png
 stack: [HTML5, CSS3, JavaScript ]
-description: Shade is a modern, well documented, responsive theme for the Jekyll static-site generator
-Best suited for a personal website + blog, currently used for this website.
+description: Shade is a modern, well documented and responsive CSS Flexbox based theme for the Jekyll static-site generator Best suited for a personal website + blog, currently used for this website.
 ---
 
 
